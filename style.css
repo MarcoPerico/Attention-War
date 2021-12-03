@@ -7,30 +7,22 @@ body{
   src: url('fonts/Px Grotesk Regular.ttf');
 }
 .row{
-    box-sizing: border-box;
-    border-bottom: 1px;
-    border-left: 1px;
-    border-right: 1px;
-    border-top: 1px;
-    border-color: inherit;
-    border-style: solid;
-    border-color: white;
     cursor: pointer;
     height: calc(100vh/9);
-    margin: 0 auto;
+    margin: 0px 0px 0px 0px;
     transition: all 0.4s ease-in-out;
   }
   #about{
-    right:0%;
+    left:2%;
   }
   #finding1{
-    left:0%;
+    left:2%;
   }
   #finding2{
     left:60%;
   }
   #finding3{
-    left:40%;
+    left:20%;
   }
   #finding4{
     left:70%;
@@ -51,23 +43,21 @@ body{
     font-family:'Px-Grotesk';
     font-weight: bold;
     position: relative;
+    opacity:0.6;
     width:40%;
     top:50%;
+    overflow: hidden;
+    transition:0.2s ease-in-out;
     color:white;
     transform: translate(0%,-50%);
     margin:0px 0px 0px 0px;
   }
+  .titolo:hover{
+    opacity:1;
+  }
   #schedario {
     right: 0%;
     top: 0%;
-    box-sizing: border-box;
-    border-top: 1px;
-        border-bottom: 1px;
-        border-right:1px;
-        border-left:1px;
-    border-color: inherit;
-    border-style: solid;
-    border-color: white;
     position: absolute;
     margin: 0 auto;
     z-index: 9;
