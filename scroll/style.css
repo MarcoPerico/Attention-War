@@ -1,0 +1,21 @@
+body {
+  height: 3000px;
+  background: linear-gradient(blue, green, red);
+  position: relative;
+}
+.counter {
+  position: fixed;
+  font-size: 40px;
+}
+.whoa {
+  position: absolute
+  left: 40%;
+  top: 1500px;
+  font-size: 60px;
+  font-weight: bold;
+  transition: 1s;
+}
+.animate {
+  transform: scale(2);
+  color: white;
+}
