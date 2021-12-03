@@ -1,0 +1,40 @@
+@font-face {
+  font-family: alpina-light;
+  src: url("./assets/fonts/alpina/GTAlpina-Light.otf");
+}
+@font-face {
+  font-family: banana-light;
+  src: url("./assets/fonts/banana/BananaGrotesk-Light.otf");
+}
+
+/* * {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+} */
+
+h1 {
+  font-family: banana-light;
+  font-weight: normal;
+}
+p {
+  font-family: alpina-light;
+}
+.section {
+  font-size: 30px;
+  padding-left: 25%;
+  padding-right: 25%;
+}
+.s1 {
+  text-align: center;
+  font-size: 50px;
+}
+
+html,
+body {
+  margin: 0;
+  padding: 0;
+}
+*/ canvas {
+  display: block;
+}
