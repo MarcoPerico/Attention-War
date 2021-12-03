@@ -1,21 +1,77 @@
-h1 {
-  font-size: 200px;
+body{
+  overflow: hidden;
+  background-color: black;
 }
-<<<<<<< Updated upstream
-body {
-  background-color: red;
+@font-face {
+  font-family: "Px-Grotesk";
+  src: url('fonts/Px Grotesk Regular.ttf');
 }
-.Default_button{ 
-  background-color: greenyellow;
-  border: none;
-  color: rgb(173, 0, 0);
-  padding: 15px 32px;
-  text-align: center;
-  text-decoration: none;
-  display: inline-block;
-  font-size: 16px;
-  margin: 4px 2px;
-  cursor: pointer;
-}
-=======
->>>>>>> Stashed changes
+.row{
+    box-sizing: border-box;
+    border-bottom: 1px;
+    border-left: 1px;
+    border-right: 1px;
+    border-top: 1px;
+    border-color: inherit;
+    border-style: solid;
+    border-color: white;
+    cursor: pointer;
+    height: calc(100vh/9);
+    margin: 0 auto;
+    transition: all 0.4s ease-in-out;
+  }
+  #about{
+    right:0%;
+  }
+  #finding1{
+    left:0%;
+  }
+  #finding2{
+    left:60%;
+  }
+  #finding3{
+    left:40%;
+  }
+  #finding4{
+    left:70%;
+  }
+  #description{
+    position:absolute;
+    width:40px;
+    height:40px;
+    top:50%;
+    left:80%;
+    transform: translate(-50%;-50%);
+    z-index: 10;
+    transition:all 0.4s ease-in-out;
+    background-color: blue;
+  }
+  .titolo{
+    font-size: calc(50vw/12);
+    font-family:'Px-Grotesk';
+    font-weight: bold;
+    position: relative;
+    width:40%;
+    top:50%;
+    color:white;
+    transform: translate(0%,-50%);
+    margin:0px 0px 0px 0px;
+  }
+  #schedario {
+    right: 0%;
+    top: 0%;
+    box-sizing: border-box;
+    border-top: 1px;
+        border-bottom: 1px;
+        border-right:1px;
+        border-left:1px;
+    border-color: inherit;
+    border-style: solid;
+    border-color: white;
+    position: absolute;
+    margin: 0 auto;
+    z-index: 9;
+    text-align: left;
+    width: 100vw;
+    height: 100vh;
+  }
