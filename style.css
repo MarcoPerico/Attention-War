@@ -12,6 +12,10 @@ body{
     margin: 0px 0px 0px 0px;
     transition: all 0.4s ease-in-out;
   }
+  .symbol1{
+    opacity:0;
+    transition: 1s;
+  }
   #about{
     left:2%;
   }
@@ -34,9 +38,41 @@ body{
     top:50%;
     left:80%;
     transform: translate(-50%;-50%);
-    z-index: 10;
     transition:all 0.4s ease-in-out;
     background-color: blue;
+  }
+  img{
+    height:70%;
+    top:50%;
+      transform: translate(0%,-50%);
+    position: relative;
+  }
+  #row1img1{
+    left:5%;
+  }
+  #row1img2{
+left:8%;
+  }
+  #row1img3{
+    left:23%;
+  }
+  #row2img1{
+    left:24%;
+  }
+  #row2img2{
+left:27%;
+  }
+  #row2img3{
+    left:40%;
+  }
+  #row3img1{
+    left:2%;
+  }
+  #row3img2{
+left:10%;
+  }
+  #row3img3{
+    left:40%;
   }
   .titolo{
     font-size: calc(50vw/12);
@@ -44,7 +80,7 @@ body{
     font-weight: bold;
     position: relative;
     opacity:0.6;
-    width:40%;
+    width:20%;
     top:50%;
     overflow: hidden;
     transition:0.2s ease-in-out;
@@ -55,12 +91,11 @@ body{
   .titolo:hover{
     opacity:1;
   }
-  #schedario {
+  #schedario,#simboli {
     right: 0%;
     top: 0%;
     position: absolute;
     margin: 0 auto;
-    z-index: 9;
     text-align: left;
     width: 100vw;
     height: 100vh;
