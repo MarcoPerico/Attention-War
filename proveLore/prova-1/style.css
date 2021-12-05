@@ -1,0 +1,59 @@
+@font-face {
+  font-family: alpina-light;
+  src: url("./assets/fonts/alpina/GTAlpina-Light.otf");
+}
+@font-face {
+  font-family: banana-light;
+  src: url("./assets/fonts/banana/BananaGrotesk-Light.otf");
+}
+@font-face {
+  font-family: laica-regular;
+  src: url("./assets/fonts/laica/LaicaA-Regular.ttf");
+}
+@font-face {
+  font-family: laica-italic;
+  src: url("./assets/fonts/laica/LaicaA-RegularItalic.ttf");
+}
+
+
+/* * {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+} */
+
+h1 {
+  font-family: laica-italic;
+  font-weight: normal;
+  font-size: 80px;
+}
+p {
+  font-family: laica-regular;
+}
+.s1 {
+  text-align: center;
+  font-size: 50px;
+}
+.intro {
+  width: 500px;
+  /* text-align: center; */
+  padding: 0 25% 0 25%;
+}
+
+html,
+body {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+canvas {
+  display: block;
+}
+
+.section{
+  font-size: 30px;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
