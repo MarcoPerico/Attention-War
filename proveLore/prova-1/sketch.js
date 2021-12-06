@@ -19,7 +19,7 @@ function setup() {
 }
 
 function draw() {
-  background(255);
+  background(0);
   let targetX = mouseX;
   let dx = targetX - x;
   x += dx * easing;
