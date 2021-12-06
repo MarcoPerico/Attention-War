@@ -15,6 +15,18 @@
   src: url("./assets/fonts/laica/LaicaA-RegularItalic.ttf");
 }
 
+html,
+body {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+canvas {
+  display: block;
+  position: absolute;
+  top: 0;
+  z-index: -1;
+}
 
 /* * {
   margin: 0;
@@ -28,7 +40,22 @@ h1 {
   font-size: 80px;
 }
 p {
+  font-family: banana-light;
+}
+/* i{
   font-family: laica-regular;
+  font-style: normal;
+  font-size: 30;
+} */
+button{
+  font-family: laica-regular;
+  font-size: 30px;
+  background-color: white;
+  width: 80%;
+  height: 60px;
+  margin: 0px 0 6px 0;
+  border: 1px solid black;
+  padding: 0;
 }
 .s1 {
   text-align: center;
@@ -38,16 +65,7 @@ p {
   width: 500px;
   /* text-align: center; */
   padding: 0 25% 0 25%;
-}
-
-html,
-body {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-}
-canvas {
-  display: block;
+  font-family: laica-regular;
 }
 
 .section{
@@ -56,4 +74,8 @@ canvas {
   display: flex;
   justify-content: center;
   align-items: center;
+}
+.s3{
+  text-align: center;
+  flex-direction: column;
 }
