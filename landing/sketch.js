@@ -2,6 +2,7 @@ Matter.use(
   'matter-attractors'
 );
 
+let image1;
 
 let Engine = Matter.Engine,
       World = Matter.World,
@@ -35,6 +36,7 @@ function setup() {
   canvas = createCanvas(windowWidth, windowHeight);
  console.log('matter-attractors');
 engine = Engine.create();
+image1 = loadImage("./assets/ehi.jpg");
 
 // // create renderer
 // var render = Render.create({
