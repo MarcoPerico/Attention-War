@@ -1,5 +1,3 @@
-
-
 let x = 1;
 let y = 1;
 let x2 = 1;
@@ -19,7 +17,7 @@ function setup() {
 }
 
 function draw() {
-  background(0);
+  background(255);
   let targetX = mouseX;
   let dx = targetX - x;
   x += dx * easing;

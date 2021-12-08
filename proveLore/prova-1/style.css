@@ -20,7 +20,7 @@ body {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  color: white;
+  /* color: white; */
 }
 canvas {
   display: block;
@@ -43,12 +43,12 @@ h1 {
 p {
   font-family: banana-light;
 }
-/* i{
+i {
   font-family: laica-regular;
   font-style: normal;
   font-size: 30;
-} */
-button{
+}
+button {
   font-family: laica-regular;
   font-size: 30px;
   background-color: white;
@@ -69,14 +69,14 @@ button{
   font-family: laica-regular;
 }
 
-.section{
+.section {
   font-size: 30px;
   height: 100vh;
   display: flex;
   justify-content: center;
   align-items: center;
 }
-.s3{
+.s3 {
   text-align: center;
   flex-direction: column;
 }
