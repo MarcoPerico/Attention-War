@@ -39,6 +39,7 @@ h1 {
   font-family: laica-italic;
   font-weight: normal;
   font-size: 80px;
+  color: blue;
 }
 p {
   font-family: banana-light;
@@ -47,6 +48,7 @@ i {
   font-family: laica-regular;
   font-style: normal;
   font-size: 30;
+  color: blue;
 }
 button {
   font-family: laica-regular;
@@ -57,6 +59,7 @@ button {
   margin: 0px 0 6px 0;
   border: 1px solid black;
   padding: 0;
+  color: blue;
 }
 .s1 {
   text-align: center;

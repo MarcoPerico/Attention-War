@@ -100,7 +100,7 @@ function moveit() {
 }
 
 function mousePressed() {
-  boxes.push(new Box(mouseX, mouseY, 50, 30));
+  boxes.push(new Box(mouseX, mouseY, 100, 60));
 }
 
 function draw() {
