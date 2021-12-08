@@ -110,3 +110,7 @@ function draw() {
   }
   moveit();
 }
+
+function windowResized() {
+  resizeCanvas(windowWidth, windowHeight);
+}
