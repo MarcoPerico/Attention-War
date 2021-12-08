@@ -1,0 +1,85 @@
+@font-face {
+  font-family: alpina-light;
+  src: url("./assets/fonts/alpina/GTAlpina-Light.otf");
+}
+@font-face {
+  font-family: banana-light;
+  src: url("./assets/fonts/banana/BananaGrotesk-Light.otf");
+}
+@font-face {
+  font-family: laica-regular;
+  src: url("./assets/fonts/laica/LaicaA-Regular.ttf");
+}
+@font-face {
+  font-family: laica-italic;
+  src: url("./assets/fonts/laica/LaicaA-RegularItalic.ttf");
+}
+
+html,
+body {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  /* color: white; */
+}
+canvas {
+  display: block;
+  position: absolute;
+  top: 0;
+  z-index: -1;
+}
+
+/* * {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+} */
+
+h1 {
+  font-family: laica-italic;
+  font-weight: normal;
+  font-size: 80px;
+  color: blue;
+}
+p {
+  font-family: banana-light;
+}
+i {
+  font-family: laica-regular;
+  font-style: normal;
+  font-size: 30;
+  color: blue;
+}
+button {
+  font-family: laica-regular;
+  font-size: 30px;
+  background-color: white;
+  width: 80%;
+  height: 60px;
+  margin: 0px 0 6px 0;
+  border: 1px solid black;
+  padding: 0;
+  color: blue;
+}
+.s1 {
+  text-align: center;
+  font-size: 50px;
+}
+.intro {
+  width: 500px;
+  /* text-align: center; */
+  padding: 0 25% 0 25%;
+  font-family: laica-regular;
+}
+
+.section {
+  font-size: 30px;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.s3 {
+  text-align: center;
+  flex-direction: column;
+}
