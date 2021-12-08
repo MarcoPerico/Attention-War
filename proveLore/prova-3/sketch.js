@@ -30,7 +30,7 @@ let render;
 let mouse;
 
 function preload() {
-  image1 = loadImage("./assets/ehi.jpg");
+  image1 = loadImage("./assets/play.png");
 }
 
 function setup() {
@@ -100,7 +100,7 @@ function moveit() {
 }
 
 function mousePressed() {
-  boxes.push(new Box(mouseX, mouseY, 100, 60));
+  boxes.push(new Box(mouseX, mouseY, 80, 80));
 }
 
 function draw() {

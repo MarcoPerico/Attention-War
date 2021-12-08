@@ -4,7 +4,7 @@ function Box(x, y, w, h) {
     restitution: 0.8,
     mass: 0.1,
   };
-  this.body = Bodies.rectangle(x, y, 100, 60, options);
+  this.body = Bodies.rectangle(x, y, 80, 80, options);
   this.w = w;
   this.h = h;
   World.add(world, this.body);
