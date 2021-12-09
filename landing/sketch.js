@@ -25,7 +25,7 @@ let boxes = [];
 let attractiveBody;
 
 let boundaries = [];
-let myImages = []
+let myImages = [];
 let rx, ry, rz;
 
 let box2;
@@ -35,6 +35,10 @@ let mouse;
 
 function preload() {
   image1 = loadImage("./assets/ehi.jpg");
+  image2 = loadImage("./assets/2.JPG");
+  image3 = loadImage("./assets/1.jpeg");
+  image4 = loadImage("./assets/4.jpg");
+
 }
 
 function setup() {
@@ -42,6 +46,9 @@ function setup() {
   canvas = createCanvas(windowWidth, windowHeight);
   console.log("matter-attractors");
   engine = Engine.create();
+
+  myImages.push(image1, image2, image3, image4);
+  
 
   // // create renderer
   // var render = Render.create({
@@ -117,7 +124,7 @@ push()
   // add mouse control
   mouse = Mouse.create(render.canvas.elt);
 
-  attractiveBody = Bodies.circle(100, 100, 10, {
+  attractiveBody = Bodies.circle(mouseX, mouseY, 10, {
     render: {
       fillStyle: `rgb(240,240,240)`,
       strokeStyle: `rgb(240,240,240)`,
@@ -156,17 +163,19 @@ function draw() {
   // rect(box1.position.x, box1.position.y, 80, 80);
   // rect(box2.position.x, box2.position.y, width/2, 10);
   // rectMode(CENTER)
-  if (boxes.length < 4) {
-    boxes.push(new Box(100, 100, 50, 30));
+  if (boxes.length < 3) {
+    for (let i = 0; i < myImages.length; i++) {
+    boxes.push(new Box(myImages[i], windowWidth/2, windowHeight/2, 100, 80));
   }
+}
   
   for (let i = 0; i < boxes.length; i++) {
     boxes[i].show();
   }
 
-  for (let i = 0; i < boundaries.length; i++) {
-    boundaries[i].show();
-}
+//   for (let i = 0; i < boundaries.length; i++) {
+//     boundaries[i].show();
+// }
   // ellipse(attractiveBody.position.x, attractiveBody.position.y, 10, 10);
   // console.log(canvasmouse.position.x);
   // console.log(attractiveBody.position.x)
@@ -222,13 +231,13 @@ function Boundary(x, y, w, h, a) {
   };
 }
 
-function Box(x, y, w, h) {
+function Box(source, x, y, w, h) {
   let options = {
     friction: 0.5,
-    restitution: 0.8,
+    restitution: 0.4,
     mass: 0.1,
   };
-  this.body = Bodies.rectangle(x, y, 50, 30, options);
+  this.body = Bodies.rectangle(x, y, 100, 80, options);
   this.w = w;
   this.h = h;
   World.add(world, this.body);
@@ -243,7 +252,7 @@ function Box(x, y, w, h) {
     // rectMode(CENTER);
     // rect(0, 0, this.w, this.h);
     imageMode(CENTER);
-    image(image1, 0, 0, this.w, this.h);
+    image(source, 0, 0, this.w, this.h);
     pop();
   };
 }
