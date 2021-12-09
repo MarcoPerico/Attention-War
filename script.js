@@ -1,16 +1,25 @@
 jQuery(document).ready(function( $ ){
   var symbols1 = document.querySelectorAll(".symbol1");
-  $("#finding1").hover(function find1(){
-    for (i = 0; i < symbols1.length; i++) {
-   symbols1[i].style.transition = Math.floor(Math.random()*(2-0+1)+0)+"s";
- };
+  var symbols2 = document.querySelectorAll(".symbol2");
+  $("#finding1").hover(function findon(){
+    randomizza(symbols1);
  $(".symbol1").css("opacity","1");
-},function find1out(){
-  for (i = 0; i < symbols1.length; i++) {
- symbols1[i].style.transition = Math.floor(Math.random()*(2-0+1)+0)+"s";
-};
+},function findout(){
+  randomizza(symbols1);
 $(".symbol1").css("opacity","0");
-
 }
 );
+$("#finding2").hover(function findon(){
+  randomizza(symbols2);
+$(".symbol2").css("opacity","1");
+},function findout(){
+randomizza(symbols2);
+$(".symbol2").css("opacity","0");
+}
+);
+function randomizza(symbols){
+  for (i = 0; i < symbols.length; i++) {
+ symbols[i].style.transition = Math.floor(Math.random()*(1.5-0+1)+0)+"s";
+}
+};
 });

@@ -38,45 +38,126 @@ canvas {
 h1 {
   font-family: laica-italic;
   font-weight: normal;
+  color:white;
   font-size: 80px;
+}
+h2 {
+  font-family: laica-italic;
+  font-weight: normal;
+  color:white;
+  padding:0px;
+  margin:0 auto;
+  text-align: center;
+  transition: all 0.2s ease-in-out;
+  font-size: 2vw;
 }
 p {
   font-family: banana-light;
+  color:white;
 }
 i {
   font-family: laica-regular;
-  font-style: normal;
-  font-size: 30;
+  color:white;
 }
-button {
-  font-family: laica-regular;
-  font-size: 30px;
+#menu{
+  width:50vw;
+  height: 80vh;
+display: flex;
+margin:0 auto;
+    align-content: center;
+    flex-direction: column;
+    justify-content:center;
+  }
+.vocemenu{
+  width:40vw;
+  height:5vh;
+  text-align: center;
+  margin:2% 0;
+  display:flex;
+  flex-direction: column;
+  align-self: center;
+  justify-content: center;
+  align-items: center;
+  cursor:pointer;
+  padding:10px;
+  z-index:10;
+  transition: all 0.2s ease-in-out;
+  border-style: solid;
+  border-width: 2px;
+  border-color:white;
+}
+.bottone{
+  display:none;
+  opacity:0;
+  width:40%;
+  font-family: laica-italic;
+  font-weight: normal;
+  color:white;
+  font-size:1.8vw;
+  height:5vh;
+  text-align: center;
+  margin:auto;
+  border-style: solid;
+  border-width: 2px;
+  border-color:white;
+  transition: all 0.2s ease-in-out;
+  background-color: black;
+}
+#duck1,#duck2{
+  opacity:0;
+  transition:all 0.5s ease-in-out;
+  top:50%;
+  z-index:1;
+  left:50%;
+}
+img{
+  width:10vw;
+  height:10vw;
+  display:block;
+  position:absolute;
+}
+.bottone:hover{
   background-color: white;
-  width: 80%;
-  height: 60px;
-  margin: 0px 0 6px 0;
-  border: 1px solid black;
-  padding: 0;
+}
+.bottone:hover > #entra{
+  color:black;
+}
+.desc{
+  display:none;
+  opacity:0;
+  align-self: center;
+  font-size: 1.6vw;
+  transition:all 0.5s ease-in-out;
+}
+.opened {
+
 }
 .s1 {
   text-align: center;
   font-size: 50px;
 }
 .intro {
-  width: 500px;
+  width: 35vw;
   /* text-align: center; */
   padding: 0 25% 0 25%;
   font-family: laica-regular;
 }
 
-.section {
+html,
+body {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  background-color: black;
+}
+canvas {
+  display: block;
+}
+
+.section{
   font-size: 30px;
   height: 100vh;
   display: flex;
   justify-content: center;
   align-items: center;
-}
-.s3 {
-  text-align: center;
-  flex-direction: column;
 }
