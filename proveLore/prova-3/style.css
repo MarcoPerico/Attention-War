@@ -83,3 +83,8 @@ button {
   text-align: center;
   flex-direction: column;
 }
+.noselect {
+  -webkit-touch-callout: none; /* iOS Safari */
+  -webkit-user-select: none; /* Safari */
+  user-select: none;
+}
