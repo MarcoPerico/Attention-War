@@ -17,8 +17,12 @@ $(".vocemenu", this).on("click", function apri(){
 $(".vocemenu",this).hover(function allarga(){
   if(!$(this).hasClass(".opened")){
     $(this).css("height","8vh");
+    $("#duck1").css({"opacity":"1","top":"30%","left":"20%"});
+    $("#duck2").css({"opacity":"1","top":"70%","left":"80%"});
   }},function chiude(){
     if(!$(this).hasClass(".opened")){
     $(this).css("height","5vh");}
+    $("#duck1").css({"opacity":"0","top":"50%","left":"50%"});
+    $("#duck2").css({"opacity":"0","top":"50%","left":"50%"});
   });
 });
