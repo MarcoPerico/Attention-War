@@ -29,8 +29,30 @@ body{
   height:100vh;
   width:100vw;
   position:fixed;
+  display: flex;
+  flex-direction: column;
+  align-content:center
   top:0;
   left:0;
+  background-color: black;
+}
+#ready{
+  font-family:banana-light;
+  font-size:2vw;
+  text-align: center;
+  color:white;
+}
+#countdown{
+  font-family:laica-italic;
+  font-size:2vw;
+  text-align: center;
+  color:white;
+}
+h1{
+  font-family:laica-italic;
+  font-size:3vw;
+  font-style: normal;
+  color:white;
 }
 #bottone1{
 display:block;

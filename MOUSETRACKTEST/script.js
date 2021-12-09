@@ -1,9 +1,25 @@
 jQuery(document).ready(function( $ ){
 var progresso=2;
 var nome="bottone";
+var count=5
 var x =setInterval(function(){
+   handleTimer(count);
+},1000);
+function handleTimer() {
+  if(count === 0) {
+    clearInterval(x);
+    endCountdown();
+  } else {
+    $('#countdown').html(count);
+    count--;
+  }
+}
+function endCountdown(){
+  document.getElementById("countdown").innerHTML = "GO!!";
+  $("#tutorial").delay(2000).hide();
+  setup();
   
-})
+};
   $(".bottone",this).on("click", function entracarta6() {
       $(this).css("opacity","0");
       $("#"+nome+progresso).show();
