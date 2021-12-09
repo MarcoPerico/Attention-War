@@ -1,41 +1,99 @@
 body{
   overflow: hidden;
+  background-color: black;
 }
-#square1{
+@font-face {
+  font-family: alpina-light;
+  src: url("./assets/fonts/alpina/GTAlpina-Light.otf");
+}
+@font-face {
+  font-family: banana-light;
+  src: url("./assets/fonts/banana/BananaGrotesk-Light.otf");
+}
+@font-face {
+  font-family: laica-regular;
+  src: url("./assets/fonts/laica/LaicaA-Regular.ttf");
+}
+@font-face {
+  font-family: laica-italic;
+  src: url("./assets/fonts/laica/LaicaA-RegularItalic.ttf");
+}
+#campo{
+  height:100vh;
+  width:100vw;
+  position:fixed;
+  top:0;
+  left:0;
+}
+#tutorial{
+  height:100vh;
+  width:100vw;
+  position:fixed;
+  display: flex;
+  flex-direction: column;
+  align-content:center
+  top:0;
+  left:0;
+  background-color: black;
+}
+#ready{
+  font-family:banana-light;
+  font-size:2vw;
+  text-align: center;
+  color:white;
+}
+#countdown{
+  font-family:laica-italic;
+  font-size:2vw;
+  text-align: center;
+  color:white;
+}
+h1{
+  font-family:laica-italic;
+  font-size:3vw;
+  font-style: normal;
+  color:white;
+}
+#bottone1{
 display:block;
 top:50%;
 left:50%;
 }
-#square2{
+#bottone2{
 display:none;
 top:75%;
 left:30%;
 }
-#square3{
+#bottone3{
   display:none;
   top:10%;
   left:90%;
 }
-#square4{
+#bottone4{
   display:none;
   top:60%;
   left:20%;
 }
-#square5{
+#bottone5{
   display:none;
   top:40%;
   left:40%;
 }
+#testobox{
+  width:40vw;
+  height:40vh;
+  position:absolute;
+  top:0%;
+}
 #testo1 {
   display: block;
   position: absolute;
+  background-color: black;
   font-size: 20pt;
-  width:40vw;
-  height:60vh;
-  top:0%;
-  color: black;
+  color: white;
   overflow:auto;
 }
+
 #testo2 {
   display: block;
   position: absolute;
@@ -46,13 +104,19 @@ left:30%;
   top:70%;
   transition: all 1s cubic-bezier(0, 0, 0.58, 1);
   right:-65%;
-  color: black;
+  color: white;
   overflow:auto;
+}
+canvas{
+  position:absolute;
+  z-index:-1;
+  display:block;
 }
 .bottone {
   position:absolute;
-  background-color: blue;
+  background-color: rgb(24, 240, 150);
   width:10vw;
+  cursor: pointer;
   transition: all 0.4s ease-in-out;
   height:10vw;
 }
