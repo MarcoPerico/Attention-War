@@ -24,6 +24,10 @@ let box1;
 let boxes = [];
 let attractiveBody;
 
+let boundaries = [];
+let myImages = []
+let rx, ry, rz;
+
 let box2;
 let mConstraint;
 let render;
@@ -70,12 +74,18 @@ function setup() {
 
   Matter.Runner.run(engine);
   // Matter.Render.run(render);
+push()
+  boundaries.push(new Boundary(width / 2, height, width, 10, 0));
+    boundaries.push(new Boundary(width / 2, 0, width, 10, 0));
+    boundaries.push(new Boundary(0, height / 2, 10, height, 0));
+    boundaries.push(new Boundary(width, height / 2, 10, height, 0));
+    pop()
 
-  let options = {
-    isStatic: true,
-    friction: 0.5,
-    restitution: 1,
-  };
+  // let options = {
+  //   isStatic: true,
+  //   friction: 0.5,
+  //   restitution: 1,
+  // };
 
   // box2 = Bodies.rectangle(500, height/2, width/2, 10, options)
   // World.add(world, box2);
@@ -137,18 +147,26 @@ function moveit() {
   });
 }
 
-function mousePressed() {
-  boxes.push(new Box(mouseX, mouseY, 50, 30));
-}
+// function mousePressed() {
+//   boxes.push(new Box(mouseX, mouseY, 50, 30));
+// }
 
 function draw() {
   background(255);
   // rect(box1.position.x, box1.position.y, 80, 80);
   // rect(box2.position.x, box2.position.y, width/2, 10);
   // rectMode(CENTER)
+  if (boxes.length < 4) {
+    boxes.push(new Box(100, 100, 50, 30));
+  }
+  
   for (let i = 0; i < boxes.length; i++) {
     boxes[i].show();
   }
+
+  for (let i = 0; i < boundaries.length; i++) {
+    boundaries[i].show();
+}
   // ellipse(attractiveBody.position.x, attractiveBody.position.y, 10, 10);
   // console.log(canvasmouse.position.x);
   // console.log(attractiveBody.position.x)
@@ -176,3 +194,56 @@ function draw() {
 //   }
 // };
 // };
+
+function Boundary(x, y, w, h, a) {
+  let options = {
+      friction: 0,
+      restitution: 0.95,
+      angle: a,
+      isStatic: true
+  };
+  this.body = Bodies.rectangle(x, y, w, h, options);
+  this.w = w;
+  this.h = h;
+  World.add(world, this.body);
+  //console.log(this.body);
+
+  this.show = function() {
+      let pos = this.body.position;
+      let angle = this.body.angle;
+      push();
+      translate(pos.x, pos.y);
+      rotate(angle);
+      rectMode(CENTER);
+      strokeWeight(2);
+      noFill();
+      rect(0, 0, this.w, this.h);
+      pop();
+  };
+}
+
+function Box(x, y, w, h) {
+  let options = {
+    friction: 0.5,
+    restitution: 0.8,
+    mass: 0.1,
+  };
+  this.body = Bodies.rectangle(x, y, 50, 30, options);
+  this.w = w;
+  this.h = h;
+  World.add(world, this.body);
+
+  this.show = function () {
+    let pos = this.body.position;
+    // let angle = this.body.angle;
+
+    push();
+    translate(pos.x, pos.y);
+    // rotate(angle);
+    // rectMode(CENTER);
+    // rect(0, 0, this.w, this.h);
+    imageMode(CENTER);
+    image(image1, 0, 0, this.w, this.h);
+    pop();
+  };
+}

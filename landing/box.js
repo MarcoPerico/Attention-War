@@ -19,7 +19,7 @@ function Box(x, y, w, h) {
     // rectMode(CENTER);
     // rect(0, 0, this.w, this.h);
     imageMode(CENTER);
-    image(image1, 0, 0, this.w, this.h);
+    image(image1, windowWidth/2, windowHeight/2, this.w, this.h);
     pop();
   };
 }
