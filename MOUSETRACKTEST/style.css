@@ -31,7 +31,8 @@ body{
   position:fixed;
   display: flex;
   flex-direction: column;
-  align-content:center
+  align-content:center;
+  justify-content: center;
   top:0;
   left:0;
   background-color: black;
@@ -44,14 +45,16 @@ body{
 }
 #countdown{
   font-family:laica-italic;
-  font-size:2vw;
+  font-size:4.5vw;
+  display:hidden;
   text-align: center;
   color:white;
 }
-h1{
+#title{
   font-family:laica-italic;
   font-size:3vw;
-  font-style: normal;
+  text-align: center;
+  font-style:normal;
   color:white;
 }
 #bottone1{
