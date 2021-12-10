@@ -70,6 +70,6 @@ function preload(){
 };
 function draw() {
   imageMode(CENTER);
-  image(freccia,mouseX,mouseY,35,35);
+  image(freccia,mouseX,mouseY,11,16);
   // windowResized2();
 };
