@@ -61,14 +61,13 @@ function testo() {
 };
 });
 let freccia;
+function preload(){
+  freccia= loadImage("assets/N_2.png");
+};
 function setup() {
   createCanvas(windowWidth, windowHeight);
   noCursor();
 };
-function preload(){
-  freccia= loadImage("assets/N_2.png");
-};
-
 function draw() {
   imageMode(CENTER);
   image(freccia,mouseX,mouseY,35,35);
