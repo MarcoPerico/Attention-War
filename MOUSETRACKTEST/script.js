@@ -61,12 +61,12 @@ function testo() {
 };
 });
 let freccia;
-function preload(){
-  freccia= loadImage("cursor.svg",{ mode: 'no-cors'});
-};
 function setup() {
   createCanvas(windowWidth, windowHeight);
   noCursor();
+};
+function preload(){
+  freccia= loadImage("cursor.svg");
 };
 function draw() {
   imageMode(CENTER);
