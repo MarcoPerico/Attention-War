@@ -1,5 +1,6 @@
 body{
   overflow: hidden;
+  user-select: none;
   background-color: black;
 }
 @font-face {
@@ -19,11 +20,43 @@ body{
   src: url("./assets/fonts/laica/LaicaA-RegularItalic.ttf");
 }
 #campo{
-  height:100vh;
+  height:95vh;
   width:100vw;
   position:fixed;
+  bottom:0%;
+  left:0;
+}
+#banner{
+  position: fixed;
   top:0;
   left:0;
+  width:100vw;
+  height: 5vh;
+  border-style: solid;
+  background-color: black;
+  border-color:white;
+  border-width: 0 0 1px 0;
+}
+#titolopag{
+  font-family:laica-italic;
+  font-size:1.4vw;
+  width:30vw;
+  top:50%;
+  left:1%;
+  transform: translate(0,-50%);
+  position: absolute;
+  margin:none;
+  text-align: left;
+  font-style:normal;
+  color:white;
+}
+#backmenu{
+  position:absolute;
+  color:white;
+  transform: translate(0,-50%);
+  top:50%;
+  right:3vw;
+  font-size:2vw;
 }
 #tutorial{
   height:100vh;
@@ -87,28 +120,41 @@ left:30%;
   height:40vh;
   position:absolute;
   top:0%;
+  left:2%;
 }
 #testo1 {
   display: block;
   position: absolute;
+  font-family:banana-light;
+  top:3%;
   background-color: black;
   font-size: 20pt;
   color: white;
   overflow:auto;
 }
+#goon{
+  bottom:30%;
+  position: absolute;
+  font-family:banana-light;
+color:black;
 
+}
 #testo2 {
   display: block;
   position: absolute;
-  font-size: 24pt;
-  width:40vw;
-  text-align:right;
+  font-family:banana-light;
+  font-size: 20pt;
+  width:23vw;
+  text-align:left;
   height:15vh;
-  top:70%;
-  transition: all 1s cubic-bezier(0, 0, 0.58, 1);
-  right:-65%;
+  bottom:30%;
+  transition: all 0.5s cubic-bezier(0, 0, 0.58, 1);
+  left:-25%;
   color: white;
-  overflow:auto;
+  overflow:visible;
+}
+span{
+  background-color: black;
 }
 canvas{
   position:absolute;
