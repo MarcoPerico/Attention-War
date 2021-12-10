@@ -14,6 +14,14 @@
   font-family: laica-italic;
   src: url("./assets/fonts/laica/LaicaA-RegularItalic.ttf");
 }
+@font-face {
+  font-family: akzidenz-r;
+  src: url("./assets/fonts/akzidenz/akzdR.otf");
+}
+@font-face {
+  font-family: diatype-r;
+  src: url("./assets/fonts/diatype/ABCDiatype-Regular.ttf");
+}
 
 html,
 body {
@@ -42,7 +50,7 @@ h1 {
   color: blue;
 }
 p {
-  font-family: banana-light;
+  font-family: diatype-r;
 }
 i {
   font-family: laica-regular;
@@ -54,11 +62,10 @@ button {
   font-family: laica-regular;
   font-size: 30px;
   background-color: white;
-  width: 80%;
   height: 60px;
   margin: 0px 0 6px 0;
   border: 1px solid black;
-  padding: 0;
+  padding: 0 50px 0 50px;
   color: blue;
 }
 .s1 {
@@ -79,7 +86,7 @@ button {
   justify-content: center;
   align-items: center;
 }
-.s3 {
+.s5 {
   text-align: center;
   flex-direction: column;
 }
