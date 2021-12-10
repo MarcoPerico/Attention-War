@@ -62,7 +62,7 @@ function testo() {
 });
 let freccia;
 function preload(){
-  freccia= loadImage("assets/N_2.png");
+  freccia= loadImage("cursor.svg",{ mode: 'no-cors'});
 };
 function setup() {
   createCanvas(windowWidth, windowHeight);
