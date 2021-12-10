@@ -113,7 +113,7 @@ let s0 = function (p) {
     image4 = p.loadImage("./assets/buttons/tw1.png");
 
     p.createCanvas(p.windowWidth, p.windowHeight);
-    p.createElement("h1", "THE ART OF <br>STREAMING WAR");
+    p.createElement("h1", "THE ART OF<br>STREAMING WAR");
     p.background(255);
     engine = Engine.create();
 
@@ -199,6 +199,7 @@ let s3 = function (p) {
       "p",
       "As a result of this problem, streaming platforms have used a variety of ways to develop their user interfaces.<br /> This guide will walk you through three different strategies used by <i>Netflix</i>, <i>Prime Video</i>, <i>YouTube</i> and <i>Twitch</i>."
     );
+    p.createElement("button", "START THE EXPERIENCE");
     p.background("green");
   };
 };
