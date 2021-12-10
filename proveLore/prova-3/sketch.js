@@ -111,7 +111,13 @@ function draw() {
   if (boxes.length < 3) {
     for (let i = 0; i < myImages.length; i++) {
       boxes.push(
-        new Box(myImages[i], windowWidth / 2, windowHeight / 2, 100, 80)
+        new Box(
+          myImages[i],
+          windowWidth / 2,
+          windowHeight / 2,
+          myImages.width,
+          myImages.height
+        )
       );
     }
   }
@@ -155,7 +161,7 @@ function Box(source, x, y, w, h) {
     restitution: 0.4,
     mass: 0.1,
   };
-  this.body = Bodies.rectangle(x, y, 100, 80, options);
+  this.body = Bodies.rectangle(x, y, 100, 50, options);
   this.w = w;
   this.h = h;
   World.add(world, this.body);
