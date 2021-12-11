@@ -22,9 +22,51 @@ body{
 #campo{
   height:95vh;
   width:100vw;
+  cursor:none;
   position:fixed;
+  transition: all 0.5s ease-in-out;
   bottom:0%;
   left:0;
+}
+#campo2{
+  height:95vh;
+  width:100vw;
+  position:fixed;
+  transition: all 0.5s ease-in-out;
+  bottom:0%;
+  left:0%;
+  opacity:0;
+}
+.path {
+  height:95vh;
+  width:80vw;
+  position:absolute;
+  object-fit: contain;
+  object-position: left;
+  border-style:solid;
+  border-color: white;
+  border-width:0 1px 0 0;
+  top:0%;
+  opacity:0.2;
+  transition:all 0.2s ease-in-out;
+  left:0;
+}
+.active{
+  opacity:1;
+}
+.stats{
+  display:none;
+  opacity:1;
+  height:10vh;
+  width:80%;
+  align-self: center;
+  font-size: 1.2vw;
+  font-family:banana-light;
+  color:white;
+  transition:all 0.5s ease-in-out;
+}
+#netflixstats{
+  display:flex;
 }
 #banner{
   position: fixed;
@@ -133,17 +175,87 @@ left:30%;
   overflow:auto;
 }
 #goon{
-  bottom:30%;
+  bottom:3%;
+  right:-25%;
+  height:40px;
+  width:120px;
   position: absolute;
+  border-style:solid;
+  display:flex;
+  flex-direction: column;
+  text-align: center;
+  align-items:center;
+  border-width:1px;
+  border-color: white;
+  transition: all 0.5s cubic-bezier(0, 0, 0.58, 1);
   font-family:banana-light;
-color:black;
+  cursor:pointer;
+color:white;
 
+}
+#goon:hover{
+  color:black;
+  background-color: white;
+}
+#statsbox{
+  height:90vh;
+  width:20vw;
+  position:fixed;
+  display:flex;
+  flex-direction: column;
+  align-items: flex-start;
+  bottom:0%;
+  right:0%;
+  opacity:1;
+}
+.visbottone{
+  margin:2% auto;
+  height:35px;
+  width:80%;
+  text-align: center;
+ display: flex;
+  align-self:flex-start;
+  flex-direction: column;
+  background-color:transparent;
+  align-items:center;
+  justify-content: center;
+  border-style:solid;
+  border-width:2px;
+  transition: all 0.5s cubic-bezier(0, 0, 0.58, 1);
+  font-family:banana-light;
+  cursor:pointer;
+color:white;
+}
+#netflixbutton{
+  border-color:red;
+  background-color: red;
+}
+#netflixbutton:hover{
+  background-color:red;
+}
+#primebutton{
+  border-color:blue;
+}
+#primebutton:hover{
+  background-color:blue;
+}
+#youtubebutton{
+  border-color:rgb(0, 255, 0);
+}
+#youtubebutton:hover{
+  background-color:rgb(0, 255, 0);
+}
+#twitchbutton{
+  border-color:rgb(195, 0, 255);
+}
+#twitchbutton:hover{
+  background-color:rgb(195, 0, 255);
 }
 #testo2 {
   display: block;
   position: absolute;
   font-family:banana-light;
-  font-size: 20pt;
+  font-size: 1.4vw;
   width:23vw;
   text-align:left;
   height:15vh;
@@ -156,9 +268,14 @@ color:black;
 span{
   background-color: black;
 }
+p{
+  margin:0 auto;
+  display:flex;
+}
 canvas{
   position:absolute;
   z-index:-1;
+  transition:all 0.5s;
   display:block;
 }
 .bottone {
