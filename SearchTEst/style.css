@@ -1,5 +1,5 @@
 body{
-  overflow: hidden;
+  /* overflow: hidden; */
 }
 #searchbox{
 width:20vw;
@@ -56,4 +56,8 @@ h1{
  width:80%;
  transform: translate(-50%,0%);
 
+}
+
+.card {
+  width: 18rem;
 }

@@ -1,15 +1,92 @@
-html, body {
+@font-face {
+  font-family: alpina-light;
+  src: url("./assets/fonts/alpina/GTAlpina-Light.otf");
+}
+@font-face {
+  font-family: banana-light;
+  src: url("./assets/fonts/banana/BananaGrotesk-Light.otf");
+}
+@font-face {
+  font-family: laica-regular;
+  src: url("./assets/fonts/laica/LaicaA-Regular.ttf");
+}
+@font-face {
+  font-family: laica-italic;
+  src: url("./assets/fonts/laica/LaicaA-RegularItalic.ttf");
+}
+@font-face {
+  font-family: akzidenz-r;
+  src: url("./assets/fonts/akzidenz/akzdR.otf");
+}
+@font-face {
+  font-family: diatype-r;
+  src: url("./assets/fonts/diatype/ABCDiatype-Regular.ttf");
+}
+
+html,
+body {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  font-family: sans-serif;
+  /* color: white; */
 }
-
 canvas {
   display: block;
+  position: absolute;
+  /* top: 0; */
+  z-index: -1;
+}
+h1 {
+  font-family: laica-italic;
+  font-weight: normal;
+  font-size: 80px;
+  color: blue;
+}
+p {
+  font-family: diatype-r;
+  display: block;
+}
+i {
+  font-family: laica-regular;
+  font-style: normal;
+  font-size: 30;
+  color: blue;
+}
+button {
+  font-family: laica-regular;
+  font-size: 30px;
+  background-color: white;
+  height: 60px;
+  border: 1px solid black;
+  padding: 0 50px 0 50px;
+  color: blue;
+}
+.s1 {
+  text-align: center;
+  font-size: 50px;
+}
+.intro {
+  width: 500px;
+  padding: 0 25% 0 25%;
+}
+.section {
+  font-size: 30px;
+  height: 100vh;
+  width: 100vw;
+  display: block;
+  justify-content: center;
+  align-items: center;
+}
+.s5 {
+  text-align: center;
+}
+.noselect {
+  -webkit-touch-callout: none; /* iOS Safari */
+  -webkit-user-select: none; /* Safari */
+  user-select: none;
 }
 
-section{
+section {
   height: 100vh;
   display: flex;
   justify-content: center;
@@ -17,12 +94,8 @@ section{
   scroll-snap-align: start;
 }
 
-.container{
+.container {
   scroll-snap-type: y mandatory;
   overflow-y: scroll;
   height: 100vh;
-}
-
-.two{
-  background: red;
 }
