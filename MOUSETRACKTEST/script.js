@@ -34,10 +34,65 @@ function endCountdown(){
 };
   $(".bottone",this).on("click", function entracarta6() {
       $(this).css("opacity","0");
-      $("#"+nome+progresso).show();
+      $(this).delay(400).hide(0);
       $("#"+nome+progresso).show();
       testo();
       progresso++;
+});
+$("#goon").on("click", function cambio() {
+  $("#campo").css("left","-200%");
+  $("campo").delay(500).hide(0);
+  $("#campo2").css("opacity","1");
+  remove();
+});
+$(".visbottone",this).on("click", function attiva(){
+if($(this).hasClass("active")){
+  if($(this).attr("id")=="netflixbutton"){
+    $("#netflixbutton").css("background-color","transparent");
+    $("#netflixstats").css("display","none");
+    $("#netflixpath").removeClass("active");
+    $("#netflixbutton").removeClass("active");
+  } else if($(this).attr("id")=="primebutton"){
+    $("#primebutton").css("background-color","transparent");
+    $("#primestats").css("display","none");
+    $("#primepath").removeClass("active");
+    $("#primebutton").removeClass("active");
+  }
+  else if($(this).attr("id")=="twitchbutton"){
+    $("#twitchbutton").css("background-color","transparent");
+    $("#twitchstats").css("display","none");
+    $("#twitchpath").removeClass("active");
+    $("#twitchbutton").removeClass("active");
+  }else if($(this).attr("id")=="youtubebutton"){
+    $("#youtubebutton").css("background-color","transparent");
+    $("#youtubestats").css("display","none");
+    $("#youtubepath").removeClass("active");
+    $("#youtubebutton").removeClass("active");
+  }
+
+} else if (!$(this).hasClass("active")) {
+  if($(this).attr("id")=="netflixbutton"){
+    $("#netflixbutton").css("background-color","red");
+    $("#netflixstats").css("display","flex");
+    $("#netflixbutton").addClass("active");
+    $("#netflixpath").addClass("active");
+  } else if($(this).attr("id")=="primebutton"){
+    $("#primebutton").css("background-color","blue");
+    $("#primestats").css("display","flex");
+    $("#primebutton").addClass("active");
+    $("#primepath").addClass("active");
+  }else if($(this).attr("id")=="twitchbutton"){
+    $("#twitchbutton").css("background-color","rgb(195, 0, 255)");
+    $("#twitchstats").css("display","flex");
+    $("#twitchpath").addClass("active");
+    $("#twitchbutton").addClass("active");
+  }else if($(this).attr("id")=="youtubebutton"){
+    $("#youtubebutton").css("background-color","rgb(0, 255, 0)");
+    $("#youtubestats").css("display","flex");
+    $("#youtubepath").addClass("active");
+    $("#youtubebutton").addClass("active");
+  }
+}
 });
 function testo() {
   if (progresso==2){
@@ -52,11 +107,13 @@ function testo() {
     document.getElementById("testo1").innerHTML += " Avanzate.";
   }
   else if (progresso==6) {
+    end();
     document.getElementById("testo1").innerHTML += " Turn Off Autoplay";
     $("#testo2").css("left","2%");
-    progresso=7;
+    $("#goon").css("right","2%");
+    $("#campo").css("cursor","auto");
     noLoop();
-    end();
+    
   }
 };
 });
