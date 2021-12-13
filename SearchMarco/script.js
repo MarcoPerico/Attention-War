@@ -39,24 +39,20 @@ $(".thumbnail").not(".keyword").css("opacity","0.3");
   $("#login").click(function(){
       if($("#login").hasClass("in")){
         $("#login").removeClass("in");
-$("#pallino").css("left","53%");
-$("#boxino").css("background-color","transparent");
+$("#pallino").css({"width":"2vh","height":"2vh"});
       }else{
         $("#login").addClass("in");
-        $("#pallino").css("left","8%");
-        $("#boxino").css("background-color","rgb(2, 156, 228)");
+        $("#pallino").css({"width":"0vh","height":"0vh"});
       }
       check();
     });
     $("#randomizza").click(function(){
       if($("#randomizza").hasClass("random")){
-        $("#pallino2").css("left","55%");
+        $("#pallino2").css({"width":"2vh","height":"2vh"});
         $("#randomizza").removeClass("random");
-        $("#boxino2").css("background-color","transparent");
               }else{
                 $("#randomizza").addClass("random");
-                $("#pallino2").css("left","8%");
-                $("#boxino2").css("background-color","rgb(255, 239, 8)");
+                $("#pallino2").css({"width":"0vh","height":"0vh"});
               } 
               check();   
     });

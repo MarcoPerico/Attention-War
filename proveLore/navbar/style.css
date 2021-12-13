@@ -37,12 +37,6 @@ a {
   transition: 0.2s;
 }
 
-#active {
-  color: white;
-}
-#home {
-  color: white;
-}
-#about {
+#active, #home, #about {
   color: white;
 }

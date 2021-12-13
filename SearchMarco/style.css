@@ -1,24 +1,47 @@
-body{
-  /* overflow: hidden; */
+@font-face {
+  font-family: PxGroteskRegular;
+  src: url("./assets/fonts/PxGrotesk/Px\ Grotesk\ Regular.ttf");
+}
+
+body {
+  font-family: PxGroteskRegular;
   background-color: black;
-  user-select: none;
+  margin: 0;
   overflow: hidden;
 }
-@font-face {
-  font-family: alpina-light;
-  src: url("./assets/fonts/alpina/GTAlpina-Light.otf");
+
+a {
+  color: #5c5c5c;
+  text-decoration: none;
+  font-weight: normal;
 }
-@font-face {
-  font-family: banana-light;
-  src: url("./assets/fonts/banana/BananaGrotesk-Light.otf");
+
+#navbar {
+  position: absolute;
+  justify-content: space-between;
+  width: 100%;
+  display: flex;
+  /* background-color: #262626; */
+  font-size: 20px;
 }
-@font-face {
-  font-family: laica-regular;
-  src: url("./assets/fonts/laica/LaicaA-Regular.ttf");
+
+.navbar-button {
+  padding: 6px;
 }
-@font-face {
-  font-family: laica-italic;
-  src: url("./assets/fonts/laica/LaicaA-RegularItalic.ttf");
+.chapters-button {
+  padding-left: 12px;
+  padding-right: 12px;
+}
+
+#navbar a:hover {
+  color: white;
+  transition: 0.2s;
+}
+#home{
+  padding-left:1.5%;
+}
+#active, #home, #about {
+  color: white;
 }
 #campo{
   height:95vh;
@@ -34,6 +57,7 @@ background-color: black;
 #searchrow,#statsrow{
   display:flex;
   width:100vw;
+  padding-top:3vh;
   flex-direction: row;
   align-items: center;
   height:6vh;
@@ -43,7 +67,7 @@ border-color:white;
 }
 #statsrow{
   height:8vh;
-  justify-content: center;
+  justify-content: right;
 }
 #columnbox{
   display:flex;
@@ -52,28 +76,28 @@ border-color:white;
   height:81vh;
 }
 .thumbnail{
-  height:68%;
-  width:50px;
+  height:85%;
+  width:65px;
   align-self: center;
   display:inline-block;
   transition:all 0.4s ease-in-out;
-  margin:0 0 0 8px;
+  margin:0 0 0 6px;
   background-color: aqua;
 }
 .column{
   border-width: 0 0 0 0;
 border-style:solid;
 border-color:white;
-width:25%;
+width:20%;
 transition:all 0.4s ease-in-out;
 visibility: visible;
-height:100%;
+height:90%;
 flex-direction: column;
 display:flex;
 }
 .statsbox{
   height:100%;
-  width:25%;
+  width:20%;
   border-width: 0 0 0 0;
   position: relative;
 border-style:solid;
@@ -86,11 +110,20 @@ border-color:black;
 background-color: white;
 align-items: center;
 border-width:2px;
+position:relative;
 flex-direction: row;
 margin-left:0.8%;
 border-style:solid;
 display:flex;
 }
+#instructions{
+  width:20vw;
+  height:100%;
+  background-color: black;
+  align-items: center;
+  flex-direction: row;
+  display:flex;
+  }
 #banner{
   position: fixed;
   top:0;
@@ -103,7 +136,7 @@ display:flex;
   border-width: 0 0 1px 0;
 }
 #titolopag{
-  font-family:laica-italic;
+  font-family: PxGroteskRegular;
   font-size:1.4vw;
   width:30vw;
   top:50%;
@@ -126,13 +159,13 @@ display:flex;
 h1{
   font-size: 12pt;
   color:black;
-  font-family:banana-light;
+  font-family: PxGroteskRegular;
   margin:0px;
 }
 p{
   font-size: 1.3vw;
   color:white;
-  font-family:banana-light;
+  font-family: PxGroteskRegular;
   margin-left:2%;
   align-self:center
 }
@@ -147,7 +180,7 @@ p{
   visibility: hidden;
 }
 .row{
-  height:6.66%;
+  height:8.333%;
   width:95%;
   display:flex;
   border-color:white;
@@ -160,23 +193,27 @@ p{
 }
 #logintext,#gibberish{
   color:white;
-  margin-left:3%;
+  margin-left:4%;
+}
+#logintext{
+  margin-left:10%;
 }
 #login, #randomizza{
   display:flex;
   font-size:12pt;
   color:white;
+  position: relative;
   width:60px;
   align-self: center;
   height:60%;
-  margin-left:10px;
+  margin-left:15px;
   cursor:pointer;
 }
 #searchbutton{
   font-size:12pt;
   width:5%;
   position:absolute;
-left:25vw;
+right:3%;
   text-align: right;
 }
 #searchinput,#searchakira{
@@ -198,30 +235,23 @@ left:25vw;
 
 }
 #boxino,#boxino2{
-  border-radius:20px;
-  width:100%;
+  width:3vh;
   border-color:white;
   border-style: solid;
-  border-width:1px;
+  position:absolute;
+  border-width: 3px;
   transition:all 0.4s ease-in-out;
-  background-color:rgb(2, 156, 228);
-  height:100%;
-}
-#boxino2{
-  background-color:rgb(255, 239, 8);
+  background-color:black;
+  height:3vh;
 }
 #pallino,#pallino2{
-  left:8%;
-  position: relative;
+  left:50%;
+  position: absolute;
  transition:all 0.4s ease-in-out;
-  border-radius:50%;
   top:50%;
-  transform: translate(0%,-50%);
+  transform: translate(-50%,-50%);
   background-color:white;
-  width:2.9vh;
-  height:2.9vh;
+  width:0vh;
+  height:0vh;
 
-}
-#pallino2{
-  background-color:fuchsia;
 }
