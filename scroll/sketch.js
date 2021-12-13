@@ -1,6 +1,6 @@
 let pos = 25;
 let myPos;
-let videoNumber = 0;
+let videoNumber = 10;
 
 // function cl(text) {
 //   console.log(text);
@@ -14,6 +14,9 @@ function ciao() {
   span.innerHTML = pos;
   
   var wScroll = window.scrollY;
+
+  const span2 = document.querySelector("span2");
+  videosp.innerHTML = videoNumber;
   
 });
 }
@@ -64,10 +67,10 @@ function draw() {
   pop();
 
   if (pos > 100 && pos < 110) {
-  videoNumber = 10;
+  videoNumber = 20;
   }
   else if (pos > 200 && pos < 210) {
-    videoNumber = 20;
+    videoNumber = 30;
     }
 
   console.log(videoNumber);
@@ -96,19 +99,20 @@ function draw() {
 
     else {
       for(var i = 0; i < 39; i++){
-        rect(width/8, 150 + i*50, 50, 40); 
+        // rect(width/8, 150 + i*50, 50, 40); 
+        image(netflix, width/8, 150 + i*50, 50, 40); 
       }
   
       for(var i = 0; i < 80; i++){
-          rect(width/2.6, 150 + i*50, 50, 40); 
+        image(amazon, width/2.6, 150 + i*50, 70, 20); 
       }
   
       for(var i = 0; i < 220; i++){
-          rect(width/1.6, 150 + i*50, 50, 40); 
+          image(yt, width/1.6, 150 + i*50, 70, 15); 
       }
   
       for(var i = 0; i < 25; i++){
-          rect(width/1.2, 150 + i*50, 50, 40);  
+        image(twitch, width/1.2, 150 + i*50, 60, 20);   
       }
     
   }
