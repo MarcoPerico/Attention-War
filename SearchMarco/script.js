@@ -22,16 +22,16 @@ $(".thumbnail").not(".keyword").css("opacity","0.3");
             $(".thumbnail").not(".rewatch").css("opacity","0.3");
               }},function norosso(){
                              if($(this).hasClass("keyword")){
-                              $(".keyword").css("background-color","aqua");
+                              $(".keyword").css("background-color","transparent");
                              $(".thumbnail").not(".keyword").css("opacity","1");
                          }else if($(this).hasClass("searchrelated")){
-                          $(".searchrelated").css("background-color","aqua");
+                          $(".searchrelated").css("background-color","transparent");
                        $(".thumbnail").not(".searchrelated").css("opacity","1");
                         }else if($(this).hasClass("unrelated")){
-                          $(".unrelated").css("background-color","aqua");
+                          $(".unrelated").css("background-color","transparent");
                           $(".thumbnail").not(".unrelated").css("opacity","1");
                             }else if($(this).hasClass("rewatch")){
-                              $(".rewatch").css("background-color","aqua");
+                              $(".rewatch").css("background-color","transparent");
                               $(".thumbnail").not(".rewatch").css("opacity","1");
                                 }
   });

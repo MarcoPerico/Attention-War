@@ -79,10 +79,16 @@ border-color:white;
   height:85%;
   width:65px;
   align-self: center;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: auto;
   display:inline-block;
   transition:all 0.4s ease-in-out;
   margin:0 0 0 6px;
-  background-color: aqua;
+  background-color: transparent;
+  border-style:solid;
+  border-color:white;
+  border-width:1px;
 }
 .column{
   border-width: 0 0 0 0;
