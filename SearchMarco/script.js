@@ -9,26 +9,26 @@ jQuery(document).ready(function( $ ){
   });
   $(".thumbnail").hover(function highlight(){
     if($(this).hasClass("keyword")){
-$(".keyword").css("background-color","red");
+$(".keyword").css({"border-color":"red","border-style":"solid","border-width":"1px"});
 $(".thumbnail").not(".keyword").css("opacity","0.3");
   }else if($(this).hasClass("searchrelated")){
-    $(".searchrelated").css("background-color","blue");
+    $(".searchrelated").css({"border-color":"blue","border-style":"solid","border-width":"1px"});
     $(".thumbnail").not(".searchrelated").css("opacity","0.3");
       }else if($(this).hasClass("unrelated")){
-        $(".unrelated").css("background-color","rgb(0,255,0)");
+        $(".unrelated").css({"border-color":"rgb (0,255,0)","border-style":"solid","border-width":"1px"});
         $(".thumbnail").not(".unrelated").css("opacity","0.3");
           }else if($(this).hasClass("rewatch")){
             $(".rewatch").css("background-color","fuchsia");
             $(".thumbnail").not(".rewatch").css("opacity","0.3");
               }},function norosso(){
                              if($(this).hasClass("keyword")){
-                              $(".keyword").css("background-color","transparent");
+                              $(".keyword").css({"border-color":"transparent","border-style":"none","border-width":"2px"});
                              $(".thumbnail").not(".keyword").css("opacity","1");
                          }else if($(this).hasClass("searchrelated")){
-                          $(".searchrelated").css("background-color","transparent");
+                          $(".searchrelated").css({"border-color":"transparent","border-style":"none","border-width":"2px"});
                        $(".thumbnail").not(".searchrelated").css("opacity","1");
                         }else if($(this).hasClass("unrelated")){
-                          $(".unrelated").css("background-color","transparent");
+                          $(".unrelated").css({"border-color":"transparent","border-style":"none","border-width":"2px"});
                           $(".thumbnail").not(".unrelated").css("opacity","1");
                             }else if($(this).hasClass("rewatch")){
                               $(".rewatch").css("background-color","transparent");
