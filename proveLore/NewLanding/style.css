@@ -1,0 +1,74 @@
+@font-face {
+  font-family: cinetype-r;
+  src: url("./assets/fonts/cinetype/GT-Cinetype-Regular.OTF");
+}
+@font-face {
+  font-family: cinetype-l;
+  src: url("./assets/fonts/cinetype/GT-Cinetype-Light.OTF");
+}
+
+html,
+body {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  color: white;
+  font-family: cinetype-r;
+}
+canvas {
+  display: block;
+  position: absolute;
+  /* top: 0; */
+  z-index: -1;
+}
+h1 {
+  font-weight: normal;
+  font-size: 80px;
+  font-family: cinetype-r;
+}
+p {
+  display: block;
+}
+/* i {
+  font-family: laica-regular;
+  font-style: normal;
+  font-size: 30;
+  color: blue;
+} */
+button {
+  font-family: cinetype-r;
+  font-size: 30px;
+  background-color: white;
+  height: 60px;
+  border: 1px solid black;
+  padding: 0 50px 0 50px;
+  color: blue;
+}
+.s1 {
+  text-align: center;
+  font-size: 50px;
+}
+.intro {
+  width: 500px;
+  padding: 0 25% 0 25%;
+}
+.section {
+  font-size: 30px;
+  height: 100vh;
+  width: 100vw;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.s5 {
+  text-align: center;
+}
+.noselect {
+  -webkit-touch-callout: none; /* iOS Safari */
+  -webkit-user-select: none; /* Safari */
+  user-select: none;
+}
+
+.hidden {
+  display: none;
+}

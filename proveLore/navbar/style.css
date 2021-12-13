@@ -2,9 +2,13 @@
   font-family: cinetype-r;
   src: url("./assets/fonts/cinetype/GT-Cinetype-Regular.OTF");
 }
+@font-face {
+  font-family: pxgrotesk;
+  src: url("./assets/PxGrotesk/PxGrotesk-Regular.ttf");
+}
 
 body {
-  font-family: cinetype-r;
+  font-family: pxgrotesk;
   background-color: black;
   margin: 0;
 }

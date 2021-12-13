@@ -1,28 +1,4 @@
 @font-face {
-  font-family: alpina-light;
-  src: url("./assets/fonts/alpina/GTAlpina-Light.otf");
-}
-@font-face {
-  font-family: banana-light;
-  src: url("./assets/fonts/banana/BananaGrotesk-Light.otf");
-}
-@font-face {
-  font-family: laica-regular;
-  src: url("./assets/fonts/laica/LaicaA-Regular.ttf");
-}
-@font-face {
-  font-family: laica-italic;
-  src: url("./assets/fonts/laica/LaicaA-RegularItalic.ttf");
-}
-@font-face {
-  font-family: akzidenz-r;
-  src: url("./assets/fonts/akzidenz/akzdR.otf");
-}
-@font-face {
-  font-family: diatype-r;
-  src: url("./assets/fonts/diatype/ABCDiatype-Regular.ttf");
-}
-@font-face {
   font-family: cinetype-r;
   src: url("./assets/fonts/cinetype/GT-Cinetype-Regular.OTF");
 }
