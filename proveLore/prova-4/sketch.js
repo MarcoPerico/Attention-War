@@ -107,66 +107,9 @@ function Box(source, x, y, w, h) {
 
 let s0 = function (p) {
   p.setup = function () {
-    image1 = p.loadImage("./assets/buttons/nf1.png");
-    image2 = p.loadImage("./assets/buttons/pv1.png");
-    image3 = p.loadImage("./assets/buttons/yt4.png");
-    image4 = p.loadImage("./assets/buttons/tw1.png");
-
     p.createCanvas(p.windowWidth, p.windowHeight);
-    p.createElement("h1", "THE ART OF<br>STREAMING WAR");
-    p.background(255);
-    engine = Engine.create();
-
-    myImages.push(image1, image2, image3, image4);
-
-    let runner = Runner.create();
-
-    world = engine.world;
-    engine.world.gravity.y = 0.2;
-
-    Matter.Runner.run(engine);
-    push();
-    boundaries.push(new Boundary(width / 2, height, width, 10, 0));
-    boundaries.push(new Boundary(width / 2, 0, width, 10, 0));
-    boundaries.push(new Boundary(0, height / 2, 10, height, 0));
-    boundaries.push(new Boundary(width, height / 2, 10, height, 0));
-    pop();
-
-    render = Render.create({
-      element: canvas.elt,
-      engine: engine,
-      options3: {
-        showVelocity: false,
-        width: 100,
-        height: 100,
-        wireframes: false,
-        background: "rgb(240,240,240)",
-      },
-    });
-    World.add(world, render);
-
-    // add mouse control
-    mouse = Mouse.create(render.canvas.elt);
-
-    attractiveBody = Bodies.circle(mouseX, mouseY, 10, {
-      render: {
-        fillStyle: `rgb(240,240,240)`,
-        strokeStyle: `rgb(240,240,240)`,
-        lineWidth: 0,
-      },
-      isStatic: true,
-      plugin: {
-        attractors: [
-          function (bodyA, bodyB) {
-            return {
-              x: (bodyA.position.x - bodyB.position.x) * 1e-6,
-              y: (bodyA.position.y - bodyB.position.y) * 1e-6,
-            };
-          },
-        ],
-      },
-    });
-    World.add(world, attractiveBody);
+    p.createElement("h1", "THE ATTENTION WAR");
+    p.background(0);
   };
 };
 
@@ -177,7 +120,7 @@ let s1 = function (p) {
       "p",
       "Over the last few years, the world of streaming has exploded. As they compete for users' attention, <i>video streaming platforms</i> have gotten increasingly competitive.<br />"
     );
-    p.background("red");
+    p.background(0);
   };
 };
 
@@ -188,7 +131,7 @@ let s2 = function (p) {
       "p",
       "One of the most serious challenges to these services' viability is <i>'decision fatigue'</i>, in which the act of selecting something to watch can overwhelm and discourage viewers if they are unable to discover something fascinating in a reasonable amount of time."
     );
-    p.background("yellow");
+    p.background(0);
   };
 };
 
@@ -200,7 +143,7 @@ let s3 = function (p) {
       "As a result of this problem, streaming platforms have used a variety of ways to develop their user interfaces.<br /> This guide will walk you through three different strategies used by <i>Netflix</i>, <i>Prime Video</i>, <i>YouTube</i> and <i>Twitch</i>."
     );
     p.createElement("button", "START THE EXPERIENCE");
-    p.background("green");
+    p.background(0);
   };
 };
 
@@ -210,26 +153,7 @@ let p2 = new p5(s2, "canvas2");
 let p3 = new p5(s3, "canvas3");
 
 p0.draw = function () {
-  background(255);
-  if (boxes.length < 3) {
-    for (let i = 0; i < myImages.length; i++) {
-      boxes.push(
-        new Box(
-          myImages[i],
-          windowWidth / 2,
-          windowHeight / 2,
-          myImages.width,
-          myImages.height
-        )
-      );
-    }
-  }
-
-  for (let i = 0; i < boxes.length; i++) {
-    boxes[i].show();
-  }
-
-  moveit();
+  p0.background(0);
 };
 
 p1.draw = function () {
