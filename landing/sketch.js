@@ -38,7 +38,6 @@ function preload() {
   image2 = loadImage("./assets/2.JPG");
   image3 = loadImage("./assets/1.jpeg");
   image4 = loadImage("./assets/4.jpg");
-
 }
 
 function setup() {
@@ -48,7 +47,6 @@ function setup() {
   engine = Engine.create();
 
   myImages.push(image1, image2, image3, image4);
-  
 
   // // create renderer
   // var render = Render.create({
@@ -81,32 +79,12 @@ function setup() {
 
   Matter.Runner.run(engine);
   // Matter.Render.run(render);
-push()
+  push();
   boundaries.push(new Boundary(width / 2, height, width, 10, 0));
-    boundaries.push(new Boundary(width / 2, 0, width, 10, 0));
-    boundaries.push(new Boundary(0, height / 2, 10, height, 0));
-    boundaries.push(new Boundary(width, height / 2, 10, height, 0));
-    pop()
-
-  // let options = {
-  //   isStatic: true,
-  //   friction: 0.5,
-  //   restitution: 1,
-  // };
-
-  // box2 = Bodies.rectangle(500, height/2, width/2, 10, options)
-  // World.add(world, box2);
-  // box1 = Bodies.rectangle(windowWidth/2, windowHeight/2, 80, 80);
-  // World.add(world, box1);
-
-  // canvasmouse = Mouse.create(canvas.elt);
-  // canvasmouse.pixelRatio = pixelDensity();
-  // let options2 = {
-  //   mouse: canvasmouse
-  //   }
-
-  // mConstraint = MouseConstraint.create(engine, options2);
-  // World.add(world, mConstraint);
+  boundaries.push(new Boundary(width / 2, 0, width, 10, 0));
+  boundaries.push(new Boundary(0, height / 2, 10, height, 0));
+  boundaries.push(new Boundary(width, height / 2, 10, height, 0));
+  pop();
 
   render = Render.create({
     element: canvas.elt,
@@ -165,17 +143,24 @@ function draw() {
   // rectMode(CENTER)
   if (boxes.length < 3) {
     for (let i = 0; i < myImages.length; i++) {
-    boxes.push(new Box(myImages[i], windowWidth/2, windowHeight/2, 100, 80));
+      const provabox = new Box(
+        myImages[i],
+        windowWidth / 2,
+        windowHeight / 2,
+        100,
+        80
+      );
+      boxes.push(provabox);
+    }
   }
-}
-  
+
   for (let i = 0; i < boxes.length; i++) {
     boxes[i].show();
   }
 
-//   for (let i = 0; i < boundaries.length; i++) {
-//     boundaries[i].show();
-// }
+  //   for (let i = 0; i < boundaries.length; i++) {
+  //     boundaries[i].show();
+  // }
   // ellipse(attractiveBody.position.x, attractiveBody.position.y, 10, 10);
   // console.log(canvasmouse.position.x);
   // console.log(attractiveBody.position.x)
@@ -206,10 +191,10 @@ function draw() {
 
 function Boundary(x, y, w, h, a) {
   let options = {
-      friction: 0,
-      restitution: 0.95,
-      angle: a,
-      isStatic: true
+    friction: 0,
+    restitution: 0.95,
+    angle: a,
+    isStatic: true,
   };
   this.body = Bodies.rectangle(x, y, w, h, options);
   this.w = w;
@@ -217,17 +202,17 @@ function Boundary(x, y, w, h, a) {
   World.add(world, this.body);
   //console.log(this.body);
 
-  this.show = function() {
-      let pos = this.body.position;
-      let angle = this.body.angle;
-      push();
-      translate(pos.x, pos.y);
-      rotate(angle);
-      rectMode(CENTER);
-      strokeWeight(2);
-      noFill();
-      rect(0, 0, this.w, this.h);
-      pop();
+  this.show = function () {
+    let pos = this.body.position;
+    let angle = this.body.angle;
+    push();
+    translate(pos.x, pos.y);
+    rotate(angle);
+    rectMode(CENTER);
+    strokeWeight(2);
+    noFill();
+    rect(0, 0, this.w, this.h);
+    pop();
   };
 }
 
