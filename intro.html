@@ -6,12 +6,13 @@
 
     <title>Intro</title>
 
-    <link rel="stylesheet" type="text/css" href="style.css" />
+    <link rel="stylesheet" type="text/css" href="intro-style.css" />
 
     <script src="libraries/p5.min.js"></script>
     <!-- <script src="libraries/p5.sound.min.js"></script> -->
     <script src="libraries/matter/build/matter.js"></script>
     <script src="libraries/matter/build/matter-attractors.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
   </head>
 
   <body>
@@ -42,7 +43,29 @@
         </p>
       </div>
       <div class="sezione" id="intro2">
-        <p class="text">
+        <div id="thumbnail-group">
+          <div class="thumbnail" id="t1"></div>
+          <div class="thumbnail" id="t2"></div>
+          <div class="thumbnail" id="t3"></div>
+          <div class="thumbnail" id="t4"></div>
+          <div class="thumbnail" id="t5"></div>
+          <div class="thumbnail" id="t6"></div>
+          <div class="thumbnail"></div>
+          <div class="thumbnail"></div>
+          <div class="thumbnail"></div>
+          <div class="thumbnail"></div>
+          <div class="thumbnail"></div>
+          <div class="thumbnail"></div>
+          <div class="thumbnail"></div>
+          <div class="thumbnail"></div>
+          <div class="thumbnail"></div>
+          <div class="thumbnail"></div>
+          <div class="thumbnail"></div>
+          <div class="thumbnail"></div>
+          <div class="thumbnail"></div>
+          <div class="thumbnail"></div>
+        </div>
+        <p class="text sotto" id="scoprimi">
           One of the most serious challenges to these services' viability is
           <i>'decision fatigue'</i>, in which the act of selecting something to
           watch can overwhelm and discourage viewers if they are unable to
@@ -56,9 +79,10 @@
           This guide will walk you through three different strategies used by
           <i>Netflix</i>, <i>Prime Video</i>, <i>YouTube</i> and <i>Twitch</i>.
         </p>
-        <a href="/proveLore/Cover/index.html">Begin</a>
+        <a class="bottone" href="/proveLore/Cover/index.html">Begin</a>
       </div>
     </div>
-    <script src="sketch.js"></script>
+    <script src="intro-sketch.js"></script>
+    <script src="intro-script.js"></script>
   </body>
 </html>
