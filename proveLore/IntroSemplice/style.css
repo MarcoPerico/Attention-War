@@ -46,6 +46,18 @@ canvas {
   display: flex;
   flex-direction: column;
 }
+#intro3 > a {
+  text-decoration: none;
+  background-color: black;
+  color: white;
+  border: 2px solid white;
+  font-family: px;
+  font-size: 26px;
+  padding: 4px 10px 4px 10px;
+}
+i {
+  color: rgb(0, 119, 255);
+}
 
 /* ---------------NAVBAR----------------------- */
 
