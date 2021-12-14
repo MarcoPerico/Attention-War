@@ -3,20 +3,11 @@
   src: url("./fonts/PxGrotesk/PxGrotesk-Bold.ttf");
   font-weight: bold;
 }
+
 @font-face {
   font-family: "PxGrotesk";
   src: url("./fonts/PxGrotesk/PxGrotesk-Regular.ttf");
   font-weight: normal;
-}
-@font-face {
-  font-family: "cinetype";
-  font-weight: normal;
-  src: url("./fonts/cinetype/GT-Cinetype-Regular.OTF");
-}
-@font-face {
-  font-family: "cinetype";
-  font-weight: bold;
-  src: url("./fonts/cinetype/GT-Cinetype-Bold.OTF");
 }
 
 h1,
@@ -64,13 +55,12 @@ body {
 }
 
 h1 {
-  font-family: cinetype;
-  font-size: 13vw;
+  font-family: PxGrotesk;
+  font-weight: normal;
+  font-size: 13.3vw;
   text-align: center;
   color: rgb(0, 0, 0);
-  /* letter-spacing: -0.03em; */
-  font-style: normal;
-  font-weight: normal;
+  letter-spacing: -0.03em;
 }
 
 h2 {
@@ -106,12 +96,11 @@ a:link {
   font-family: PxGrotesk;
   font-weight: normal;
   font-size: 50px;
-  color: rgb(0, 255, 38);
+  color: rgb(0, 0, 0);
   text-decoration: none;
 }
 a:hover {
-  text-decoration: underline;
-  text-decoration-color: rgb(0, 255, 38);
+  text-decoration-color: rgb(0, 0, 0);
 }
 
 canvas {
