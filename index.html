@@ -1,58 +1,64 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta http-equiv="X-UA-Compatible" content="ie=edge">
-  <link rel="stylesheet" href="style.css">
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
-  <script src="script.js"></script>
-</head>
-<body>
-  <div id="simboli">
-<div id="riga1" class="row">
-  <img id="row1img1" class="symbol1" src="symbols_svg/S_fwd10sec_bluestroke.svg">
-  <img id="row1img2" class="symbol1"src="symbols_svg/S_rewind_greenfill.svg">
-  <img id="row1img3" class="symbol1" src="symbols_svg/S_search_greenfill.svg">
-  </div>
-<div id="riga2" class="row">
-  <img id="row2img1" class="symbol1"src="symbols_svg/S_Pause_redfill.svg">
-  <img id="row2img2" class="symbol1"src="symbols_svg/S_playbutton_bluestroke.svg">
-  <img id="row2img3"class="symbol1" src="symbols_svg/S_cancel_redfill.svg">
-  </div>
-<div id="riga3" class="row">
-  <img id="row3img1" class="symbol1"src="symbols_svg/S_playbar.svg">
-  <img id="row3img2" class="symbol1"src="symbols_svg/S_play_bluefill.svg">
-  <img id="row3img3" class="symbol2"src="symbols_svg/S_playbar.svg">
-  <img id="row3img4" class="symbol2"src="symbols_svg/S_play_bluefill.svg">
-  <img id="row3img5" class="symbol2"src="symbols_svg/S_play_bluefill.svg">
-</div>
-<div id="riga4" class="row">
-</div>
-  <div id="riga5" class="row"></div>
-    <div id="riga9" class="row"></div>
-        <div id="riga8" class="row"></div>
-    <div id="riga7" class="row"></div>
-    <div id="riga6" class="row"></div>
-  </div>
-  <div id="schedario">
-<div id="scheda1" class="row">
-  </div>
-<div id="scheda2" class="row">
-  <h1 id="finding1"class="titolo">FINDING1</h1>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-  </div>
-<div id="scheda3" class="row">
-</div>
-<div id="scheda4" class="row">
-  <h1 id="finding2"class="titolo">FINDING2</h1>
-</div>
-  <div id="scheda5" class="row"></div>
-    <div id="scheda9" class="row"><h1 id="finding3"class="titolo">FINDING3</h1></div>
-        <div id="scheda8" class="row"></div>
-    <div id="scheda7" class="row"></div>
-    <div id="scheda6" class="row">
-      <h1 id="about" class="titolo">ABOUT US</h1></div>
-  </div>
-</body>
+    <title>Intro</title>
+
+    <link rel="stylesheet" type="text/css" href="style.css" />
+
+    <script src="libraries/p5.min.js"></script>
+    <!-- <script src="libraries/p5.sound.min.js"></script> -->
+    <script src="libraries/matter/build/matter.js"></script>
+    <script src="libraries/matter/build/matter-attractors.js"></script>
+  </head>
+
+  <body>
+    <div id="navbar">
+      <a href="/homepage-chiara/index.html" id="home" class="navbar-button"
+        >ATTENTION WAR</a
+      >
+      <div id="chapters" class="navbar-button">
+        <a href="#news" class="chapters-button" id="active">Intro</a>
+        <a href="#news" class="chapters-button">First impression</a>
+        <a href="/MOUSETRACKTEST/index.html" class="chapters-button"
+          >Hide and seek</a
+        >
+        <a href="/SearchMarco/search.html" class="chapters-button"
+          >We know what you want</a
+        >
+      </div>
+      <!-- <a href="#contact" id="about" class="navbar-button">About</a> -->
+    </div>
+
+    <div id="container">
+      <div class="sezione" id="intro1">
+        <p class="text">
+          Over the last few years, the world of streaming has exploded.<br />
+          As they compete for users' attention,
+          <i>video streaming platforms</i> have gotten increasingly
+          competitive.<br />
+        </p>
+      </div>
+      <div class="sezione" id="intro2">
+        <p class="text">
+          One of the most serious challenges to these services' viability is
+          <i>'decision fatigue'</i>, in which the act of selecting something to
+          watch can overwhelm and discourage viewers if they are unable to
+          discover something fascinating in a reasonable amount of time.
+        </p>
+      </div>
+      <div class="sezione" id="intro3">
+        <p class="text">
+          As a result of this problem, streaming platforms have used a variety
+          of ways to develop their user interfaces.<br />
+          This guide will walk you through three different strategies used by
+          <i>Netflix</i>, <i>Prime Video</i>, <i>YouTube</i> and <i>Twitch</i>.
+        </p>
+        <a href="/proveLore/IntroSemplice/prova.html">Begin</a>
+      </div>
+    </div>
+    <script src="sketch.js"></script>
+  </body>
 </html>
