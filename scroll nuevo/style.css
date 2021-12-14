@@ -1,0 +1,31 @@
+body {
+  position: relative;
+}
+
+.counter {
+  position: fixed;
+  font-size: 40px;
+}
+  
+#pixels {
+  right: 0;
+}
+.screen {
+  position: absolute;
+  top: 0;
+}
+#netflix{
+  left:0;
+}
+#youtube{
+  left:25%;
+}
+#twitch{
+  left:50%;
+  overflow: scroll;
+}
+
+#videos {
+  top: 20%;
+  right: 10%;
+}

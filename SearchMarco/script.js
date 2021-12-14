@@ -76,20 +76,38 @@ $("#pallino").css({"width":"0vh","height":"0vh"});
   if($("#login").hasClass("in") && $("#randomizza").hasClass("random")){
     $("#column1").css("opacity","0");
     $("#column1").delay(500).addClass("off");
+    $("#column2,#column3").removeClass("off");
+    $("#column2,#column3").children(".row").removeClass("off");
+    $("#column2,#column3").children(".row").children(".thumbnail").removeClass("off");
+    $("#row11a,#row10a,#row9a,#row8a,#row7a,#row6a,#row12a").addClass("off");
+    $("#row11b,#row10b,#row9b,#row8b,#row7b-2,#row7b-3,#row7b-4,#row12b").addClass("off");
     $("#column4").css("opacity","0");
     $("#column4").delay(500).addClass("off");
   } else if (!$("#login").hasClass("in") && $("#randomizza").hasClass("random")){
     $("#column1").css("opacity","0");
     $("#column1").delay(500).addClass("off");
+    $("#column2,#column3").removeClass("off");
+    $("#column2,#column3").children(".row").removeClass("off");
+    $("#column2,#column3").children(".row").children(".thumbnail").removeClass("off");
+    $("#column3").addClass("off");
+    $("#row11a,#row10a,#row9a,#row8a,#row7a,#row6a,#row12a").removeClass("off");
     $("#column4").css("opacity","0");
     $("#column4").delay(500).addClass("off");
   } else if ($("#login").hasClass("in") && !$("#randomizza").hasClass("random")){
     $("#column1").removeClass("off");
     $("#column1").css("opacity","1");
+    $("#column2,#column3").removeClass("off");
+    $("#column2,#column3").children(".row").removeClass("off");
+    $("#column2,#column3").children(".row").children(".thumbnail").removeClass("off");
+    $("#row12a,#row11a,#row10a-2,#row10a-3,#row10a-4").addClass("off");
     $("#column4").removeClass("off");
     $("#column4").css("opacity","1");
   } else if (!$("#login").hasClass("in") && !$("#randomizza").hasClass("random")){
     $("#column1").css("opacity","0");
+    $("#column2,#column3").removeClass("off");
+    $("#column2,#column3").children(".row").removeClass("off");
+    $("#column2,#column3").children(".row").children(".thumbnail").removeClass("off");
+    $("#row12a,#row11a,#row10a-2,#row10a-3,#row10a-4").addClass("off");
     $("#column1").delay(500).addClass("off");
     $("#column4").removeClass("off");
     $("#column4").css("opacity","1");
