@@ -25,7 +25,17 @@ body {
   overflow: scroll;
 }
 
-#videos {
-  top: 20%;
-  right: 10%;
+#tvideos {
+  top: 80%;
+  left: 60%;
+}
+
+#nvideos {
+  top: 80%;
+  left: 10%;
+}
+
+#yvideos {
+  top: 80%;
+  left: 30%;
 }
