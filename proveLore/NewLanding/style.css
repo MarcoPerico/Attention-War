@@ -1,74 +1,66 @@
 @font-face {
-  font-family: cinetype-r;
-  src: url("./assets/fonts/cinetype/GT-Cinetype-Regular.OTF");
-}
-@font-face {
-  font-family: cinetype-l;
-  src: url("./assets/fonts/cinetype/GT-Cinetype-Light.OTF");
+  font-family: px;
+  src: url("assets/fonts/PxGrotesk/PxGrotesk-Regular.ttf");
 }
 
 html,
 body {
   margin: 0;
   padding: 0;
-  box-sizing: border-box;
-  color: white;
-  font-family: cinetype-r;
+  font-family: px;
 }
+
 canvas {
   display: block;
   position: absolute;
-  /* top: 0; */
+  top: 0;
   z-index: -1;
 }
-h1 {
-  font-weight: normal;
-  font-size: 80px;
-  font-family: cinetype-r;
-}
-p {
-  display: block;
-}
-/* i {
-  font-family: laica-regular;
-  font-style: normal;
-  font-size: 30;
-  color: blue;
-} */
-button {
-  font-family: cinetype-r;
-  font-size: 30px;
-  background-color: white;
-  height: 60px;
-  border: 1px solid black;
-  padding: 0 50px 0 50px;
-  color: blue;
-}
-.s1 {
+.text {
+  color: white;
   text-align: center;
-  font-size: 50px;
-}
-.intro {
-  width: 500px;
-  padding: 0 25% 0 25%;
-}
-.section {
+  width: 60%;
   font-size: 30px;
-  height: 100vh;
-  width: 100vw;
+}
+#container {
   display: flex;
+  height: 100vh;
   justify-content: center;
   align-items: center;
 }
-.s5 {
-  text-align: center;
-}
-.noselect {
-  -webkit-touch-callout: none; /* iOS Safari */
-  -webkit-user-select: none; /* Safari */
-  user-select: none;
+
+a {
+  color: #5c5c5c;
+  text-decoration: none;
+  font-weight: normal;
 }
 
-.hidden {
-  display: none;
+/* ---------------NAVBAR----------------------- */
+
+#navbar {
+  position: absolute;
+  justify-content: space-between;
+  width: 100%;
+  display: flex;
+  /* background-color: #262626; */
+  font-size: 22px;
+}
+
+.navbar-button {
+  padding: 6px;
+}
+.chapters-button {
+  padding-left: 12px;
+  padding-right: 12px;
+}
+
+#navbar a:hover {
+  color: white;
+  transition: 0.2s;
+}
+
+#active,
+#home,
+#about {
+  color: white;
 }
