@@ -23,17 +23,18 @@
       </div>
       <!-- <a href="#contact" id="about" class="navbar-button">About</a> -->
     </div>
-    <div class="container">
-      <div class="slides">
-        <div id="slide1" class="slide">
+    <div id="container">
+      <div id="fullpage" class="noselect">
+        <div class="section" id="canvas1"></div>
+
+        <div class="slide" id="intro1">
           <p class="text">
-            Over the last few years, the world of streaming has exploded. As
-            they compete for users' attention,
-            <i>video streaming platforms</i> have gotten increasingly
-            competitive.<br />
+            Over the last few years, the world of streaming has exploded.
+            <br />As they compete for users' attention, video streaming
+            platforms have gotten increasingly competitive.
           </p>
         </div>
-        <div id="slide2" class="slide">
+        <div class="slide" id="intro2">
           <p class="text">
             One of the most serious challenges to these services' viability is
             <i>'decision fatigue'</i>, in which the act of selecting something
@@ -41,7 +42,7 @@
             discover something fascinating in a reasonable amount of time.
           </p>
         </div>
-        <div id="slide3" class="slide">
+        <div class="slide" id="intro3">
           <p class="text">
             As a result of this problem, streaming platforms have used a variety
             of ways to develop their user interfaces.<br />
@@ -51,10 +52,9 @@
           </p>
         </div>
       </div>
+      <script src="./fullpage.min.js"></script>
+      <script src="./app.js"></script>
     </div>
-    <button id="next-btn">Next</button>
-    <button id="back-btn">Back</button>
-
     <script src="sketch.js"></script>
   </body>
 </html>

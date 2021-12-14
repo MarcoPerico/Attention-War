@@ -8,7 +8,6 @@ body {
   margin: 0;
   padding: 0;
   font-family: px;
-  background-color: black;
 }
 
 canvas {
@@ -20,29 +19,21 @@ canvas {
 .text {
   color: white;
   text-align: center;
-  /* width: 60%; */
+  width: 60%;
   font-size: 30px;
 }
-/* .container {
+#container {
   display: flex;
   height: 100vh;
   justify-content: center;
   align-items: center;
-} */
-
-.container {
-  margin: auto;
-  overflow: hidden;
-  width: 60%;
 }
 
-.slides {
-  display: flex;
-  height: 100%;
+a {
+  color: #5c5c5c;
+  text-decoration: none;
+  font-weight: normal;
 }
-/* .slide {
-  width: 60vw;
-} */
 
 /* ---------------NAVBAR----------------------- */
 
@@ -72,10 +63,4 @@ canvas {
 #home,
 #about {
   color: white;
-}
-
-a {
-  color: #5c5c5c;
-  text-decoration: none;
-  font-weight: normal;
 }
