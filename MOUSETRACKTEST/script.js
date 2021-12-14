@@ -24,16 +24,10 @@ jQuery(document).ready(function ($) {
   function handleTimer() {
     if (count === 0) {
       clearInterval(x);
-      endCountdown();
     } else {
       $("#countdown").html(count);
       count--;
     }
-  }
-  function endCountdown() {
-    document.getElementById("countdown").innerHTML = "GO!!";
-    $("#tutorial").hide();
-    setup();
   }
   $(".bottone", this).on("click", function entracarta6() {
     $(this).css("opacity", "0");
@@ -97,35 +91,51 @@ jQuery(document).ready(function ($) {
   });
   function testo() {
     if (progresso == 2) {
-      document.getElementById("testo1").innerHTML += " clicca su accedi.";
+      document.getElementById("testo1").innerHTML += " Click on the downwards arrow next to the profile picture.";
+      $("#screenshots").attr("src","/assets/Netflix/Netflix screenshot 2.jpg");
       start();
-      $("#gg").css("display", "none");
     } else if (progresso == 3) {
-      document.getElementById("testo1").innerHTML += " apri le Impostazioni.";
+      document.getElementById("testo1").innerHTML += " In the dropdown menu, click on the Account button.";
+      $("#screenshots").attr("src","/assets/Netflix/Netflix screenshot 3.jpg");
     } else if (progresso == 4) {
-      document.getElementById("testo1").innerHTML += " seleziona Autoplay.";
+      document.getElementById("testo1").innerHTML += " Click on the scrollbar.";
+      $("#screenshots").attr("src","/assets/Netflix/Netflix screenshot 4.jpg");
     } else if (progresso == 5) {
-      document.getElementById("testo1").innerHTML += " Avanzate.";
+      document.getElementById("testo1").innerHTML += " Click on the downwards arrow of Bharath's profile.";
+      $("#screenshots").attr("src","/assets/Netflix/Netflix screenshot 5.jpg");
     } else if (progresso == 6) {
+      document.getElementById("testo1").innerHTML += " Next to Playback Settings, click on Change.";
+      $("#screenshots").attr("src","/assets/Netflix/Netflix screenshot 6.jpg");
+    } else if (progresso == 7) {
+      document.getElementById("testo1").innerHTML += " Uncheck Autoplay next episode in a series.";
+      $("#screenshots").attr("src","/assets/Netflix/Netflix screenshot 7.jpg");
+    } else if (progresso == 8) {
+      document.getElementById("testo1").innerHTML += " Uncheck Autoplay previews while browsing.";
+      $("#screenshots").attr("src","/assets/Netflix/Netflix screenshot 8.jpg");
+    } else if (progresso == 9) {
+      document.getElementById("testo1").innerHTML += " Click on the Save button";
+      $("#screenshots").attr("src","/assets/Netflix/Netflix screenshot 9.jpg");
+    } else if (progresso == 10) {
       end();
-      document.getElementById("testo1").innerHTML += " Turn Off Autoplay";
+      document.getElementById("testo1").innerHTML += " You've done it!";
+      $("#screenshots").css("opacity","0");
       $("#testo2").css("left", "2%");
       $("#goon").css("right", "2%");
       $("#campo").css("cursor", "auto");
-      noLoop();
+      p1.noLoop();
     }
   }
 });
 let freccia;
-function setup() {
-  createCanvas(windowWidth, windowHeight);
-  noCursor();
-}
-function preload() {
-  freccia = loadImage("cursor.svg");
-}
-function draw() {
-  imageMode(CENTER);
-  image(freccia, mouseX, mouseY, 11, 16);
+let s1 = function(p){
+p.setup = function() {
+  freccia = p.loadImage("cursor.svg");
+  p.createCanvas(p.windowWidth, p.windowHeight);
+  p.background(0);
+}}
+let p1 = new p5(s1,"screenshotscont");
+p1.draw = function(){
+  p1.imageMode(p1.CENTER);
+  p1.image(freccia, p1.mouseX, p1.mouseY, 11, 16);
   // windowResized2();
 }

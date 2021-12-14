@@ -1,10 +1,9 @@
 @font-face {
-  font-family: cinetype-r;
-  src: url("./assets/fonts/cinetype/GT-Cinetype-Regular.OTF");
+  font-family: PxGroteskRegular;
+  src: url("./assets/fonts/PxGrotesk/Px\ Grotesk\ Regular.ttf");
 }
-
 body {
-  font-family: cinetype-r;
+  font-family: PxGroteskRegular;
   background-color: black;
   margin: 0;
   overflow: hidden;
@@ -15,13 +14,22 @@ body {
   right:0;
   width:80vw;
 }
-#screenshots{
+#screenshots, #screenshotscont{
   position:absolute;
-  right:0;
-  top:0;
-  width:80vw;
+  right:1.5%;
+  top:3%;
+  height:563px;
+  width:1200px;
 }
-
+#screenshotscont{
+  overflow: hidden;
+  border-style: solid;
+  border-color:white;
+  border-width: 1px;
+}
+#screenshots{
+  transition:all 0.3s ease-in-out;
+}
 a {
   color: #5c5c5c;
   text-decoration: none;
@@ -58,7 +66,6 @@ a {
 #campo{
   height:95vh;
   width:100vw;
-  cursor:none;
   position:fixed;
   transition: all 0.5s ease-in-out;
   bottom:0%;
@@ -116,7 +123,7 @@ a {
   border-width: 0 0 1px 0;
 }
 #titolopag{
-  font-family: cinetype-r;
+  font-family: PxGroteskRegular;
   font-size:1.4vw;
   width:30vw;
   top:50%;
@@ -149,34 +156,44 @@ a {
   background-color: black;
 }
 #ready{
-  font-family: cinetype-r;
+  font-family: PxGroteskRegular;
   font-size:2vw;
   text-align: center;
   color:white;
 }
 #countdown{
-  font-family: cinetype-r;
+  font-family: PxGroteskRegular;
   font-size:4.5vw;
   display:hidden;
   text-align: center;
   color:white;
 }
 #title{
-  font-family: cinetype-r;
+  font-family: PxGroteskRegular;
   font-size:3vw;
   text-align: center;
   font-style:normal;
   color:white;
 }
+.bottone {
+  position:absolute;
+  width:35px;
+  height:35px;
+  border-style:solid;
+  border-color:aqua;
+  border-width:1px;
+  cursor: pointer;
+  transition: all 0.4s ease-in-out;
+}
 #bottone1{
 display:block;
-top:50%;
-left:50%;
+top:4.5%;
+left:1.8%;
 }
 #bottone2{
 display:none;
-top:75%;
-left:30%;
+top:1.8%;
+left:93.2%;
 }
 #bottone3{
   display:none;
@@ -194,7 +211,7 @@ left:30%;
   left:40%;
 }
 #testobox{
-  width:20vw;
+  width:18vw;
   height:100vh;
   background-color: black;
   position:absolute;
@@ -204,7 +221,7 @@ left:30%;
 #testo1 {
   display: block;
   position: absolute;
-  font-family: cinetype-r;
+  font-family: PxGroteskRegular;
   top:10%;
   left:3%;
   background-color: black;
@@ -246,6 +263,11 @@ color:white;
   right:0%;
   opacity:1;
 }
+img{
+  border-style: solid;
+  border-color:white;
+  border-width: 1px 1px 1px 1px;
+}
 .visbottone{
   margin:2% auto;
   height:35px;
@@ -260,7 +282,7 @@ color:white;
   border-style:solid;
   border-width:2px;
   transition: all 0.5s cubic-bezier(0, 0, 0.58, 1);
-  font-family:banana-light;
+  font-family: PxGroteskRegular;
   cursor:pointer;
 color:white;
 }
@@ -292,7 +314,7 @@ color:white;
 #testo2 {
   display: block;
   position: absolute;
-  font-family: cinetype-r;
+  font-family: PxGroteskRegular;
   font-size: 1.4vw;
   width:23vw;
   text-align:left;
@@ -316,11 +338,4 @@ canvas{
   transition:all 0.5s;
   display:block;
 }
-.bottone {
-  position:absolute;
-  background-color: rgb(24, 240, 150);
-  width:10vw;
-  cursor: pointer;
-  transition: all 0.4s ease-in-out;
-  height:10vw;
-}
+
