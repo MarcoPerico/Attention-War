@@ -1,5 +1,11 @@
 @font-face {
   font-family: px;
+  font-weight: 100;
+  src: url("assets/fonts/PxGrotesk/PxGrotesk-Light.ttf");
+}
+@font-face {
+  font-family: px;
+  font-weight: 200;
   src: url("assets/fonts/PxGrotesk/PxGrotesk-Regular.ttf");
 }
 
@@ -8,51 +14,51 @@ body {
   margin: 0;
   padding: 0;
   font-family: px;
-  background-color: black;
+  /* background-color: black; */
+  overflow-x: hidden;
 }
 
 canvas {
   display: block;
   position: absolute;
-  top: 0;
   z-index: -1;
 }
 .text {
   color: white;
   text-align: center;
-  /* width: 60%; */
+  width: 50%;
   font-size: 30px;
+  font-weight: 100;
 }
-/* .container {
+#container {
   display: flex;
+  flex-direction: column;
+  top: 0;
+  z-index: 1;
+}
+.sezione {
   height: 100vh;
-  justify-content: center;
-  align-items: center;
-} */
-
-.container {
-  margin: auto;
-  overflow: hidden;
-  width: 60%;
-}
-
-.slides {
   display: flex;
-  height: 100%;
+  align-items: center;
+  justify-content: center;
 }
-/* .slide {
-  width: 60vw;
-} */
+#intro3 {
+  display: flex;
+  flex-direction: column;
+}
 
 /* ---------------NAVBAR----------------------- */
 
 #navbar {
-  position: absolute;
+  position: fixed;
   justify-content: space-between;
   width: 100%;
   display: flex;
   /* background-color: #262626; */
   font-size: 22px;
+  top: 0;
+  z-index: 2;
+  font-weight: 200;
 }
 
 .navbar-button {
