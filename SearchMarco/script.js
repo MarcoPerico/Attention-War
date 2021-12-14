@@ -73,7 +73,9 @@ $("#pallino").css({"width":"0vh","height":"0vh"});
               check();   
     });
     function check(){
-  if($("#login").hasClass("in") && $("#randomizza").hasClass("random")){
+  if($("#login").hasClass("in") && $("#randomizza").hasClass("random")){  //LOGGED IN e RANDOM//
+    $("#row1a-1").css("background-image","url('/assets/primevideo_thumbnails/1.webp')");
+    $("#row1b-1").css("background-image","url('/assets/youtube_thumbnails/10.webp')");
     $("#column1").css("opacity","0");
     $("#column1").delay(500).addClass("off");
     $("#column2,#column3").removeClass("off");
@@ -83,7 +85,8 @@ $("#pallino").css({"width":"0vh","height":"0vh"});
     $("#row11b,#row10b,#row9b,#row8b,#row7b-2,#row7b-3,#row7b-4,#row12b").addClass("off");
     $("#column4").css("opacity","0");
     $("#column4").delay(500).addClass("off");
-  } else if (!$("#login").hasClass("in") && $("#randomizza").hasClass("random")){
+  } else if (!$("#login").hasClass("in") && $("#randomizza").hasClass("random")){ //LOGGED OUT e RANDOM//
+
     $("#column1").css("opacity","0");
     $("#column1").delay(500).addClass("off");
     $("#column2,#column3").removeClass("off");
@@ -93,7 +96,8 @@ $("#pallino").css({"width":"0vh","height":"0vh"});
     $("#row11a,#row10a,#row9a,#row8a,#row7a,#row6a,#row12a").removeClass("off");
     $("#column4").css("opacity","0");
     $("#column4").delay(500).addClass("off");
-  } else if ($("#login").hasClass("in") && !$("#randomizza").hasClass("random")){
+  } else if ($("#login").hasClass("in") && !$("#randomizza").hasClass("random")){ //LOGGED IN e AKIRA//
+
     $("#column1").removeClass("off");
     $("#column1").css("opacity","1");
     $("#column2,#column3").removeClass("off");
@@ -102,7 +106,8 @@ $("#pallino").css({"width":"0vh","height":"0vh"});
     $("#row12a,#row11a,#row10a-2,#row10a-3,#row10a-4").addClass("off");
     $("#column4").removeClass("off");
     $("#column4").css("opacity","1");
-  } else if (!$("#login").hasClass("in") && !$("#randomizza").hasClass("random")){
+  } else if (!$("#login").hasClass("in") && !$("#randomizza").hasClass("random")){ //LOGGED OUT E AKIRA//
+
     $("#column1").css("opacity","0");
     $("#column2,#column3").removeClass("off");
     $("#column2,#column3").children(".row").removeClass("off");
