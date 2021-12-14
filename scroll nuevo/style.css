@@ -22,6 +22,7 @@ body {
 }
 #twitch{
   left:50%;
+  overflow: scroll;
 }
 
 #videos {
