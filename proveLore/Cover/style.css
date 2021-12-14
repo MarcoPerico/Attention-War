@@ -98,9 +98,14 @@ a {
   color: white;
   border: 1px solid white;
   font-family: px;
-  font-size: 26px;
-  padding: 4px 10px 4px 10px;
+  font-size: 22px;
+  padding: 6px 18px 6px 18px;
   transform: translate(0, 40px);
   opacity: 0%;
   transition: 0.5s;
+}
+
+.bottone:hover {
+  background-color: white;
+  color: black;
 }
