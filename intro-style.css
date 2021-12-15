@@ -24,11 +24,11 @@ canvas {
   z-index: -1;
 }
 .text {
-  color: white;
+  color: black;
   text-align: center;
   width: 50%;
   font-size: 30px;
-  font-weight: 100;
+  font-weight: 200;
   z-index: 1;
 }
 #container {
@@ -89,14 +89,14 @@ i {
 }
 
 #navbar a:hover {
-  color: white;
+  color: black;
   transition: 0.2s;
 }
 
 #active,
 #home,
 #about {
-  color: white;
+  color: rgb(0, 0, 0);
 }
 
 a {
@@ -110,7 +110,7 @@ a {
   top: 100vh;
   position: absolute;
   left: 20%;
-  top: 125vh;
+  top: 225vh;
   width: 60%;
 }
 
@@ -132,4 +132,13 @@ a {
 }
 .sotto {
   z-index: 0;
+}
+h1 {
+  font-style: normal;
+  font-size: 200px;
+  font-weight: normal;
+}
+#landing {
+  display: flex;
+  flex-direction: column;
 }
