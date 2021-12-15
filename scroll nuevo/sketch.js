@@ -1,6 +1,14 @@
 jQuery(document).ready(function( $ ){
-
-
+$(document).scroll(function(){
+  var y = $(this).scrollTop();
+  if(y>8680){
+    $("#goon").removeClass("flexioni");
+    $("#goon").css("opacity","1");
+  } else {
+    $("#goon").css("opacity","0");
+    $("#goon").addClass("flexioni");
+  }
+})
 
 
 });
@@ -48,13 +56,14 @@ let youtubemap;
 //   //  console.log(window.innerHeight)
 //   // console.log(window.innerHeight)
 // }
-
+window.onbeforeunload = function () {
+  window.scrollTo(0, 0);
+}
 function draw() {
   updateTwitchCounter()
   updateNetflixCounter()
   updateYouTubeCounter()
 }
-
 function updateTwitchCounter() {
   'use strict';
   twitchmap = map(document.documentElement.scrollTop, 0, twitchscroll.scrollHeight, 0, 150);
@@ -81,7 +90,6 @@ if (round(youtubemap) > 1500) {
   youtubecounter.textContent = 1500;
 }
 }
-
 
 
 document.addEventListener('scroll', updateTwitchCounter);
