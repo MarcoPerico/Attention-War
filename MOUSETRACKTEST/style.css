@@ -187,8 +187,8 @@ margin-top:3%;
   width:35px;
   height:35px;
   border-style:solid;
-  border-color:white;
-  border-width:1px;
+  border-color:red;
+  border-width:2px;
 }
 #bottone1{
 display:block;
@@ -349,15 +349,17 @@ img{
   width:80%;
   text-align: center;
  display: flex;
+ overflow: hidden;
   align-self:flex-start;
   flex-direction: column;
+  user-select: none;
   background-color:transparent;
   align-items:center;
   justify-content: center;
   border-style:solid;
   border-color:white;
   border-width:2px;
-  transition: all 0.5s cubic-bezier(0, 0, 0.58, 1);
+  transition: all 0.3s cubic-bezier(0, 0, 0.58, 1);
   font-family: PxGroteskRegular;
   cursor:pointer;
 }
@@ -405,6 +407,7 @@ p{
   margin:0 auto;
   display:flex;
   color:white;
+  user-select: none;
   font-size:1vw;
 }
 canvas{

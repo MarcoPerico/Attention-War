@@ -1,3 +1,9 @@
+jQuery(document).ready(function( $ ){
+
+
+
+
+});
 function cl(text) {
   console.log(text);
 };
@@ -5,7 +11,7 @@ function cl(text) {
 window.addEventListener("scroll", () => {
   
   const span = document.querySelector("span");
-  span.innerHTML = window.scrollY;
+  span.innerHTML = Math.round(window.scrollY);
   
   var wScroll = window.scrollY;
   
