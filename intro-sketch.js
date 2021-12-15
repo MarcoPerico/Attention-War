@@ -240,7 +240,7 @@ let p2 = new p5(s2, "intro2");
 let p3 = new p5(s3, "intro3");
 
 p1.draw = function () {
-  p1.background(0);
+  p1.background(255);
 
   if (boxes.length < 3) {
     for (let i = 0; i < myImages.length; i++) {
@@ -264,7 +264,7 @@ p1.draw = function () {
 
 p2.draw = function () {
   p2.fill("blue");
-  p2.background(0);
+  p2.background(255);
   p2.ellipse(p2.mouseX, p2.mouseY, 20);
 
   if (boxes2.length < 3) {
@@ -289,7 +289,7 @@ p2.draw = function () {
 
 p3.draw = function () {
   p3.fill("yellow");
-  p3.background(0);
+  p3.background(255);
 
   p3.ellipse(p3.mouseX, p3.mouseY, 20);
 };
