@@ -71,143 +71,66 @@ jQuery(document).ready(function ($) {
 
   //-----------------------------------------------------------------
 
-  function spostati1() {
+  function spostati() {
     $("#t1").css("transform", "translate(-70px, -30px)");
+    $("#t2").css("transform", "translate(-50px, -60px)");
+    $("#t3").css("transform", "translate(-5px, -150px)");
+    $("#t4").css("transform", "translate(10px, -120px)");
+    $("#t5").css("transform", "translate(50px, -30px)");
+    $("#t6").css("transform", "translate(-150px, -20px)");
+    $("#t7").css("transform", "translate(-70px, -50px)");
+    $("#t8").css("transform", "translate(-30px, -150px)");
+    $("#t9").css("transform", "translate(50px, -120px)");
+    $("#t10").css("transform", "translate(150px, -30px)");
+    $("#t11").css("transform", "translate(-200px, -10px)");
+    $("#t12").css("transform", "translate(-120px, 120px)");
+    $("#t13").css("transform", "translate(10px, -150px)");
+    $("#t14").css("transform", "translate(100px, -120px)");
+    $("#t15").css("transform", "translate(180px, 0px)");
+    $("#t16").css("transform", "translate(-150px, 30px)");
+    $("#t17").css("transform", "translate(-70px, 120px)");
+    $("#t18").css("transform", "translate(-20px, 70px)");
+    $("#t19").css("transform", "translate(50px, 30px)");
+    $("#t20").css("transform", "translate(150px, 30px)");
+    $("#t21").css("transform", "translate(-70px, 50px)");
+    $("#t22").css("transform", "translate(-20px, 120px)");
+    $("#t23").css("transform", "translate(0px, 80px)");
+    $("#t24").css("transform", "translate(30px, 50px)");
+    $("#t25").css("transform", "translate(50px, 30px)");
   }
-  function rimettiti1() {
+
+  function rimettiti() {
     $("#t1").css("transform", "translate(0px, 0px)");
-  }
-
-  function spostati2() {
-    $("#t2").css("transform", "translate(-50px, -40px)");
-  }
-  function rimettiti2() {
     $("#t2").css("transform", "translate(0px, 0px)");
-  }
-
-  function spostati3() {
-    $("#t3").css("transform", "translate(-5px, -40px)");
-  }
-  function rimettiti3() {
     $("#t3").css("transform", "translate(0px, 0px)");
-  }
-
-  function spostati4() {
-    $("#t4").css("transform", "translate(5px, -30px)");
-  }
-  function rimettiti4() {
     $("#t4").css("transform", "translate(0px, 0px)");
-  }
-
-  function spostati5() {
-    $("#t5").css("transform", "translate(50px, -20px)");
-  }
-  function rimettiti5() {
     $("#t5").css("transform", "translate(0px, 0px)");
-  }
-
-  function spostati6() {
-    $("#t6").css("transform", "translate(-80px, -20px)");
-  }
-  function rimettiti6() {
     $("#t6").css("transform", "translate(0px, 0px)");
-  }
-
-  function spostati7() {
-    $("#t7").css("transform", "translate(-40px, -50px)");
-  }
-  function rimettiti7() {
     $("#t7").css("transform", "translate(0px, 0px)");
-  }
-
-  function spostati8() {
-    $("#t8").css("transform", "translate(-10px, -40px)");
-  }
-  function rimettiti8() {
     $("#t8").css("transform", "translate(0px, 0px)");
-  }
-
-  function spostati9() {
-    $("#t9").css("transform", "translate(50px, -40px)");
-  }
-  function rimettiti9() {
     $("#t9").css("transform", "translate(0px, 0px)");
-  }
-
-  function spostati10() {
-    $("#t10").css("transform", "translate(50px, -30px)");
-  }
-  function rimettiti10() {
     $("#t10").css("transform", "translate(0px, 0px)");
+    $("#t11").css("transform", "translate(0px, 0px)");
+    $("#t12").css("transform", "translate(0px, 0px)");
+    $("#t13").css("transform", "translate(0px, 0px)");
+    $("#t14").css("transform", "translate(0px, 0px)");
+    $("#t15").css("transform", "translate(0px, 0px)");
+    $("#t16").css("transform", "translate(0px, 0px)");
+    $("#t17").css("transform", "translate(0px, 0px)");
+    $("#t18").css("transform", "translate(0px, 0px)");
+    $("#t19").css("transform", "translate(0px, 0px)");
+    $("#t20").css("transform", "translate(0px, 0px)");
+    $("#t21").css("transform", "translate(0px, 0px)");
+    $("#t22").css("transform", "translate(0px, 0px)");
+    $("#t23").css("transform", "translate(0px, 0px)");
+    $("#t24").css("transform", "translate(0px, 0px)");
+    $("#t25").css("transform", "translate(0px, 0px)");
   }
 
   $("#thumbnail-group").mouseenter(function () {
-    spostati1();
+    spostati();
   });
   $("#thumbnail-group").mouseleave(function () {
-    rimettiti1();
-  });
-
-  $("#thumbnail-group").mouseenter(function () {
-    spostati2();
-  });
-  $("#thumbnail-group").mouseleave(function () {
-    rimettiti2();
-  });
-
-  $("#thumbnail-group").mouseenter(function () {
-    spostati3();
-  });
-  $("#thumbnail-group").mouseleave(function () {
-    rimettiti3();
-  });
-
-  $("#thumbnail-group").mouseenter(function () {
-    spostati4();
-  });
-  $("#thumbnail-group").mouseleave(function () {
-    rimettiti4();
-  });
-
-  $("#thumbnail-group").mouseenter(function () {
-    spostati5();
-  });
-  $("#thumbnail-group").mouseleave(function () {
-    rimettiti5();
-  });
-
-  $("#thumbnail-group").mouseenter(function () {
-    spostati6();
-  });
-  $("#thumbnail-group").mouseleave(function () {
-    rimettiti6();
-  });
-
-  $("#thumbnail-group").mouseenter(function () {
-    spostati7();
-  });
-  $("#thumbnail-group").mouseleave(function () {
-    rimettiti7();
-  });
-
-  $("#thumbnail-group").mouseenter(function () {
-    spostati8();
-  });
-  $("#thumbnail-group").mouseleave(function () {
-    rimettiti8();
-  });
-
-  $("#thumbnail-group").mouseenter(function () {
-    spostati9();
-  });
-  $("#thumbnail-group").mouseleave(function () {
-    rimettiti9();
-  });
-
-  $("#thumbnail-group").mouseenter(function () {
-    spostati10();
-  });
-  $("#thumbnail-group").mouseleave(function () {
-    rimettiti10();
+    rimettiti();
   });
 });

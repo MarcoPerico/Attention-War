@@ -36,12 +36,19 @@ canvas {
   flex-direction: column;
   top: 0;
   z-index: 1;
+
+  scroll-snap-type: y mandatory;
+  overflow-y: scroll;
+  height: 100%;
+  width: 100vw;
 }
 .sezione {
   height: 100vh;
   display: flex;
   align-items: center;
   justify-content: center;
+
+  scroll-snap-align: start;
 }
 #intro3 {
   display: flex;
@@ -81,7 +88,7 @@ i {
 }
 
 .navbar-button {
-  padding: 6px;
+  padding: 6px 12px 6px 12px;
 }
 .chapters-button {
   padding-left: 12px;
@@ -105,6 +112,8 @@ a {
   font-weight: normal;
 }
 
+/* ------------------------THUMBNAILS------------------------- */
+
 #thumbnail-group {
   width: 100vw;
   position: absolute;
@@ -124,7 +133,86 @@ a {
   background-color: aqua;
   z-index: 9;
   transition: 0.5s;
+  background-size: cover;
 }
+
+#t1 {
+  background-image: url("assets/thumbnails/netflix_thumbnails/1.jpg");
+}
+#t2 {
+  background-image: url("assets/thumbnails/primevideo_thumbnails/4.jpg");
+}
+#t3 {
+  background-image: url("assets/thumbnails/random_login_youtube_thumbnails/4.jpg");
+}
+#t4 {
+  background-image: url("assets/thumbnails/youtube_logout_thumbnails/2.jpg");
+}
+#t5 {
+  background-image: url("assets/thumbnails/twitch_thumbnails/15.jpg");
+}
+#t6 {
+  background-image: url("assets/thumbnails/netflix_thumbnails/3.jpg");
+}
+#t7 {
+  background-image: url("assets/thumbnails/primevideo_thumbnails/2.jpg");
+}
+#t8 {
+  background-image: url("assets/thumbnails/netflix_thumbnails/22.jpg");
+}
+#t9 {
+  background-image: url("assets/thumbnails/netflix_thumbnails/23.jpg");
+}
+#t10 {
+  background-image: url("assets/thumbnails/primevideo_thumbnails/30.jpg");
+}
+#t11 {
+  background-image: url("assets/thumbnails/youtube_thumbnails/34.jpg");
+}
+#t12 {
+  background-image: url("assets/thumbnails/netflix_thumbnails/44.jpg");
+}
+#t13 {
+  background-image: url("assets/thumbnails/random_logout_primevideo_thumbnails/41.jpg");
+}
+#t14 {
+  background-image: url("assets/thumbnails/youtube_thumbnails/billie.jpg");
+}
+#t15 {
+  background-image: url("assets/thumbnails/netflix_thumbnails/8.jpg");
+}
+#t16 {
+  background-image: url("assets/thumbnails/primevideo_thumbnails/8.jpg");
+}
+#t17 {
+  background-image: url("assets/thumbnails/youtube_thumbnails/h3.jpg");
+}
+#t18 {
+  background-image: url("assets/thumbnails/netflix_thumbnails/16.jpg");
+}
+#t19 {
+  background-image: url("assets/thumbnails/youtube_thumbnails/mct.jpg");
+}
+#t20 {
+  background-image: url("assets/thumbnails/primevideo_thumbnails/35.jpg");
+}
+#t21 {
+  background-image: url("assets/thumbnails/netflix_thumbnails/2.jpg");
+}
+#t22 {
+  background-image: url("assets/thumbnails/random_login_primevideo_thumbnails/20.jpg");
+}
+#t23 {
+  background-image: url("assets/thumbnails/youtube_thumbnails/fortnite.jpg");
+}
+#t24 {
+  background-image: url("assets/thumbnails/netflix_thumbnails/5.jpg");
+}
+#t25 {
+  background-image: url("assets/thumbnails/youtube_thumbnails/ciccio.jpg");
+}
+
+/* ------------------------------------------------------------ */
 
 #intro2 {
   text-align: center;
