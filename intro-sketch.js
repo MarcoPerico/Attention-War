@@ -21,11 +21,17 @@ let canvasmouse;
 let engine;
 let world;
 let box1;
+
 let boxes = [];
+let boxes2 = [];
+
 let attractiveBody;
 
 let boundaries = [];
+
 let myImages = [];
+let myImages2 = [];
+
 let rx, ry, rz;
 
 let box2;
@@ -160,6 +166,66 @@ let s1 = function (p) {
 let s2 = function (p) {
   p.setup = function () {
     p.createCanvas(p.windowWidth, p.windowHeight);
+    p.createCanvas(p.windowWidth, p.windowHeight);
+    image5 = p.loadImage("./assets/logos/n.png");
+    image6 = p.loadImage("./assets/logos/p.png");
+    image7 = p.loadImage("./assets/logos/t.png");
+    image8 = p.loadImage("./assets/logos/y.png");
+
+    canvas = p.createCanvas(p.windowWidth, p.windowHeight);
+    // console.log("matter-attractors");
+    engine = Engine.create();
+
+    myImages2.push(image5, image6, image7, image8);
+
+    let runner = Runner.create();
+
+    world = engine.world;
+    engine.world.gravity.y = 0.2;
+
+    Matter.Runner.run(engine);
+    p.push();
+    boundaries.push(new Boundary(p.width / 2, p.height, p.width, 10, 0));
+    boundaries.push(new Boundary(p.width / 2, 0, p.width, 10, 0));
+    boundaries.push(new Boundary(0, p.height / 2, 10, p.height, 0));
+    boundaries.push(new Boundary(p.width, p.height / 2, 10, p.height, 0));
+    p.pop();
+
+    render = Render.create({
+      element: canvas.elt,
+      engine: engine,
+      options3: {
+        showVelocity: false,
+        width: 100,
+        height: 100,
+        wireframes: false,
+        background: "rgb(240,240,240)",
+      },
+    });
+    World.add(world, render);
+
+    // add mouse control
+    mouse = Mouse.create(render.canvas.elt);
+
+    attractiveBody = Bodies.circle(p1.mouseX, p1.mouseY, 10, {
+      render: {
+        fillStyle: `rgb(240,240,240)`,
+        strokeStyle: `rgb(240,240,240)`,
+        lineWidth: 0,
+      },
+      isStatic: true,
+      plugin: {
+        attractors: [
+          function (bodyA, bodyB) {
+            return {
+              x: (bodyA.position.x - bodyB.position.x) * 1e-6,
+              y: (bodyA.position.y - bodyB.position.y) * 1e-6,
+            };
+          },
+        ],
+      },
+    });
+    World.add(world, attractiveBody);
   };
 };
 
@@ -199,8 +265,26 @@ p1.draw = function () {
 p2.draw = function () {
   p2.fill("blue");
   p2.background(0);
-
   p2.ellipse(p2.mouseX, p2.mouseY, 20);
+
+  if (boxes2.length < 3) {
+    for (let i = 0; i < myImages2.length; i++) {
+      const provabox2 = new Box(
+        myImages2[i],
+        p2.windowWidth / 2,
+        p2.windowHeight / 2,
+        100,
+        80
+      );
+      boxes2.push(provabox2);
+    }
+  }
+
+  for (let i = 0; i < boxes2.length; i++) {
+    boxes2[i].show();
+  }
+
+  moveit();
 };
 
 p3.draw = function () {

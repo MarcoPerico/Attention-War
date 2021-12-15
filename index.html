@@ -1,64 +1,50 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
   <head>
     <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Attention War</title>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta
+      name="viewport"
+      width="device-width,"
+      initial-scale="1.0,"
+      maximum-scale="1.0,"
+      user-scalable="0"
+    />
+    <link rel="stylesheet" href="./assets/style.css" />
+    <div id="p5_loading" class="loadingclass">Loading...</div>
 
-    <title>Intro</title>
-
-    <link rel="stylesheet" type="text/css" href="style.css" />
-
-    <script src="libraries/p5.min.js"></script>
-    <!-- <script src="libraries/p5.sound.min.js"></script> -->
-    <script src="libraries/matter/build/matter.js"></script>
-    <script src="libraries/matter/build/matter-attractors.js"></script>
+    <script
+      type="text/javascript"
+      src="https://code.jquery.com/jquery-3.6.0.min.js"
+    ></script>
+    <script src="./libraries/p5.min.js"></script>
+    <script src="./libraries/p5.sound.min.js"></script>
+    <script src="./libraries/collide2D/p5.collide2d.js"></script>
+    <script src="./libraries/matter/build/matter.js"></script>
+    <script src="./libraries/matter/build/matter-attractors.js"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;500&display=swap"
+      rel="stylesheet"
+    />
   </head>
 
   <body>
-    <div id="navbar">
-      <a href="/homepage-chiara/index.html" id="home" class="navbar-button"
-        >ATTENTION WAR</a
-      >
-      <div id="chapters" class="navbar-button">
-        <a href="#news" class="chapters-button" id="active">Intro</a>
-        <a href="#news" class="chapters-button">First impression</a>
-        <a href="/MOUSETRACKTEST/index.html" class="chapters-button"
-          >Hide and seek</a
-        >
-        <a href="/SearchMarco/search.html" class="chapters-button"
-          >We know what you want</a
-        >
-      </div>
-      <!-- <a href="#contact" id="about" class="navbar-button">About</a> -->
+    <div id="wrapper-canvas"></div>
+    <div class="content-wrapper">
+      <h1>ATTENTION WAR</h1>
+      <h2>About the gold diggers of the web</h2>
+      <!-- <a href="main.html"><span class="button">PLAY</span></a> -->
     </div>
 
-    <div id="container">
-      <div class="sezione" id="intro1">
-        <p class="text">
-          Over the last few years, the world of streaming has exploded.<br />
-          As they compete for users' attention,
-          <i>video streaming platforms</i> have gotten increasingly
-          competitive.<br />
-        </p>
-      </div>
-      <div class="sezione" id="intro2">
-        <p class="text">
-          One of the most serious challenges to these services' viability is
-          <i>'decision fatigue'</i>, in which the act of selecting something to
-          watch can overwhelm and discourage viewers if they are unable to
-          discover something fascinating in a reasonable amount of time.
-        </p>
-      </div>
-      <div class="sezione" id="intro3">
-        <p class="text">
-          As a result of this problem, streaming platforms have used a variety
-          of ways to develop their user interfaces.<br />
-          This guide will walk you through three different strategies used by
-          <i>Netflix</i>, <i>Prime Video</i>, <i>YouTube</i> and <i>Twitch</i>.
-        </p>
-        <a href="/proveLore/IntroSemplice/prova.html">Begin</a>
-      </div>
+    <div class="enter-btn">
+      <!-- <img src="./assets/images/SVG/freccia.svg" /> -->
+      <a href="intro.html"><span class="btn">ENTER</span></a>
     </div>
-    <script src="sketch.js"></script>
+
+    <script src="./assets/landingsketch.js"></script>
+    <script src="./assets/robematter.js"></script>
   </body>
 </html>
