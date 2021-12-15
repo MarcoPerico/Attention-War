@@ -29,6 +29,7 @@ canvas {
   width: 50%;
   font-size: 30px;
   font-weight: 100;
+  z-index: 1;
 }
 #container {
   display: flex;
@@ -46,14 +47,20 @@ canvas {
   display: flex;
   flex-direction: column;
 }
-#intro3 > a {
+.bottone {
   text-decoration: none;
   background-color: black;
   color: white;
-  border: 2px solid white;
+  border: 1px solid white;
   font-family: px;
-  font-size: 26px;
-  padding: 4px 10px 4px 10px;
+  font-size: 22px;
+  padding: 6px 18px 6px 18px;
+  transition: 0.5s;
+}
+
+.bottone:hover {
+  background-color: white;
+  color: black;
 }
 i {
   color: rgb(0, 119, 255);
@@ -96,4 +103,33 @@ a {
   color: #5c5c5c;
   text-decoration: none;
   font-weight: normal;
+}
+
+#thumbnail-group {
+  width: 100vw;
+  top: 100vh;
+  position: absolute;
+  left: 20%;
+  top: 125vh;
+  width: 60%;
+}
+
+.thumbnail {
+  display: inline-block;
+  width: 170px;
+  height: 100px;
+  margin: 5px 5px 5px 5px;
+  top: 100vh;
+  background-color: aqua;
+  z-index: 9;
+  transition: 0.5s;
+}
+
+#intro2 {
+  text-align: center;
+  align-items: center;
+  justify-content: center;
+}
+.sotto {
+  z-index: 0;
 }
