@@ -79,14 +79,14 @@ jQuery(document).ready(function ($) {
   }
 
   function spostati2() {
-    $("#t2").css("transform", "translate(-50px, -30px)");
+    $("#t2").css("transform", "translate(-50px, -40px)");
   }
   function rimettiti2() {
     $("#t2").css("transform", "translate(0px, 0px)");
   }
 
   function spostati3() {
-    $("#t3").css("transform", "translate(-5px, -30px)");
+    $("#t3").css("transform", "translate(-5px, -40px)");
   }
   function rimettiti3() {
     $("#t3").css("transform", "translate(0px, 0px)");
@@ -100,10 +100,45 @@ jQuery(document).ready(function ($) {
   }
 
   function spostati5() {
-    $("#t5").css("transform", "translate(10px, -20px)");
+    $("#t5").css("transform", "translate(50px, -20px)");
   }
   function rimettiti5() {
     $("#t5").css("transform", "translate(0px, 0px)");
+  }
+
+  function spostati6() {
+    $("#t6").css("transform", "translate(-80px, -20px)");
+  }
+  function rimettiti6() {
+    $("#t6").css("transform", "translate(0px, 0px)");
+  }
+
+  function spostati7() {
+    $("#t7").css("transform", "translate(-40px, -50px)");
+  }
+  function rimettiti7() {
+    $("#t7").css("transform", "translate(0px, 0px)");
+  }
+
+  function spostati8() {
+    $("#t8").css("transform", "translate(-10px, -40px)");
+  }
+  function rimettiti8() {
+    $("#t8").css("transform", "translate(0px, 0px)");
+  }
+
+  function spostati9() {
+    $("#t9").css("transform", "translate(50px, -40px)");
+  }
+  function rimettiti9() {
+    $("#t9").css("transform", "translate(0px, 0px)");
+  }
+
+  function spostati10() {
+    $("#t10").css("transform", "translate(50px, -30px)");
+  }
+  function rimettiti10() {
+    $("#t10").css("transform", "translate(0px, 0px)");
   }
 
   $("#thumbnail-group").mouseenter(function () {
@@ -139,5 +174,40 @@ jQuery(document).ready(function ($) {
   });
   $("#thumbnail-group").mouseleave(function () {
     rimettiti5();
+  });
+
+  $("#thumbnail-group").mouseenter(function () {
+    spostati6();
+  });
+  $("#thumbnail-group").mouseleave(function () {
+    rimettiti6();
+  });
+
+  $("#thumbnail-group").mouseenter(function () {
+    spostati7();
+  });
+  $("#thumbnail-group").mouseleave(function () {
+    rimettiti7();
+  });
+
+  $("#thumbnail-group").mouseenter(function () {
+    spostati8();
+  });
+  $("#thumbnail-group").mouseleave(function () {
+    rimettiti8();
+  });
+
+  $("#thumbnail-group").mouseenter(function () {
+    spostati9();
+  });
+  $("#thumbnail-group").mouseleave(function () {
+    rimettiti9();
+  });
+
+  $("#thumbnail-group").mouseenter(function () {
+    spostati10();
+  });
+  $("#thumbnail-group").mouseleave(function () {
+    rimettiti10();
   });
 });
