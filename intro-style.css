@@ -30,17 +30,19 @@ canvas {
   font-size: 30px;
   font-weight: 200;
   z-index: 1;
+  transition: 0.7s;
 }
 #container {
   display: flex;
   flex-direction: column;
   top: 0;
   z-index: 1;
+  transition: 0.7s;
 
-  scroll-snap-type: y mandatory;
+  /* scroll-snap-type: y mandatory;
   overflow-y: scroll;
   height: 100%;
-  width: 100vw;
+  width: 100vw; */
 }
 .sezione {
   height: 100vh;
@@ -48,7 +50,7 @@ canvas {
   align-items: center;
   justify-content: center;
 
-  scroll-snap-align: start;
+  /* scroll-snap-align: start; */
 }
 #intro3 {
   display: flex;
@@ -96,14 +98,14 @@ i {
 }
 
 #navbar a:hover {
-  color: black;
+  color: white;
   transition: 0.2s;
 }
 
 #active,
 #home,
 #about {
-  color: rgb(0, 0, 0);
+  color: rgb(255, 255, 255);
 }
 
 a {
@@ -219,6 +221,10 @@ a {
   align-items: center;
   justify-content: center;
 }
+#intro4 {
+  display: flex;
+  flex-direction: column;
+}
 .sotto {
   z-index: 0;
 }
@@ -235,4 +241,13 @@ h1 {
   height: 50px;
   position: absolute;
   bottom: 40px;
+}
+#myVideo {
+  position: absolute;
+  top: 100vh;
+}
+#begin {
+  margin-top: 15vh;
+  padding: 40px 50px 40px 50px;
+  font-size: 30px;
 }

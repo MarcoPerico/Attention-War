@@ -21,8 +21,12 @@ jQuery(document).ready(function ($) {
     var y = $(this).scrollTop();
     if (y > 800) {
       $("#navbar").fadeIn();
+      $("#container").css("background-color", "black");
+      $(".text").css("color", "white");
     } else {
       $("#navbar").fadeOut();
+      $("#container").css("background-color", "transparent");
+      $(".text").css("color", "black");
     }
   });
 
