@@ -85,14 +85,14 @@ a {
   width:80vw;
   position:absolute;
   object-fit: contain;
-  object-position: left;
+  object-position: right;
   border-style:solid;
   border-color: white;
-  border-width:0 1px 0 0;
+  border-width:0 0 0 1px;
   top:0%;
-  opacity:0.2;
+  opacity:0.3;
   transition:all 0.2s ease-in-out;
-  left:0;
+  right:0;
 }
 .active{
   opacity:1;
@@ -101,11 +101,11 @@ a {
   display:none;
   opacity:1;
   height:10vh;
-  width:80%;
-  align-self: center;
-  font-size: 1.2vw;
-  font-family:banana-light;
-  color:white;
+margin-top:3%;
+  text-align: center;
+  font-size: 0.9vw;
+  font-family: PxGroteskRegular;
+  color:black;
   transition:all 0.5s ease-in-out;
 }
 #netflixstats{
@@ -179,15 +179,20 @@ a {
   position:absolute;
   width:35px;
   height:35px;
-  border-style:solid;
-  border-color:aqua;
-  border-width:1px;
   cursor: pointer;
   transition: all 0.4s ease-in-out;
 }
+.traccia{
+  position:absolute;
+  width:35px;
+  height:35px;
+  border-style:solid;
+  border-color:red;
+  border-width:2px;
+}
 #bottone1{
 display:block;
-top:4.5%;
+top:4.1%;
 left:1.8%;
 }
 #bottone2{
@@ -197,19 +202,80 @@ left:93.2%;
 }
 #bottone3{
   display:none;
-  top:10%;
-  left:90%;
+  top:49%;
+  width:70px;
+  height:20px;
+  left:83%;
 }
 #bottone4{
   display:none;
-  top:60%;
-  left:20%;
+  top:1%;
+  height:270px;
+  width:30px;
+  right:0;
 }
 #bottone5{
   display:none;
-  top:40%;
-  left:40%;
+  top:30%;
+  left:79.5%;
 }
+#bottone6{
+  display:none;
+  top:33%;
+  width:50px;
+  left:79.5%;
+}
+#bottone7{
+  display:none;
+  top:31%;
+  left:15.5%;
+}
+#bottone8{
+  display:none;
+  top:36%;
+  left:15.5%;
+}
+#bottone9{
+  display:none;
+  top:87%;
+  width:100px;
+  left:15%;
+}
+#traccia1{
+  top:4.1%;
+  left:1.8%;
+}
+#traccia2{
+  top:1.8%;
+left:93.2%;
+}
+#traccia3{
+  top:47%;
+  left:84%;
+}
+#traccia4{
+  top:1%;
+  height:260px;
+  width:20px;
+  right:0;}
+ #traccia5{ top:30%;
+  left:79.5%;}
+  #traccia6{
+    top:33%;
+    left:79.5%;
+  }
+  #traccia7{
+    top:36%;
+    left:15.5%;
+  }
+  #traccia8{
+    top:31%;
+    left:15.5%;
+  }
+  #traccia9{
+    top:87%;
+    left:18%;
+  }
 #testobox{
   width:18vw;
   height:100vh;
@@ -222,35 +288,44 @@ left:93.2%;
   display: block;
   position: absolute;
   font-family: PxGroteskRegular;
-  top:10%;
+  top:5%;
   left:3%;
   background-color: black;
-  font-size: 1.2vw;
+  font-size: 1vw;
   color: white;
   overflow:auto;
 }
-#goon{
+#goon,#goon2{
   bottom:3%;
-  right:-25%;
+  right:3%;
   height:40px;
-  width:120px;
-  position: absolute;
+  width:160px;
+  position: fixed;
   border-style:solid;
   display:flex;
   flex-direction: column;
   text-align: center;
   align-items:center;
+  justify-content: center;
   border-width:1px;
   border-color: white;
   transition: all 0.5s cubic-bezier(0, 0, 0.58, 1);
-  font-family:banana-light;
+  font-family: PxGroteskRegular;
   cursor:pointer;
 color:white;
 
 }
 #goon:hover{
-  color:black;
   background-color: white;
+}
+#goon2:hover{
+  background-color: white;
+}
+#goon:hover > #next{
+  color:black;
+}
+#goon2:hover > #next2{
+  color:black;
 }
 #statsbox{
   height:90vh;
@@ -260,7 +335,7 @@ color:white;
   flex-direction: column;
   align-items: flex-start;
   bottom:0%;
-  right:0%;
+  left:0%;
   opacity:1;
 }
 img{
@@ -274,54 +349,54 @@ img{
   width:80%;
   text-align: center;
  display: flex;
+ overflow: hidden;
   align-self:flex-start;
   flex-direction: column;
+  user-select: none;
   background-color:transparent;
   align-items:center;
   justify-content: center;
   border-style:solid;
+  border-color:white;
   border-width:2px;
-  transition: all 0.5s cubic-bezier(0, 0, 0.58, 1);
+  transition: all 0.3s cubic-bezier(0, 0, 0.58, 1);
   font-family: PxGroteskRegular;
   cursor:pointer;
-color:white;
+}
+#disclaimer{
+  margin: 0 10px 60px 30px;
+  font-size:0.9vw;
+}
+.visbottone:hover{
+  background-color: white;
+}
+.visbottone:hover > .titoletto {
+color:black;
+}
+.titoletto{
+  color:white;
+  margin-top:2%;
+  transition: all 0.3s ease-in-out;
+}
+#titolettonetflix{
+  color:red;
+  margin-top:6%;
 }
 #netflixbutton{
-  border-color:red;
-  background-color: red;
-}
-#netflixbutton:hover{
-  background-color:red;
-}
-#primebutton{
-  border-color:blue;
-}
-#primebutton:hover{
-  background-color:blue;
-}
-#youtubebutton{
-  border-color:rgb(0, 255, 0);
-}
-#youtubebutton:hover{
-  background-color:rgb(0, 255, 0);
-}
-#twitchbutton{
-  border-color:rgb(195, 0, 255);
-}
-#twitchbutton:hover{
-  background-color:rgb(195, 0, 255);
+  height:15vh;
+  background-color:white;
 }
 #testo2 {
   display: block;
   position: absolute;
   font-family: PxGroteskRegular;
   font-size: 1.4vw;
-  width:23vw;
+  width:26vw;
   text-align:left;
   height:15vh;
-  bottom:0%;
+  bottom:-25%;
   transition: all 0.5s cubic-bezier(0, 0, 0.58, 1);
-  left:-25%;
+  left:21%;
   color: white;
   overflow:visible;
 }
@@ -331,6 +406,9 @@ span{
 p{
   margin:0 auto;
   display:flex;
+  color:white;
+  user-select: none;
+  font-size:1vw;
 }
 canvas{
   position:absolute;
