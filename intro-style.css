@@ -107,10 +107,9 @@ a {
 
 #thumbnail-group {
   width: 100vw;
-  top: 100vh;
   position: absolute;
   left: 20%;
-  top: 225vh;
+  /* top: 225vh; */
   width: 60%;
 }
 
