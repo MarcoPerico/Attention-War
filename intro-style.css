@@ -16,6 +16,7 @@ body {
   font-family: px;
   /* background-color: black; */
   overflow-x: hidden;
+  font-weight: 100;
 }
 
 canvas {
@@ -28,7 +29,7 @@ canvas {
   text-align: center;
   width: 50%;
   font-size: 30px;
-  font-weight: 200;
+  font-weight: 100;
   z-index: 1;
   transition: 0.7s;
 }
@@ -72,9 +73,6 @@ canvas {
   background-color: white;
   color: black;
 }
-i {
-  color: rgb(0, 119, 255);
-}
 
 /* ---------------NAVBAR----------------------- */
 
@@ -87,7 +85,7 @@ i {
   font-size: 22px;
   top: 0;
   z-index: 2;
-  font-weight: 200;
+  font-weight: 100;
 }
 
 .navbar-button {
@@ -255,9 +253,9 @@ h1 {
   margin-top: 15vh;
   padding: 40px 50px 40px 50px;
   font-size: 30px;
-  position: relative;
+  font-weight: 100;
 }
-.grained {
+#container::before {
   pointer-events: none;
 }
 
@@ -286,7 +284,7 @@ h1 {
   margin-top: 10vh;
 }
 .about-button {
-  font-weight: 200;
+  font-weight: 100;
   text-align: left;
   background-color: black;
   color: white;
@@ -318,4 +316,7 @@ h1 {
 
 #last-about-section {
   margin-bottom: 100px;
+}
+#about-container::before {
+  pointer-events: none;
 }
