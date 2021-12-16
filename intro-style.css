@@ -231,19 +231,21 @@ a {
 }
 h1 {
   font-style: normal;
-  font-size: 200px;
+  font-size: 12vw;
   font-weight: 100;
   /* color: white; */
+  margin-top: 5vh;
 }
 #landing {
   display: flex;
   flex-direction: column;
   background-color: transparent;
+  justify-content: space-between;
 }
 #freccia {
   height: 50px;
   /* position: absolute; */
-  bottom: 40px;
+  margin-bottom: 40px;
 }
 #myVideo {
   position: absolute;
