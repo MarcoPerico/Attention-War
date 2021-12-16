@@ -40,7 +40,7 @@ body {
   top: 0px;
   font-family: PxGrotesk;
   font-size: 16px;
-  color: rgb(0, 255, 38);
+  color: rgb(255, 255, 255);
   justify-content: center;
   background: black;
   z-index: 2;
@@ -52,6 +52,7 @@ body {
   margin: 0;
   padding: 0;
   justify-content: center;
+  height: 100vh;
 }
 
 h1 {
@@ -74,13 +75,13 @@ h2 {
   line-height: 16px;
 }
 
-.enter-button {
+/* .enter-button {
   width: 100%;
   z-index: -1;
   margin: 0;
   padding: 0;
   justify-content: center;
-}
+} */
 
 .enter-btn {
   justify-content: center;
@@ -92,7 +93,7 @@ h2 {
   bottom: 15px;
 }
 
-a:link {
+/* a:link {
   font-family: PxGrotesk;
   font-weight: normal;
   font-size: 40px;
@@ -101,6 +102,14 @@ a:link {
 }
 a:hover {
   text-decoration-color: rgb(0, 0, 0);
+} */
+
+.btn {
+  font-family: PxGrotesk;
+  font-weight: normal;
+  font-size: 40px;
+  color: rgb(0, 0, 0);
+  text-decoration: none;
 }
 
 canvas {
