@@ -242,7 +242,7 @@ h1 {
 }
 #freccia {
   height: 50px;
-  position: absolute;
+  /* position: absolute; */
   bottom: 40px;
 }
 #myVideo {
@@ -253,4 +253,8 @@ h1 {
   margin-top: 15vh;
   padding: 40px 50px 40px 50px;
   font-size: 30px;
+  position: relative;
+}
+.grained {
+  pointer-events: none;
 }
