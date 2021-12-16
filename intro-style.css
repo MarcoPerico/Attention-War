@@ -17,6 +17,7 @@ body {
   /* background-color: black; */
   overflow-x: hidden;
   font-weight: 100;
+  /* overflow-y: scroll; */
 }
 
 canvas {
@@ -274,6 +275,8 @@ h1 {
   flex-direction: column;
   align-items: center;
   min-height: 100vh;
+  -ms-overflow-style: none; /* IE and Edge */
+  scrollbar-width: none; /* Firefox */
 }
 
 #about-intro-text {
@@ -297,6 +300,7 @@ h1 {
   font-family: px;
   padding: 24px;
   cursor: pointer;
+  transition: 0.3s;
 }
 .about-section {
   border: 1px solid white;
@@ -305,11 +309,13 @@ h1 {
   display: flex;
   flex-direction: column;
   justify-content: center;
+  background-color: white;
+  color: black;
 }
 
 .about-section-text {
   font-size: 24px;
-  font-weight: 100;
+  font-weight: 200;
   padding: 0 24px 0 24px;
 }
 .content {
@@ -323,4 +329,48 @@ h1 {
 }
 #about-container::before {
   pointer-events: none;
+}
+.active,
+.about-button:hover {
+  background-color: white;
+  color: black;
+}
+#about-container::-webkit-scrollbar {
+  display: none;
+}
+#gruppo-capitoli {
+  display: flex;
+  flex-direction: row;
+  margin-top: 30px;
+}
+.capitolo {
+  color: white;
+  width: 16vw;
+  border: 1px solid white;
+  margin: 0 6px 0 6px;
+  padding: 16px;
+  font-size: 18px;
+  transition: 0.3s;
+}
+.capitolo-text {
+  padding: 0;
+  margin: 0 0 14px 0;
+}
+.capitolo-img {
+  height: 300px;
+  background-image: url("./assets/1.jpeg");
+  background-size: cover;
+  margin-bottom: 20px;
+}
+h2 {
+  font-weight: 100;
+  font-size: 24px;
+  margin: 0 0 20px 0;
+  padding: 0;
+  text-align: center;
+}
+.capitolo:hover {
+  /* background-color: white;
+  color: black; */
+  transform: translate(0, -10px);
 }
