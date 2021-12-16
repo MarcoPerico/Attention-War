@@ -372,5 +372,6 @@ h2 {
 .capitolo:hover {
   /* background-color: white;
   color: black; */
-  transform: translate(0, -10px);
+  margin-top: -10px;
+  margin-bottom: 10px;
 }
