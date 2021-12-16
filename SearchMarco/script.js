@@ -70,11 +70,15 @@ $("#pallino").css({"width":"0vh","height":"0vh"});
     });
     $("#randomizza").click(function(){
       if($("#randomizza").hasClass("random")){
-        $("#pallino2").css({"width":"0vh","height":"0vh"});
+        $("#bianchino").css({"left":"0%","width":"29%"});
+        $("#acasaccio").css("color","white");
+        $("#akira").css("color","black");
         $("#randomizza").removeClass("random");
               }else{
                 $("#randomizza").addClass("random");
-                $("#pallino2").css({"width":"2vh","height":"2vh"});
+                $("#bianchino").css({"left":"40%","width":"60%"});
+                $("#akira").css("color","white");
+                $("#acasaccio").css("color","black");
               } 
               check();   
     });

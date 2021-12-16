@@ -15,6 +15,31 @@ a {
   font-family: PxGroteskRegular;
   font-weight: normal;
 }
+#goon2{
+  bottom:3%;
+  right:3%;
+  height:40px;
+  width:160px;
+  position: fixed;
+  border-style:solid;
+  display:flex;
+  flex-direction: column;
+  text-align: center;
+  align-items:center;
+  justify-content: center;
+  border-width:1px;
+  border-color: white;
+  transition: all 0.5s cubic-bezier(0, 0, 0.58, 1);
+  font-family: PxGroteskRegular;
+  cursor:pointer;
+color:white;
+}
+#goon2:hover{
+  background-color: white;
+}
+#goon2:hover > #next2{
+  color:black;
+}
 #toggloidi{
   margin-top:50%;
   position:absolute;
