@@ -34,14 +34,14 @@ let render;
 let mouse;
 
 function preload() {
-  image1 = loadImage("./assets/buttons/3x/n1.png");
+  image1 = loadImage("./assets/buttons/3x/n3.png");
   // image2 = loadImage("./assets/buttons/2x/n2.png");
-  image3 = loadImage("./assets/buttons/3x/n3.png");
+  image3 = loadImage("./assets/buttons/3x/t2.png");
   image4 = loadImage("./assets/buttons/3x/n4.png");
   image5 = loadImage("./assets/buttons/3x/p1.png");
   image6 = loadImage("./assets/buttons/3x/p2.png");
   image7 = loadImage("./assets/buttons/3x/t1.png");
-  image8 = loadImage("./assets/buttons/3x/t2.png");
+  image8 = loadImage("./assets/buttons/3x/n1.png");
   image9 = loadImage("./assets/buttons/3x/y1.png");
   image10 = loadImage("./assets/buttons/3x/y2.png");
   image11 = loadImage("./assets/buttons/3x/y3.png");
@@ -129,7 +129,7 @@ function moveit() {
 }
 
 function draw() {
-  background(255);
+  background(0, 0, 0, 0);
   if (boxes.length < 10) {
     for (let i = 0; i < myImages.length; i++) {
       const provabox = new Box(myImages[i], windowWidth / 2, windowHeight / 2);
@@ -183,9 +183,14 @@ function Box(source, x, y, w, h) {
 
   this.show = function () {
     let pos = this.body.position;
+    // let angle = this.body.angle;
 
     push();
     translate(pos.x, pos.y);
+    // rotate(angle);
+    // rectMode(CENTER);
+    // rect(0, 0, this.w, this.h);
+
     imageMode(CENTER);
     image(source, 0, 0, this.w, this.h);
     pop();
