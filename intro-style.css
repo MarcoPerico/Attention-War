@@ -258,7 +258,11 @@ h1 {
 #container::before {
   pointer-events: none;
 }
-
+#intro1 {
+  background-image: url("./assets/fight-tr_4.gif");
+  background-repeat: no-repeat;
+  background-position: center;
+}
 /* ------------------------ABOUT------------------------------------ */
 
 #about-container {
