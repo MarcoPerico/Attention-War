@@ -49,6 +49,7 @@ canvas {
   display: flex;
   align-items: center;
   justify-content: center;
+  /* background-color: black; */
 
   /* scroll-snap-align: start; */
 }
@@ -232,10 +233,12 @@ h1 {
   font-style: normal;
   font-size: 200px;
   font-weight: 100;
+  /* color: white; */
 }
 #landing {
   display: flex;
   flex-direction: column;
+  background-color: transparent;
 }
 #freccia {
   height: 50px;

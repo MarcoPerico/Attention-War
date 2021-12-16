@@ -1,20 +1,4 @@
 jQuery(document).ready(function ($) {
-  // var position = $(window).scrollTop();
-
-  // should start at 0
-
-  // $(window).scroll(function () {
-  //   var scroll = $(window).scrollTop();
-  //   if (scroll > position) {
-  //     console.log("scrollDown");
-  //     $("html,body").animate({ scrollTop: $("#intro1").offset().top }, 700);
-  //   } else {
-  //     console.log("scrollUp");
-  //     $("html,body").animate({ scrollTop: $("#landing").offset().top }, 700);
-  //   }
-  //   position = scroll;
-  // });
-
   //-----------------------------------------------------------------
 
   $(document).scroll(function () {
@@ -29,49 +13,6 @@ jQuery(document).ready(function ($) {
       $(".text").css("color", "black");
     }
   });
-
-  //-----------------------------------------------------------------
-
-  // $("#landing").on("wheel", function (a) {
-  //   if (a.originalEvent.deltaY > 0) {
-  //     $("html,body").animate({ scrollTop: $("#intro1").offset().top }, 700);
-  //   }
-  //   console.log(a);
-  // });
-
-  // $("#intro1").on("wheel", function (b) {
-  //   if (b.originalEvent.deltaY > 0) {
-  //     $("html,body").animate({ scrollTop: $("#intro2").offset().top }, 700);
-  //   } else if (b.originalEvent.deltaY < 0) {
-  //     $("html,body").animate({ scrollTop: $("#landing").offset().top }, 700);
-  //   }
-  //   console.log(b);
-  // });
-
-  //------------------------------------------------------------------
-
-  // $("#landing").scroll(function zz() {
-  //   var scrolloni = $(window).scrollTop();
-  //   var yesus = $("#landing").scrollTop();
-  //   if (scrolloni > yesus) {
-  //     $("html,body").animate({ scrollTop: $("#intro1").offset().top }, 700);
-  //     alert();
-  //   } else {
-  //   }
-  // });
-
-  // $("#landing").bind("mousewheel", function (e) {
-  //   if (e.originalEvent.wheelDelta / 120 < 0) {
-
-  //   }
-  // });
-  // $("#intro1").bind("mousewheel", function (e) {
-  //   if (e.originalEvent.wheelDelta / 120 < 0) {
-  //     $("html,body").animate({ scrollTop: $("#intro2").offset().top }, 700);
-  //   } else {
-
-  //   }
-  // });
 
   //-----------------------------------------------------------------
 
