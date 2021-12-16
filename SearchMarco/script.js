@@ -9,29 +9,35 @@ jQuery(document).ready(function( $ ){
   });
   $(".thumbnail").hover(function highlight(){
     $(".nothovering").addClass("off");
-$(".hovering").removeClass("off");
     if($(this).hasClass("keyword")){
 $(".keyword").css("outline","2px red solid");
 $("#category1").removeClass("off");
-$(".hovering").css("color","red");
+$(".hoveringred").removeClass("off");
+$(".hoveringred").css("color","red");
 $(".thumbnail").not(".keyword").css("opacity","0.3");
   }else if($(this).hasClass("searchrelated")){
-    $(".hovering").css("color","blue");
+    $(".hoveringblue").removeClass("off");
+    $(".hoveringblue").css("color","blue");
     $("#category2").removeClass("off");
     $(".searchrelated").css("outline","2px blue solid");
     $(".thumbnail").not(".searchrelated").css("opacity","0.3");
       }else if($(this).hasClass("unrelated")){
-        $(".hovering").css("color","rgb(0,255,0)");
+        $(".hoveringgreen").removeClass("off");
+        $(".hoveringgreen").css("color","rgb(0,255,0)");
         $("#category3").removeClass("off");
         $(".unrelated").css("outline","2px rgb(0,255,0) solid");
         $(".thumbnail").not(".unrelated").css("opacity","0.3");
           }else if($(this).hasClass("rewatch")){
-            $(".hovering").css("color","fuchsia");
+            $(".hoveringfuchsia").removeClass("off");
+            $(".hoveringfuchsia").css("color","fuchsia");
             $("#category4").removeClass("off");
             $(".rewatch").css("outline","2px fuchsia solid");
             $(".thumbnail").not(".rewatch").css("opacity","0.3");
               }},function norosso(){
-                $(".hovering").addClass("off");
+                $(".hoveringred").addClass("off");
+                $(".hoveringblue").addClass("off");
+                $(".hoveringgreen").addClass("off");
+                $(".hoveringfuchsia").addClass("off");
                 $(".nothovering").removeClass("off");
                              if($(this).hasClass("keyword")){
                               $(".keyword").css("outline","none");
@@ -74,6 +80,12 @@ $("#pallino").css({"width":"0vh","height":"0vh"});
     });
     function check(){
   if($("#login").hasClass("in") && $("#randomizza").hasClass("random")){  //LOGGED IN e RANDOM//
+    $('#primeresultsgreen').html('20 results');
+    $('#primeresults').html('20 results');
+    $('#primeresults').html('20 results');
+    $('#logintext').html('LOGGED IN');
+    $('#youtuberesults').html('25 results');
+    $('#twitchresults').html('No results');
     $("#column2,#column3").children(".row").children(".thumbnail").removeClass("keyword searchrelated unrelated rewatch");
     $("#column2").children(".row").children(".thumbnail").addClass("unrelated");
     $("#row1b-1,#row1b-2,#row1b-3,#row1b-4,#row2b-1,#row2b-2,#row2b-3,#row2b-4,#row3b-1,#row3b-2,#row3b-3,#row3b-4,#row4b-1,#row4b-2,#row4b-3").addClass("unrelated");
@@ -135,8 +147,15 @@ $("#pallino").css({"width":"0vh","height":"0vh"});
     $("#column4").css("opacity","0");
     $("#column4").delay(500).addClass("off");
   } else if (!$("#login").hasClass("in") && $("#randomizza").hasClass("random")){ //LOGGED OUT e RANDOM//
+    $('#primeresults').html('308 results');
+    $('#netflixresults').html('No results');
+    $('#logintext').html('LOGGED OUT');
+    $('#youtuberesults').html('No results');
+    $('#twitchresults').html('No results');
     $("#column2,#column3").children(".row").children(".thumbnail").removeClass("keyword searchrelated unrelated rewatch");
     $("#column2").children(".row").children(".thumbnail").addClass("unrelated");
+    $('#primeresultsgreen').html('308 results');
+    $('#youtuberesultsgreen').html('');
     $("#row1a-1").css("background-image","url('/assets/random_logout_primevideo_thumbnails/1.jpg')"); //PRIMEVIDEO//
     $("#row1a-2").css("background-image","url('/assets/random_logout_primevideo_thumbnails/2.jpg')");
     $("#row1a-3").css("background-image","url('/assets/random_logout_primevideo_thumbnails/3.jpg')");
@@ -191,6 +210,15 @@ $("#pallino").css({"width":"0vh","height":"0vh"});
     $("#column4").css("opacity","0");
     $("#column4").delay(500).addClass("off");
   } else if ($("#login").hasClass("in") && !$("#randomizza").hasClass("random")){ //LOGGED IN e AKIRA//
+    $('#primeresults').html('37 results');
+    $('#netflixresults').html('315 results');
+    $('#youtuberesults').html('828 results');
+    $('#logintext').html('LOGGED IN');
+    $('#twitchresults').html('22 results');
+    $('#primeresultsgreen').html('');
+    $('#netflixresultsblue').html('314 results');
+    $('#netflixresultsred').html('1 results');
+    $('#youtuberesultsgreen').html('16 results');
     $("#column2,#column3").children(".row").children(".thumbnail").removeClass("keyword searchrelated unrelated rewatch");
     $("#row1-1").children(".row").children(".thumbnail").addClass("keyword");
     $("#row1-2,#row1-3,#row1-4,#row2-1,#row2-2,#row2-3,#row2-4,#row3-1,#row3-2,#row3-3,#row3-4,#row4-1,#row4-2,#row4-3,#row4-4,#row5-1,#row5-2,#row5-3,#row5-4,#row6-1,#row6-2,#row6-3,#row6-4,#row7-1,#row7-2,#row7-3,#row7-4,#row8-1,#row8-2,#row8-3,#row8-4,#row9-1,#row9-2,#row9-3,#row9-4,#row10-1,#row10-2,#row10-3,#row10-4,#row11-1,#row11-2,#row11-3,#row11-4").addClass("searchrelated");
@@ -290,6 +318,15 @@ $("#pallino").css({"width":"0vh","height":"0vh"});
     $("#column4").removeClass("off");
     $("#column4").css("opacity","1");
   } else if (!$("#login").hasClass("in") && !$("#randomizza").hasClass("random")){ //LOGGED OUT E AKIRA//
+    $('#primeresults').html('37 results');
+    $('#netflixresults').html('No results');
+    $('#youtuberesults').html('828 results');
+    $('#logintext').html('LOGGED OUT');
+    $('#twitchresults').html('22 results');
+    $('#primeresultsgreen').html('');
+    $('#netflixresultsblue').html('');
+    $('#netflixresultsred').html('');
+    $('#youtuberesultsgreen').html('16 results');
     $("#column2,#column3").children(".row").children(".thumbnail").removeClass("keyword searchrelated unrelated rewatch");
     $("#row1a-1,#row1a-2,#row2a-3,#row2a-4,#row3a-1,#row4a-3").addClass("keyword");
     $("#row1a-3,#row1a-4,#row2a-1,#row2a-2,#row3a-2,#row3a-3,#row3a-4,#row4a-1,#row4a-2,#row4a-4,#row5a-1,#row5a-2,#row5a-3,#row5a-4,#row6a-1,#row6a-2,#row6a-3,#row6a-4,#row7a-1,#row7a-2,#row7a-3,#row7a-4,#row8a-1,#row8a-2,#row8a-3,#row8a-4,#row9a-1,#row9a-2,#row9a-3,#row9a-4,#row10a-1,#row10a-2,#row10a-3,#row10a-4").addClass("searchrelated");
