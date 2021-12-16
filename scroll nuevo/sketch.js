@@ -120,36 +120,36 @@ function draw() {
 }
 function updateTwitchCounter() {
   'use strict';
-  twitchmap = map(document.documentElement.scrollTop, 0, twitchscroll.scrollHeight, 0, 150);
+  twitchmap = map(document.documentElement.scrollTop, 0, twitchscroll.scrollHeight, 0, 73);
   twitchcounter.textContent = round(twitchmap);
-if (round(twitchmap) > 150) {
-  twitchcounter.textContent = 150;
+if (round(twitchmap) > 73) {
+  twitchcounter.textContent = 73;
 }
 }
 
 function updateNetflixCounter() {
   'use strict';
-  netflixmap = map(document.documentElement.scrollTop, 0, netflixscroll.scrollHeight, 0, 300);
+  netflixmap = map(document.documentElement.scrollTop, 0, netflixscroll.scrollHeight, 0, 235);
   netflixcounter.textContent = round(netflixmap);
-if (round(netflixmap) > 300) {
-  netflixcounter.textContent = 300;
+if (round(netflixmap) > 235) {
+  netflixcounter.textContent = 235;
 }
 }
 
 function updateYouTubeCounter() {
   'use strict';
-  youtubemap = map(document.documentElement.scrollTop, 0, youtubescroll.scrollHeight, 0, 1500);
+  youtubemap = map(document.documentElement.scrollTop, 0, youtubescroll.scrollHeight, 0, 881);
   youtubecounter.textContent = round(youtubemap);
-if (round(youtubemap) > 1500) {
-  youtubecounter.textContent = 1500;
+if (round(youtubemap) > 881) {
+  youtubecounter.textContent = 881;
 }
 }
 function updatePrimeCounter() {
   'use strict';
-  primemap = map(document.documentElement.scrollTop, 0, primescroll.scrollHeight, 0, 800);
+  primemap = map(document.documentElement.scrollTop, 0, primescroll.scrollHeight, 0, 433);
   primecounter.textContent = round(primemap);
-if (round(primemap) > 800) {
-  primecounter.textContent = 800;
+if (round(primemap) > 433) {
+  primecounter.textContent = 433;
 }
 }
 
