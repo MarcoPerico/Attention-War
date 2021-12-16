@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" type="text/css" href="intro-style.css" />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+
+    <title>About</title>
+  </head>
+  <body>
+    <!-- NAVBAR -->
+    <div id="navbar">
+      <a href="./intro.html" id="home" class="navbar-button">ATTENTION WAR</a>
+      <div id="chapters" class="navbar-button">
+        <!-- <a href="#news" class="chapters-button">First impression</a>
+          <a href="./MOUSETRACKTEST/index.html" class="chapters-button"
+            >Hide and seek</a
+          >
+          <a href="./SearchMarco/search.html" class="chapters-button"
+            >We know what you want</a
+          > -->
+      </div>
+      <a href="#contact" id="about" class="navbar-button">About</a>
+    </div>
+
+    <div id="about-container">
+      <div id="about-intro">
+        <p id="about-intro-text">
+          “Attention War” is a web visual analysis of the role of streaming
+          platforms’ interfaces in the user journey and choices with the intent
+          of reflecting on how these design devices are ultimately aimed to keep
+          subscribers on the services and induce content consumption. Through a
+          series of interactive experiences, the project presents a selection of
+          strategies implemented by streaming platforms to achieve user
+          retention. This project was developed during the 2021-2022 Final
+          Synthesis Design Studio C3 at Politecnico di Milano, MA in
+          Communication Design.
+        </p>
+      </div>
+      <div class="about-section">
+        <button class="about-button">TOPIC</button>
+        <div class="content">
+          <p class="about-section-text">
+            The streaming world has dramatically expanded over the past few
+            years. Competition among video streaming platforms has become more
+            and more fierce, as they long for users’ attention. Meeting
+            everyone’s needs and tastes seems to be the right way to maintain
+            dominance. “Decision fatigue” is one of the worst threats to these
+            services’ success: the task of choosing something to watch can be a
+            tortuous process. It can overwhelm users and discourage them if they
+            are unable to find something interesting within a short time. In
+            response to these challenges, streaming platforms have been
+            implementing their interfaces with various strategies, ranging from
+            autoplaying video trailers to providing user-tailored
+            recommendations.
+          </p>
+        </div>
+      </div>
+      <div class="about-section">
+        <button class="about-button">RESEARCH</button>
+        <div class="content">
+          <p class="about-section-text">
+            The research behind the project comes from Are You Still Watching?,
+            a printed report about the topic, realized in a previous phase of
+            the course. The investigation was conducted on four main video
+            streaming platforms: Netflix, Prime Video, YouTube and Twitch. These
+            four were selected because they represent various types of video
+            providers that, when compared, present differences and similarities
+            in terms of content fruition. The research was centered around two
+            seperate moments of the user experience on streaming platforms: the
+            process of selecting what to watch and the actual fruition of
+            content. The aspects analyzed range from the way of presenting the
+            content library for both active (through the search bar) and passive
+            (from the homepage) search experiences, to the ways of dealing with
+            decision fatigue, with a general focus on the strategic or
+            manipulative features implemented in the interfaces.
+          </p>
+        </div>
+      </div>
+      <div class="about-section" id="last-about-section">
+        <button class="about-button">PROCESS</button>
+        <div class="content">
+          <p class="about-section-text">
+            When building the website, three of the findings from the report
+            were selected to be representative of the research.<br />
+            Finding new ways to present the findings from the report making them
+            suitable for the web was a central part of the website design
+            process. Each data visualization has been re-designed into an
+            interactive web experience to allow users to directly experience the
+            process of interface deconstructing and how data has been
+            collected.<br />
+            In order to test the search feature of each platform, the results
+            pages were analysed both logged in with an account and without one,
+            for two different search queries: a specific keyword, in this case
+            “Akira”, and an arbitrary one, formed by completely random letters.
+            By doing this, it is possible to observe how the different
+            platforms’ algorithms react to the user’s search, either with a
+            standard common search or without it having a clue of what the user
+            is looking for. When the user is involved in an active research for
+            content, it might be inferred that they don’t need to be shown
+            recommendations since they already know what they want, but in fact
+            algorithms do not take a step back.<br />
+            What is observable is that not only do streaming platforms strive to
+            satisfy your searches with pertinent results, but they also tend to
+            create interest in content that you were not actually looking for:
+            the algorithm makes sure you always have many options to pick from,
+            it can rearrange results in an order that favours exclusive or
+            original produced content and ultimately it will often propose
+            results that have actually no relation to your typed-in query.
+            Testing the same searches as a logged-off visitor was useful to
+            analyse how platforms use personalization to make sure your hunt for
+            content never fails, by adding personalized results that being
+            logged-off simply don’t show or in other cases by displaying a
+            larger amount of results to a new non-registered user to likely aim
+            at creating interest in joining the service.
+          </p>
+        </div>
+      </div>
+    </div>
+    <script src="./about-script.js"></script>
+  </body>
+</html>

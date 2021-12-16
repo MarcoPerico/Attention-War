@@ -129,7 +129,7 @@ function moveit() {
 }
 
 function draw() {
-  background(255, 255, 255, 50);
+  background(255);
   if (boxes.length < 10) {
     for (let i = 0; i < myImages.length; i++) {
       const provabox = new Box(myImages[i], windowWidth / 2, windowHeight / 2);
