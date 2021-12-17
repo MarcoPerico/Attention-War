@@ -1,12 +1,12 @@
 @font-face {
   font-family: "PxGrotesk";
-  src: url("./assets/fonts/PxGrotesk/PxGrotesk-Bold.ttf");
+  src: url("./fonts/PxGrotesk/PxGrotesk-Bold.ttf");
   font-weight: bold;
 }
 
 @font-face {
   font-family: "PxGrotesk";
-  src: url("./assets/fonts/PxGrotesk/PxGrotesk-Regular.ttf");
+  src: url("./fonts/PxGrotesk/PxGrotesk-Regular.ttf");
   font-weight: normal;
 }
 

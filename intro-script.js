@@ -4,19 +4,13 @@ jQuery(document).ready(function ($) {
   $(document).scroll(function () {
     var y = $(this).scrollTop();
     if (y > 800) {
-      $("#navbar").css("opacity", "100%");
-
-      // $("#navbar").fadeIn();
-
-      // $("#container").css("background-color", "black");
-      // $(".text").css("color", "white");
+      $("#navbar").fadeIn();
+      $("#container").css("background-color", "black");
+      $(".text").css("color", "white");
     } else {
-      $("#navbar").css("opacity", "0%");
-
-      // $("#navbar").fadeOut();
-
-      // $("#container").css("background-color", "transparent");
-      // $(".text").css("color", "black");
+      $("#navbar").fadeOut();
+      $("#container").css("background-color", "transparent");
+      $(".text").css("color", "black");
     }
   });
 

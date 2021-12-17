@@ -47,12 +47,9 @@ let mouse;
 
 /////////////////////////////////////////////////////////////////
 
-function preload() {
+function preload(){
   for (let i = 0; i <= 25; i++) {
-    myImages[i] = loadImage(
-      "./assets/buttons-chiara/btn" + i + ".png",
-      imagesLoaded
-    );
+    myImages[i] = loadImage("./assets/images/btn" + i + ".png", imagesLoaded);
   }
 }
 
@@ -63,21 +60,19 @@ function imagesLoaded() {
 
 /////////////////////////// SETUP //////////////////////////////
 function setup() {
-  canvas = createCanvas(windowWidth, windowHeight);
-  canvas.parent("landing");
-
+  canvas = createCanvas(windowWidth,windowHeight);
   //canvas.style("z-index", "1");
   background("rgb(245,245,245)");
-  textFont("px");
+  textFont("PxGrotesk");
 
   //matter.js interaction : setup
   engine = Engine.create();
   let runner = Runner.create();
   world = engine.world;
-  engine.world.gravity.y = 0;
+  engine.world.gravity.y = 0.9;
   Matter.Runner.run(engine);
 
-  //Boundaries
+//Boundaries
   // push()
   // boundaries.push(new Boundary(width / 2, height, width, 10, 0));
   // boundaries.push(new Boundary(width / 2, 0, width, 10, 0));
@@ -120,26 +115,24 @@ function setup() {
   });
   World.add(world, attractiveBody);
 
+
+
   //pixel texture effect : setup
   noiseGra = createGraphics(windowWidth, windowHeight);
-  noiseGra.loadPixels();
-  for (let x = 0; x <= width; x++) {
-    for (let y = 0; y <= height; y++) {
-      noiseGra.set(
-        x,
-        y,
-        color(200, noise(x / 10, y / 10, (x * y) / 50) * random([0, 40, 80]))
-      );
-    }
-  }
-  noiseGra.updatePixels();
+	noiseGra.loadPixels()
+	for( let  x=0; x<=width; x++){
+		for(let y=0; y<=height; y++){
+      noiseGra.set(x, y, color(200, noise(x/10,y/10,x*y/50)*random([0,40,80])))
+		}
+	} noiseGra.updatePixels();
 }
+
 
 /////////////////////////// DRAW //////////////////////////////
 function draw() {
   push();
   //blendMode(HARD_LIGHT);
-  background(0);
+  background("rgb(245,245,245)");
   pop();
 
   //text title and subtitle
@@ -152,59 +145,46 @@ function draw() {
   push();
   let h1 = "ATTENTION WAR";
   textAlign(CENTER, TOP);
-  fill(255);
-  textSize((windowWidth / 100) * 12.6);
-  text(h1, windowWidth / 2, 0);
+  fill(0);
+  textSize(windowWidth/100*12.6);
+  text(h1, windowWidth/2, 0);
   let h1width = textWidth(h1);
   pop();
 
   push();
   let h2 = "A guide to streaming platforms' user retention strategies";
-  textAlign(LEFT, TOP);
-  fill(255);
+  textAlign(LEFT,TOP);
+  fill(0);
   textSize(18);
-  text(h2, 25, h1width * 0.092 + 40);
+  text(h2, 25, h1width*0.092+40);
   pop();
+
 
   //matter.js interaction : draw
   if (boxes.length <= 29) {
     //for (let i = 0; i < 1; i++) {
-    boxes.push(
-      new Box(myImages[0], windowWidth / 2, windowHeight / 2, 268, 90)
-    );
-    boxes.push(
-      new Box(myImages[1], windowWidth / 2, windowHeight / 2, 217, 75)
-    );
-    boxes.push(
-      new Box(myImages[2], windowWidth / 3, windowHeight / 2, 162, 60)
-    );
-    boxes.push(
-      new Box(myImages[3], windowWidth / 3, windowHeight / 2, 280, 96)
-    );
-    boxes.push(new Box(myImages[4], windowWidth / 2, windowHeight / 2, 76, 38));
-    boxes.push(
-      new Box(myImages[5], windowWidth / 2, windowHeight / 2, 274, 100)
-    );
-    boxes.push(
-      new Box(myImages[6], windowWidth / 3, windowHeight / 2, 229, 46)
-    );
-    boxes.push(
-      new Box(myImages[7], windowWidth / 3, windowHeight / 2, 371, 60)
-    );
-    boxes.push(new Box(myImages[8], 0, windowHeight / 2, 115, 45));
-    boxes.push(new Box(myImages[9], 0, windowHeight / 2, 54, 76));
-    boxes.push(new Box(myImages[10], 0, windowHeight / 2, 266, 70));
-    boxes.push(new Box(myImages[11], 0, windowHeight / 2, 423, 90));
-    boxes.push(new Box(myImages[12], windowWidth, windowHeight / 2, 322, 76));
-    boxes.push(new Box(myImages[13], windowWidth, windowHeight / 2, 87, 87));
-    boxes.push(new Box(myImages[14], windowWidth, windowHeight / 2, 99, 99));
-    boxes.push(new Box(myImages[15], windowWidth, windowHeight / 2, 322, 76));
-    boxes.push(new Box(myImages[16], windowWidth, windowHeight / 2, 24, 24));
+    boxes.push(new Box(myImages[0], windowWidth/2, windowHeight/2, 268, 90));
+    boxes.push(new Box(myImages[1], windowWidth/2, windowHeight/2, 217, 75));
+    boxes.push(new Box(myImages[2], windowWidth/3, windowHeight/2, 162, 60));
+    boxes.push(new Box(myImages[3], windowWidth/3, windowHeight/2, 280, 96));
+    boxes.push(new Box(myImages[4], windowWidth/2, windowHeight/2, 76, 38));
+    boxes.push(new Box(myImages[5], windowWidth/2, windowHeight/2, 274, 100));
+    boxes.push(new Box(myImages[6], windowWidth/3, windowHeight/2, 229, 46));
+    boxes.push(new Box(myImages[7], windowWidth/3, windowHeight/2, 371, 60));
+    boxes.push(new Box(myImages[8], 0, windowHeight/2, 115, 45));
+    boxes.push(new Box(myImages[9], 0, windowHeight/2, 54, 76));
+    boxes.push(new Box(myImages[10], 0, windowHeight/2, 266, 70));
+    boxes.push(new Box(myImages[11], 0, windowHeight/2, 423, 90));
+    boxes.push(new Box(myImages[12], windowWidth, windowHeight/2, 322, 76));
+    boxes.push(new Box(myImages[13], windowWidth, windowHeight/2, 87, 87));
+    boxes.push(new Box(myImages[14], windowWidth, windowHeight/2, 99, 99));
+    boxes.push(new Box(myImages[15], windowWidth, windowHeight/2, 322, 76));
+    boxes.push(new Box(myImages[16], windowWidth, windowHeight/2, 24, 24));
     boxes.push(new Box(myImages[16], 0, windowHeight, 24, 24));
     boxes.push(new Box(myImages[16], windowWidth, 0, 24, 24));
-    boxes.push(new Box(myImages[17], windowWidth, windowHeight / 2, 136, 40));
-    boxes.push(new Box(myImages[18], 0, windowHeight / 2, 66, 36));
-    boxes.push(new Box(myImages[19], 0, windowHeight / 2, 290, 69));
+    boxes.push(new Box(myImages[17], windowWidth, windowHeight/2, 136, 40));
+    boxes.push(new Box(myImages[18], 0, windowHeight/2, 66, 36));
+    boxes.push(new Box(myImages[19], 0, windowHeight/2, 290, 69));
     boxes.push(new Box(myImages[20], 0, windowHeight, 32, 32));
     boxes.push(new Box(myImages[20], windowWidth, 0, 32, 32));
     boxes.push(new Box(myImages[20], windowWidth, 0, 32, 32)); //24
@@ -221,6 +201,7 @@ function draw() {
   }
 
   moveIt();
+
 
   //pixel texture effect : draw
   // push();
