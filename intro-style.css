@@ -304,19 +304,23 @@ h1 {
 
 #about-container {
   background-color: black;
-  height:100vh;
+  height:95vh;
   color: white;
-  position:absolute;
-  bottom:0;
-  left:0;
   display: flex;
-  justify-content:center;
   /* justify-content: center; */
   flex-direction: column;
-  align-items: center;
-  overflow:none;
-  -ms-overflow-style: none; /* IE and Edge */ /* Firefox */
+  align-items:flex-end;
+  min-height: 100vh;
+  -ms-overflow-style: none; /* IE and Edge */
+  scrollbar-width: none; /* Firefox */
 }
+
+#about-intro-text {
+  margin: 0;
+  margin-bottom: 7vh;
+  font-weight: 100;
+}
+
 #about-intro {
   font-size: 30px;
   width: 50vw;
@@ -328,32 +332,31 @@ h1 {
   background-color: black;
   color: white;
   border: none;
-  font-size: 24px;
+  font-size: 2vw;
   font-family: px;
   padding: 24px;
   cursor: pointer;
   transition: 0.3s;
 }
 .about-section {
-  border: 1px solid white;
-  width: 50vw;
-  margin-bottom: 1vh;
+  border-width: 1px 0px 0px 0px;
+  border-color:white;
+  border-style: solid;
+  width: 75vw;
+  margin-right:2%;
   display: flex;
   flex-direction: column;
-  justify-content: center;
-  background-color: white;
-  color: black;
+  justify-content:right;
+  color: white;
 }
-
+.content{
+  width:70%;
+}
 .about-section-text {
-  font-size: 24px;
+  font-size: 1.2vw;
   font-weight: 200;
   padding: 0 24px 0 24px;
-}
-.content {
-  overflow: hidden;
-  transition: max-height 0.2s ease-out;
-  max-height: 0;
+  margin-bottom: 70px;
 }
 
 #last-about-section {
@@ -361,11 +364,6 @@ h1 {
 }
 #about-container::before {
   pointer-events: none;
-}
-.active,
-.about-button:hover {
-  background-color: white;
-  color: black;
 }
 #about-container::-webkit-scrollbar {
   display: none;
@@ -375,6 +373,8 @@ h1 {
   flex-direction: row;
   margin-top: 30px;
 }
+
+/*HOME*/
 .capitolo {
   color: white;
   width: 16vw;
@@ -400,6 +400,10 @@ h2 {
   margin: 0 0 20px 0;
   padding: 0;
   text-align: center;
+}
+p{
+  cursor: default;
+  user-select: none;
 }
 .capitolo:hover {
   /* background-color: white;
