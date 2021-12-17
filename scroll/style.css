@@ -1,0 +1,18 @@
+body {
+  /* height: 8000px; */
+  background: black;
+  position: relative;
+/* 
+  overflow: hidden; */
+}
+
+
+.counter {
+  position: fixed;
+  font-size: 40px;
+  color: white;
+}
+
+#video {
+  top:10%;
+}

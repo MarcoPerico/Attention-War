@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <title>Sketch</title>
+
+    <link rel="stylesheet" type="text/css" href="fullpage.min.css" />
+    <link rel="stylesheet" type="text/css" href="style.css" />
+    <script
+      type="text/javascript"
+      src="https://code.jquery.com/jquery-3.6.0.min.js"
+    ></script>
+    <script src="./libraries/p5.min.js"></script>
+    <!-- <script src="libraries/p5.sound.min.js"></script> -->
+    <script src="./libraries/collide2D/p5.collide2d.js"></script>
+    <script src="./libraries/matter/build/matter.js"></script>
+    <script src="./libraries/matter/build/matter-attractors.js"></script>
+  </head>
+
+  <body>
+    <div id="navbar" class="hidden">
+      <a href="#home">Home</a>
+      <a href="#news">News</a>
+      <a href="#contact">Contact</a>
+    </div>
+    <div id="fullpage" class="noselect">
+      <div class="section s1" id="canvas0"></div>
+      <div class="section intro s2" id="canvas1"></div>
+      <div class="section intro s3" id="canvas2"></div>
+      <div class="section intro s4" id="canvas3"></div>
+    </div>
+    <script src="./fullpage.min.js"></script>
+    <script src="./app.js"></script>
+    <!-- <div id="wrapper-canvas"></div> -->
+    <script src="./sketch.js"></script>
+  </body>
+</html>
