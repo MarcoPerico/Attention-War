@@ -39,14 +39,6 @@ h2 {
   justify-content: center;
   height: 100vh;
 } */
-.cover-mousetrack {
-  display: flex;
-  flex-direction: column;
-  text-align: center;
-  align-items: center;
-  justify-content: center;
-  height: 100vh;
-}
 
 .info {
   font-weight: 100;
@@ -64,9 +56,26 @@ h2 {
   transition: 0.5s;
   transform: translate(0, 5px);
 }
+.bottone-start {
+  text-decoration: none;
+  background-color: black;
+  color: white;
+  border: 1px solid white;
+  font-family: px;
+  font-size: 22px;
+  padding: 6px 18px 6px 18px;
+  transform: translate(0, 40px);
+  opacity: 0%;
+  transition: 0.5s;
+}
+
+.bottone-start:hover {
+  background-color: white;
+  color: black;
+}
 
 /* ------------- navbar ---------------- */
-a {
+/* a {
   color: #5c5c5c;
   text-decoration: none;
   font-weight: normal;
@@ -78,7 +87,7 @@ a {
   width: 100%;
   display: flex;
   /* background-color: #262626; */
-  font-size: 20px;
+/* font-size: 20px;
 }
 
 .navbar-button {
@@ -98,22 +107,4 @@ a {
 #home,
 #about {
   color: white;
-}
-
-.bottone {
-  text-decoration: none;
-  background-color: black;
-  color: white;
-  border: 1px solid white;
-  font-family: px;
-  font-size: 22px;
-  padding: 6px 18px 6px 18px;
-  transform: translate(0, 40px);
-  opacity: 0%;
-  transition: 0.5s;
-}
-
-.bottone:hover {
-  background-color: white;
-  color: black;
-}
+}*/
