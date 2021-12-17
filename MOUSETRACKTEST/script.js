@@ -1,3 +1,4 @@
+var progresso = 2;
 jQuery(document).ready(function ($) {
   //COVER
   function inizio() {
@@ -17,7 +18,6 @@ jQuery(document).ready(function ($) {
   });
 
   //MARCO
-  var progresso = 2;
   var nome = "bottone";
   var count = 3;
   var startTime, endTime;
@@ -191,12 +191,17 @@ let s1 = function (p) {
   };
 };
 let p1 = new p5(s1, "screenshotscont");
+
 p1.draw = function () {
-  p1.imageMode(p1.CENTER);
-  p1.image(freccia, p1.mouseX, p1.mouseY, 10, 16);
+  if(progresso>=3){
+    disegnafreccia();
+  }
   // windowResized2();
 };
-
+function disegnafreccia(){
+  p1.imageMode(p1.CENTER);
+  p1.image(freccia, p1.mouseX, p1.mouseY, 10, 16);
+};
 var options = {
   animate: true,
   patternWidth: 500,
