@@ -133,7 +133,7 @@ display:flex;
 }
 .category{
   width:70%;
-  height:20%;
+  height:25%;
   border-style:solid;
   position:absolute;
   margin:0 auto;
@@ -216,9 +216,10 @@ p{
   font-size: 1.3vw;
   color:white;
   cursor:default;
+  word-break: normal;
   font-family: PxGroteskRegular;
   margin-left:2%;
-  align-self:center;
+  text-align:left;
 }
 .titles{
   color:white;
@@ -244,7 +245,7 @@ p{
   height:7vh;
   width:100%;
   flex-direction: column;
-  margin-top:5%;
+  margin-top:23%;
   position:relative;
   left:10%;
 }
