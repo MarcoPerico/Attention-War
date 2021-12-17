@@ -206,4 +206,4 @@ var options = {
   grainWidth: 1,
   grainHeight: 1,
 };
-grained("#about-container", options);
+grained("#cover-mousetrack", options);
