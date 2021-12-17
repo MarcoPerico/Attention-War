@@ -9,109 +9,114 @@
     <script src="libraries/p5.min.js"></script>
   </head>
   <body>
-    <div id="campo2">
-      <img
-        src="assets/youtubepath.png"
-        height="100"
-        id="youtubepath"
-        class="path"
-      />
-      <img
-        src="assets/amazonpath.png"
-        height="100"
-        id="primepath"
-        class="path"
-      />
-      <img
-        src="assets/netflixpath.png"
-        height="100"
-        id="netflixpath"
-        class="path active"
-      />
-      <div id="statsbox">
-        <p id="disclaimer">
-          This is what it usually takes for a user<br />to disable the autoplay
-          function<br />on each platform
+    <div id="grain-totale">
+      <div id="campo2">
+        <img
+          src="assets/youtubepath.png"
+          height="100"
+          id="youtubepath"
+          class="path"
+        />
+        <img
+          src="assets/amazonpath.png"
+          height="100"
+          id="primepath"
+          class="path"
+        />
+        <img
+          src="assets/netflixpath.png"
+          height="100"
+          id="netflixpath"
+          class="path active"
+        />
+        <div id="statsbox">
+          <p id="disclaimer">
+            This is what it usually takes for a user<br />to disable the
+            autoplay function<br />on each platform
+          </p>
+          <div id="netflixbutton" class="visbottone active">
+            <p class="titoletto" id="titolettonetflix">NETFLIX</p>
+            <p id="netflixstats" class="stats">
+              Avg. time: 30s<br />Clicks:8<br />Scrolls:30<br />Pages:4
+            </p>
+          </div>
+          <div id="primebutton" class="visbottone">
+            <p class="titoletto" id="titolettoprime">PRIMEVIDEO</p>
+            <p id="primestats" class="stats">
+              Avg. time: 17s<br />Clicks:5<br />Scrolls:0<br />Pages:4
+            </p>
+          </div>
+          <div id="youtubebutton" class="visbottone">
+            <p class="titoletto" id="titolettoyoutube">YOUTUBE</p>
+            <p id="youtubestats" class="stats">
+              Avg. time: 3s<br />Clicks:1<br />Scrolls:0<br />Pages:0
+            </p>
+          </div>
+          <div id="twitchbutton" class="visbottone">
+            <p class="titoletto" id="titolettotwitch">TWITCH</p>
+            <p id="twitchstats" class="stats">
+              Twitch doesn't have<br />an Autoplay function.
+            </p>
+          </div>
+        </div>
+        <div id="goon2"><p id="next2">NEXT CHAPTER</p></div>
+      </div>
+      <div id="campo">
+        <div id="testobox">
+          <p id="testo1">Click on the back button in the player window.</p>
+        </div>
+        <p id="testo2">
+          <span>Tempo: 6s<br />Interazioni:5<br />scroll:600px</span>
         </p>
-        <div id="netflixbutton" class="visbottone active">
-          <p class="titoletto" id="titolettonetflix">NETFLIX</p>
-          <p id="netflixstats" class="stats">
-            Avg. time: 30s<br />Clicks:8<br />Scrolls:30<br />Pages:4
-          </p>
+        <div id="screenshotscont">
+          <div id="traccia1" class="traccia"></div>
+          <div id="traccia2" class="traccia"></div>
+          <div id="traccia3" class="traccia"></div>
+          <div id="traccia4" class="traccia"></div>
+          <div id="traccia5" class="traccia"></div>
+          <div id="traccia7" class="traccia"></div>
+          <div id="traccia8" class="traccia"></div>
+          <div id="traccia6" class="traccia"></div>
+          <div id="traccia9" class="traccia"></div>
         </div>
-        <div id="primebutton" class="visbottone">
-          <p class="titoletto" id="titolettoprime">PRIMEVIDEO</p>
-          <p id="primestats" class="stats">
-            Avg. time: 17s<br />Clicks:5<br />Scrolls:0<br />Pages:4
-          </p>
+        <img
+          src="../MOUSETRACKTEST/assets/Netflix/Netflix screenshot 1.jpg"
+          id="screenshots"
+        />
+        <div id="screenshotscont">
+          <div id="bottone1" class="bottone"></div>
+          <div id="bottone2" class="bottone"></div>
+          <div id="bottone3" class="bottone"></div>
+          <div id="bottone4" class="bottone"></div>
+          <div id="bottone5" class="bottone"></div>
+          <div id="bottone6" class="bottone"></div>
+          <div id="bottone7" class="bottone"></div>
+          <div id="bottone8" class="bottone"></div>
+          <div id="bottone9" class="bottone"></div>
         </div>
-        <div id="youtubebutton" class="visbottone">
-          <p class="titoletto" id="titolettoyoutube">YOUTUBE</p>
-          <p id="youtubestats" class="stats">
-            Avg. time: 3s<br />Clicks:1<br />Scrolls:0<br />Pages:0
-          </p>
-        </div>
-        <div id="twitchbutton" class="visbottone">
-          <p class="titoletto" id="titolettotwitch">TWITCH</p>
-          <p id="twitchstats" class="stats">
-            Twitch doesn't have<br />an Autoplay function.
-          </p>
-        </div>
+        <div id="goon"><p id="next">NEXT</p></div>
       </div>
-      <div id="goon2"><p id="next2">NEXT CHAPTER</p></div>
-    </div>
-    <div id="campo">
-      <div id="testobox">
-        <p id="testo1">Click on the back button in the player window.</p>
-      </div>
-      <p id="testo2">
-        <span>Tempo: 6s<br />Interazioni:5<br />scroll:600px</span>
-      </p>
-      <div id="screenshotscont">
-        <div id="traccia1" class="traccia"></div>
-        <div id="traccia2" class="traccia"></div>
-        <div id="traccia3" class="traccia"></div>
-        <div id="traccia4" class="traccia"></div>
-        <div id="traccia5" class="traccia"></div>
-        <div id="traccia7" class="traccia"></div>
-        <div id="traccia8" class="traccia"></div>
-        <div id="traccia6" class="traccia"></div>
-        <div id="traccia9" class="traccia"></div>
-      </div>
-      <img src="assets/Netflix/Netflix screenshot 1.jpg" id="screenshots" />
-      <div id="screenshotscont">
-        <div id="bottone1" class="bottone"></div>
-        <div id="bottone2" class="bottone"></div>
-        <div id="bottone3" class="bottone"></div>
-        <div id="bottone4" class="bottone"></div>
-        <div id="bottone5" class="bottone"></div>
-        <div id="bottone6" class="bottone"></div>
-        <div id="bottone7" class="bottone"></div>
-        <div id="bottone8" class="bottone"></div>
-        <div id="bottone9" class="bottone"></div>
-      </div>
-      <div id="goon"><p id="next">NEXT</p></div>
-    </div>
 
-    <div id="cover-mousetrack">
-      <h2 class="capitolo">1<sup>st</sup> TECHNIQUE</h2>
-      <h1 class="titolo">Hide and seek</h1>
-      <p class="info">
-        Making a good first impression is always important, even if you are a
-        video streaming platform.
-      </p>
-      <a class="bottone-start" href="#">Enter</a>
-    </div>
+      <div id="cover-mousetrack">
+        <h2 class="capitolo">1<sup>st</sup> TECHNIQUE</h2>
+        <h1 class="titolo">Hide and seek</h1>
+        <p class="info">
+          Making a good first impression is always important, even if you are a
+          video streaming platform.
+        </p>
+        <a class="bottone-start" href="#">Enter</a>
+      </div>
 
-    <div id="navbar">
-      <a href="#home" id="home" class="navbar-button">THE ATTENTION WAR</a>
-      <div id="chapters" class="navbar-button">
-        <a href="#news" class="chapters-button">First impression</a>
-        <a href="#news" class="chapters-button" id="active">Hide and seek</a>
-        <a href="#news" class="chapters-button">We know what you want</a>
+      <div id="navbar">
+        <a href="#home" id="home" class="navbar-button">THE ATTENTION WAR</a>
+        <div id="chapters" class="navbar-button">
+          <a href="#news" class="chapters-button">First impression</a>
+          <a href="#news" class="chapters-button" id="active">Hide and seek</a>
+          <a href="#news" class="chapters-button">We know what you want</a>
+        </div>
       </div>
     </div>
     <script src="script.js"></script>
-    <script src="./libraries/grained/grained.js"></script>
+    <script src="../libraries/grained/grained.js"></script>
   </body>
 </html>

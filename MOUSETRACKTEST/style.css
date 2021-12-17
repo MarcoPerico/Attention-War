@@ -19,8 +19,8 @@ body {
   position: absolute;
   right: 1.5%;
   top: 3%;
-  height: 563px;
-  width: 1200px;
+  height: 35.1875vw;
+  width: 75vw;
 }
 #screenshotscont {
   overflow: hidden;
