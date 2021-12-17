@@ -52,11 +52,13 @@ $("#boxinoisbacc3").on("click",function(){
     $("#daytonakk3").css({"height":"2vh","width":"2vh"});
     $("#primeclick").css("height","21.33%");
     $("#youtubeclick").css("height","9.33%");
+    $(".click").children().css("opacity","1");
     $("#twitchclick").css("height","5.33%");
     $(".click").removeClass("chiuso");
   } else{
     $("#netflixclick,#primeclick, #youtubeclick, #twitchclick").css("height","0%");
     $(".click").addClass("chiuso");
+    $(".click").children().css("opacity","0");
     $("#daytonakk3").css({"height":"0","width":"0"});
   }
 });
