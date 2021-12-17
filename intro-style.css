@@ -4,7 +4,7 @@
   src: url("./assets/fonts/PxGrotesk/PxGrotesk-Light.ttf");
 }
 @font-face {
-  font-family: px;
+  font-family: px2;
   font-weight: 200;
   src: url("./assets/fonts/PxGrotesk/PxGrotesk-Regular.ttf");
 }
@@ -13,6 +13,7 @@ html,
 body {
   margin: 0;
   padding: 0;
+  background-color:black;
   font-family: px;
   /* background-color: black; */
   overflow-x: hidden;
@@ -141,7 +142,9 @@ canvas {
 #about {
   color: rgb(255, 255, 255);
 }
-
+#home{
+  margin-left:1%;
+}
 a {
   color: #5c5c5c;
   text-decoration: none;
@@ -304,7 +307,6 @@ h1 {
 
 #about-container {
   background-color: black;
-  height:95vh;
   color: white;
   display: flex;
   /* justify-content: center; */
@@ -320,7 +322,34 @@ h1 {
   margin-bottom: 7vh;
   font-weight: 100;
 }
-
+#menu{
+  position:fixed;
+  width:15vw;
+  height:25vh;
+  top:10vh;
+  left:1.5vw;
+  display: flex;
+  font-family: px;
+  flex-direction: column;
+  align-items:flex-start;
+  justify-content: center;
+  font-size:2vw;
+}
+.vocimenu{
+  font-size:1.3vw;
+  color:white;
+  font-family: px;
+  cursor:pointer;
+  opacity:0.6;
+  transition: all 0.2s ease-in-out;
+  margin-bottom:0;
+  margin-top:3%;
+  width:100%;
+}
+.vocimenu:hover{
+  margin-left: 2%;
+  opacity:1;
+}
 #about-intro {
   font-size: 30px;
   width: 50vw;
@@ -398,6 +427,7 @@ h2 {
   font-weight: 100;
   font-size: 24px;
   margin: 0 0 20px 0;
+  user-select: none;
   padding: 0;
   text-align: center;
 }
@@ -410,4 +440,67 @@ p{
   color: black; */
   margin-top: -10px;
   margin-bottom: 10px;
+}
+footer {
+  margin-top:10vh;
+  margin-bottom:10vh;
+  padding: 0 1rem; 
+  grid-column: 1 / span 4;
+  display: grid;
+  color:white;
+  font-family: px;
+  background-color: black;
+  grid-template-columns: repeat(4, 1fr);
+  column-gap: 1rem;
+  font-size: 1rem;
+}
+
+footer * {
+  grid-column: span 1;
+}
+
+.logo {
+  display: grid;
+  grid-template-columns: repeat(2, 65px);
+  column-gap: 0.5rem;
+}
+
+.logo * {
+  grid-column: span 1;
+}
+
+.icon {
+  vertical-align: bottom;
+  padding-bottom: 0.6rem;
+}
+
+footer img {
+  height: 50px;
+  width: auto;
+  margin-bottom:4vh;
+}
+#students {
+  margin-left: 5vw;;
+}
+#faculty{
+  margin-left:2.8vw;
+}
+
+footer h1 {
+  margin: 0 0 1rem 0;
+  font-size: 1rem;
+  font-family: px2;
+  user-select: none;
+  text-transform: uppercase;
+}
+
+footer ul {
+  padding: 0;
+}
+
+footer li {
+  list-style: none;
+  user-select: none;
+  margin: 0;
+  line-height: 1.5;
 }
