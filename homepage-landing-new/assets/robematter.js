@@ -52,7 +52,7 @@ function Box(source, x, y, w, h) {
     translate(pos.x, pos.y);
     //blendMode(BLEND);
     fill(0);
-    rotate(angle);
+    // rotate(angle);
     // rectMode(CENTER);
     // rect(0, 0, this.w, this.h, 20);
     // fill(255);
