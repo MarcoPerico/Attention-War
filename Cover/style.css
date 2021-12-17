@@ -31,7 +31,15 @@ h2 {
   transition: 0.5s;
 }
 
-.container {
+/* .container {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+} */
+.cover-mousetrack {
   display: flex;
   flex-direction: column;
   text-align: center;
