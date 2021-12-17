@@ -102,7 +102,6 @@ canvas {
   justify-content: space-between;
   width: 100%;
   display: flex;
-  /* background-color: #262626; */
   font-size: 22px;
   top: 0;
   z-index: 2;
@@ -124,7 +123,7 @@ canvas {
 }
 
 .navbar-button {
-  padding: 6px 12px 6px 12px;
+  padding: 9px 14px 9px 14px;
 }
 .chapters-button {
   padding-left: 12px;

@@ -1,6 +1,12 @@
 @font-face {
   font-family: PxGroteskRegular;
-  src: url("./assets/fonts/PxGrotesk/Px\ Grotesk\ Regular.ttf");
+  font-weight: 200;
+  src: url("../assets/fonts/PxGrotesk/PxGrotesk-Regular.ttf");
+}
+@font-face {
+  font-family: PxGroteskRegular;
+  font-weight: 100;
+  src: url("../assets/fonts/PxGrotesk/PxGrotesk-Light.ttf");
 }
 body {
   font-family: PxGroteskRegular;
@@ -66,8 +72,7 @@ a {
   left: 0;
   background-color: black;
   display: flex;
-  /* background-color: #262626; */
-  font-size: 20px;
+  font-size: 22px;
 }
 #question {
   font-size: 1vw;
@@ -80,7 +85,7 @@ a {
   top: 3.5%;
 }
 .navbar-button {
-  padding: 6px;
+  padding: 9px 14px 9px 14px;
 }
 #campotot {
   transition: all 0.5s cubic-bezier(0, 0, 0.58, 1);
@@ -179,9 +184,9 @@ a {
   color: white;
   transition: 0.2s;
 }
-#home {
+/* #home {
   padding-left: 1.5%;
-}
+} */
 #active,
 #home,
 #about {
@@ -473,7 +478,6 @@ p {
   background-color: black;
   color: white;
   border: 1px solid white;
-  font-family: px;
   font-size: 22px;
   padding: 6px 18px 6px 18px;
   transform: translate(0, 40px);
@@ -484,4 +488,7 @@ p {
 .bottone-start:hover {
   background-color: white;
   color: black;
+}
+h1 {
+  font-weight: normal;
 }
