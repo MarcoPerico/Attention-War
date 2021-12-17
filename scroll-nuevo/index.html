@@ -6,95 +6,141 @@
 
     <title>Sketch</title>
 
-    <!-- <link rel="stylesheet" type="text/css" href="fullpage.min.css" /> -->
     <link rel="stylesheet" type="text/css" href="style.css" />
+    <link rel="stylesheet" type="text/css" href="../Cover/style-cover.css">
     <script src="libraries/p5.min.js"></script>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
   </head>
 
   <body>
+    <div id="containerone">
     <div id="campotot2" class="off">
-<div id="column1" class="columns">
-  <p id="instructionstext">The amount of content present in the first 3 viewports of each platform.<br><br>toggle and confront the categories.</p>
-  <div id="toggloidi">
-    <div id="toggle1" class="toggloide">
-     <div id="boxinoisbacc">
-      <div id="daytonakk1"></div>
-     </div><p class="categoria">Shown immediately</p>
+      <div id="column1" class="columns">
+        <p id="instructionstext">The amount of content present in the first 3 viewports of each platform.<br><br>toggle and confront the categories.</p>
+          <div id="toggloidi">
+            <div id="toggle1" class="toggloide">
+              <div id="boxinoisbacc">
+                <div id="daytonakk1"></div>
+              </div>
+              <p class="categoria">Shown immediately</p>
+            </div>
+            <div id="toggle2" class="toggloide">
+              <div id="boxinoisbacc2">
+                <div id="daytonakk2"></div>
+              </div><p class="categoria">Shown after scroll</p>
+            </div>
+            <div id="toggle3" class="toggloide">
+              <div id="boxinoisbacc3">
+                <div id="daytonakk3"></div>
+              </div>
+              <p class="categoria">Shown after click</p>
+            </div>
+          </div>
+          <div id="goon2"><p id="next2">NEXT CHAPTER</p></div>
+        </div>
+        <div id="column2" class="columns">
+          <p class="titoli2">Netflix</p>
+          <div id="box1" class="box">
+            <div id="netflixclick" class="click statist">
+              <p class="counters blue">54</p>
+            </div>
+            <div id="netflixscroll" class="scroll statist">
+              <p class="counters green">60</p>
+            </div>
+            <div id="netflixshown" class="shown statist">
+              <p class="counters red">1</p>
+            </div>
+          </div>
+        </div>
+        <div id="column3" class="columns">
+          <p class="titoli2">Prime Video</p>
+            <div id="box2" class="box">
+              <div id="primeclick" class="click statist">
+                <p class="counters blue">32</p>
+              </div>
+              <div id="primescroll" class="scroll statist">
+                <p class="counters green">38</p>
+              </div>
+              <div id="primeshown" class="shown statist">
+                <p class="counters red">22</p>
+              </div>
+            </div>
+          </div>
+          <div id="column4" class="columns">
+            <p class="titoli2">Youtube</p>
+            <div id="box3" class="box">
+              <div id="youtubeclick" class="click statist">
+                <p class="counters blue">14</p>
+              </div>
+              <div id="youtubescroll" class="scroll statist">
+                <p class="counters green">20</p>
+              </div>
+              <div id="youtubeshown" class="shown statist">
+                <p class="counters red">9</p>
+              </div>
+            </div>
+          </div>
+        <div id="column5" class="columns">
+          <p class="titoli2">Twitch</p>
+          <div id="box4" class="box">
+            <div id="twitchclick" class="click statist">
+              <p class="counters blue">8</p>
+            </div>
+            <div id="twitchscroll" class="scroll statist">
+              <p class="counters green">28</p>
+            </div>
+            <div id="twitchshown" class="shown statist">
+              <p class="counters red">4</p>
+            </div>
+          </div>
+        </div>
     </div>
-    <div id="toggle2" class="toggloide">
-      <div id="boxinoisbacc2">
-        <div id="daytonakk2"></div>
-      </div><p class="categoria">Shown after scroll</p>
-    </div>
-    <div id="toggle3" class="toggloide">
-      <div id="boxinoisbacc3">
-        <div id="daytonakk3"></div>
-      </div><p class="categoria">Shown after click</p>
-    </div>
-  </div>
-  <div id="goon2"><p id="next2">NEXT CHAPTER</p></div>
-</div>
-<div id="column2" class="columns">
-  <p class="titoli2">Netflix</p><div id="box1" class="box">
-    <div id="netflixclick" class="click statist"><p class="counters blue">54</p></div>
-    <div id="netflixscroll" class="scroll statist"><p class="counters green">60</p></div>
-    <div id="netflixshown" class="shown statist"><p class="counters red">1</p></div>
-  </div></div>
-<div id="column3" class="columns">
-  <p class="titoli2">Prime Video</p><div id="box2" class="box">
-    <div id="primeclick" class="click statist"><p class="counters blue">32</p></div>
-    <div id="primescroll" class="scroll statist"><p class="counters green">38</p></div>
-    <div id="primeshown" class="shown statist"><p class="counters red">22</p></div>
-  </div></div>
-<div id="column4" class="columns">
-  <p class="titoli2">Youtube</p><div id="box3" class="box">
-    <div id="youtubeclick" class="click statist"><p class="counters blue">14</p></div>
-    <div id="youtubescroll" class="scroll statist"><p class="counters green">20</p></div>
-    <div id="youtubeshown" class="shown statist"><p class="counters red">9</p></div>
-  </div></div>
-<div id="column5" class="columns">
-  <p class="titoli2">Twitch</p><div id="box4" class="box">
-    <div id="twitchclick" class="click statist"><p class="counters blue">8</p></div>
-    <div id="twitchscroll" class="scroll statist"><p class="counters green">28</p></div>
-    <div id="twitchshown" class="shown statist"><p class="counters red">4</p></div>
-  </div></div>
-    </div>
-    <div id="campotot">
-    <div id="counterpix">
-      <p id="pixels" class="counter"><span>0</span></p>
-      <p id="textpix">pixels scrolled</p>
-    </div>
-          <div id="container">
-        <img src = "assets/netflix.webp" id="netflix" width = "300" class = "screen"></img>
-        <img src = "assets/prime.jpg" id="prime" width = "300" class = "screen"></img>
-        <img src = "assets/youtube_prova.jpg" id = "youtube" width = "300" class = "screen"></img>
-        <img src = "assets/twitch.webp" id="twitch" width = "300" class = "screen"></img>
-        <div id="counterbar">
-          <p id="nvideos" class="counter"><span id="nspan">0</span> videos</p>
-          <p id="pvideos" class="counter"><span id="pspan">0</span> videos</p>
-          <p id="yvideos" class="counter"><span id="yspan">0</span> videos</p>
-        <p id="tvideos" class="counter"><span id="tspan">0</span> videos</p>
-        <p class="titoli" id="titnetflix">Netflix</p>
-        <p class="titoli" id="titprime">Prime Video</p>
-        <p class="titoli" id="tityoutube">Youtube</p>
-        <p class="titoli" id="tittwitch">Twitch</p>
-      </div>
+
+      <div id="campotot">
+        <div id="counterpix">
+          <p id="pixels" class="counter"><span>0</span></p>
+          <p id="textpix">pixels scrolled</p>
+        </div>
+        <div id="container">
+          <img src = "assets/netflix.webp" id="netflix" width = "300" class = "screen"></img>
+          <img src = "assets/prime.jpg" id="prime" width = "300" class = "screen"></img>
+          <img src = "assets/youtube_prova.jpg" id = "youtube" width = "300" class = "screen"></img>
+          <img src = "assets/twitch.webp" id="twitch" width = "300" class = "screen"></img>
+          <div id="counterbar">
+            <p id="nvideos" class="counter"><span id="nspan">0</span> videos</p>
+            <p id="pvideos" class="counter"><span id="pspan">0</span> videos</p>
+            <p id="yvideos" class="counter"><span id="yspan">0</span> videos</p>
+            <p id="tvideos" class="counter"><span id="tspan">0</span> videos</p>
+            <p class="titoli" id="titnetflix">Netflix</p>
+            <p class="titoli" id="titprime">Prime Video</p>
+            <p class="titoli" id="tityoutube">Youtube</p>
+            <p class="titoli" id="tittwitch">Twitch</p>
+          </div>
         <div id="campo">
           <p id="question">How many videos are in your homepage?<br><br>scroll down to count them.</p>
+        </div>
+        </div>
       </div>
-      </div>
-    </div>
     <div id="goon"><p id="next">NEXT</p></div>
-      </div>
+  </div>
+
+  <div id="cover-scroll">
+    <h2 class="capitolo">1<sup>st</sup> TECHNIQUE</h2>
+    <h1 class="titolo">First impression</h1>
+    <p class="info">
+      Making a good first impression is always important, even if you are a
+      video streaming platform.
+    </p>
+    <a class="bottone-start" href="#">Enter</a>
+  </div>
      
-      <div id="navbar">
-        <a href="#home" id="home" class="navbar-button">THE ATTENTION WAR</a>
+  <div id="navbar">
+    <a href="#home" id="home" class="navbar-button">THE ATTENTION WAR</a>
         <div id="chapters" class="navbar-button">
           <a href="#news" class="chapters-button" id="active"
-            >1. First impression</a>
-          <a href="#news" class="chapters-button">2. Hide and seek</a>
-          <a href="#news" class="chapters-button">3. We know what you want</a>
+            >First impression</a>
+          <a href="#news" class="chapters-button">Hide and seek</a>
+          <a href="#news" class="chapters-button">We know what you want</a>
         </div>
         <!-- <p id="video" class="counter"><span id="videosp">10</span> videos</p> -->
     <!-- <script src="./fullpage.min.js"></script> -->
