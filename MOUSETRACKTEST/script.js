@@ -140,36 +140,60 @@ jQuery(document).ready(function ($) {
     if (progresso == 2) {
       document.getElementById("testo1").innerHTML +=
         "<br><br>Click on the downwards arrow next to the profile picture.";
-      $("#screenshots").attr("src", "/assets/Netflix/Netflix screenshot 2.jpg");
+      $("#screenshots").attr(
+        "src",
+        "../MOUSETRACKTEST/assets/Netflix/Netflix screenshot 2.jpg"
+      );
       start();
     } else if (progresso == 3) {
       document.getElementById("testo1").innerHTML +=
         "<br><br>In the dropdown menu, click on the Account button.";
-      $("#screenshots").attr("src", "/assets/Netflix/Netflix screenshot 3.jpg");
+      $("#screenshots").attr(
+        "src",
+        "../MOUSETRACKTEST/assets/Netflix/Netflix screenshot 3.jpg"
+      );
     } else if (progresso == 4) {
       document.getElementById("testo1").innerHTML +=
         "<br><br>Click on the scrollbar.";
-      $("#screenshots").attr("src", "/assets/Netflix/Netflix screenshot 4.jpg");
+      $("#screenshots").attr(
+        "src",
+        "../MOUSETRACKTEST/assets/Netflix/Netflix screenshot 4.jpg"
+      );
     } else if (progresso == 5) {
       document.getElementById("testo1").innerHTML +=
         "<br><br>Click on the downwards arrow of Bharath's profile.";
-      $("#screenshots").attr("src", "/assets/Netflix/Netflix screenshot 5.jpg");
+      $("#screenshots").attr(
+        "src",
+        "../MOUSETRACKTEST/assets/Netflix/Netflix screenshot 5.jpg"
+      );
     } else if (progresso == 6) {
       document.getElementById("testo1").innerHTML +=
         "<br><br>Next to Playback Settings, click on Change.";
-      $("#screenshots").attr("src", "/assets/Netflix/Netflix screenshot 6.jpg");
+      $("#screenshots").attr(
+        "src",
+        "../MOUSETRACKTEST/assets/Netflix/Netflix screenshot 6.jpg"
+      );
     } else if (progresso == 7) {
       document.getElementById("testo1").innerHTML +=
         "<br><br>Uncheck Autoplay next episode in a series.";
-      $("#screenshots").attr("src", "/assets/Netflix/Netflix screenshot 7.jpg");
+      $("#screenshots").attr(
+        "src",
+        "../MOUSETRACKTEST/assets/Netflix/Netflix screenshot 7.jpg"
+      );
     } else if (progresso == 8) {
       document.getElementById("testo1").innerHTML +=
         "<br><br>Uncheck Autoplay previews while browsing.";
-      $("#screenshots").attr("src", "/assets/Netflix/Netflix screenshot 8.jpg");
+      $("#screenshots").attr(
+        "src",
+        "../MOUSETRACKTEST/assets/Netflix/Netflix screenshot 8.jpg"
+      );
     } else if (progresso == 9) {
       document.getElementById("testo1").innerHTML +=
         "<br><br>Click on the Save button";
-      $("#screenshots").attr("src", "/assets/Netflix/Netflix screenshot 9.jpg");
+      $("#screenshots").attr(
+        "src",
+        "../MOUSETRACKTEST/assets/Netflix/Netflix screenshot 9.jpg"
+      );
     } else if (progresso == 10) {
       end();
       document.getElementById("testo1").innerHTML += "<br><br>You've done it!";
