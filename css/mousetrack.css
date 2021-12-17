@@ -347,6 +347,9 @@ a {
 #goon2:hover {
   background-color: white;
 }
+#next {
+  color: white;
+}
 #goon:hover > #next {
   color: black;
 }
@@ -449,6 +452,7 @@ canvas {
   font-size: 65px;
   transform: translate(0, 50px);
   transition: 0.5s;
+  margin-bottom: 5vh;
 }
 
 /* .container {
@@ -478,11 +482,10 @@ canvas {
   font-weight: 100;
   width: 40%;
   text-align: center;
-  font-size: 22px;
+  font-size: 26px;
   opacity: 0%;
   transition: 0.5s;
   transform: translate(0, 5px);
-  color: white;
 }
 .capitolo {
   font-weight: 100;
@@ -501,9 +504,8 @@ h2 {
   background-color: black;
   color: white;
   border: 1px solid white;
-  font-family: PxGroteskRegular;
-  font-size: 22px;
-  padding: 6px 18px 6px 18px;
+  font-size: 26px;
+  padding: 18px 36px 18px 36px;
   transform: translate(0, 40px);
   opacity: 0%;
   transition: 0.5s;

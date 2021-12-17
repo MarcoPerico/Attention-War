@@ -40,6 +40,9 @@ a {
   cursor: pointer;
   color: white;
 }
+#next2 {
+  color: white;
+}
 #goon2:hover {
   background-color: white;
 }
@@ -256,31 +259,7 @@ a {
   margin-left: 1.5%;
   width: 17vw;
 }
-#goon2 {
-  bottom: 3%;
-  right: 3%;
-  height: 40px;
-  width: 160px;
-  position: fixed;
-  border-style: solid;
-  display: flex;
-  flex-direction: column;
-  text-align: center;
-  align-items: center;
-  justify-content: center;
-  border-width: 1px;
-  border-color: white;
-  transition: all 0.5s cubic-bezier(0, 0, 0.58, 1);
-  font-family: PxGroteskRegular;
-  cursor: pointer;
-  color: white;
-}
-#goon2:hover {
-  background-color: white;
-}
-#goon2:hover > #next2 {
-  color: black;
-}
+
 .titoli2 {
   user-select: none;
   top: 40%;
@@ -456,12 +435,13 @@ p {
   font-size: 65px;
   transform: translate(0, 50px);
   transition: 0.5s;
+  margin-bottom: 5vh;
 }
 .info {
   font-weight: 100;
   width: 40%;
   text-align: center;
-  font-size: 22px;
+  font-size: 26px;
   opacity: 0%;
   transition: 0.5s;
   transform: translate(0, 5px);
@@ -478,8 +458,8 @@ p {
   background-color: black;
   color: white;
   border: 1px solid white;
-  font-size: 22px;
-  padding: 6px 18px 6px 18px;
+  font-size: 26px;
+  padding: 18px 36px 18px 36px;
   transform: translate(0, 40px);
   opacity: 0%;
   transition: 0.5s;
