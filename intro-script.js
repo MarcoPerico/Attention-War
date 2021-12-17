@@ -4,13 +4,15 @@ jQuery(document).ready(function ($) {
   $(document).scroll(function () {
     var y = $(this).scrollTop();
     if (y > 800) {
-      $("#navbar").fadeIn();
-      $("#container").css("background-color", "black");
-      $(".text").css("color", "white");
+      // $("#navbar").fadeIn();
+      // $("#container").css("background-color", "black");
+      // $(".text").css("color", "white");
+      $("#navbar").css("opacity", "100%");
     } else {
-      $("#navbar").fadeOut();
-      $("#container").css("background-color", "transparent");
-      $(".text").css("color", "black");
+      // $("#navbar").fadeOut();
+      // $("#container").css("background-color", "transparent");
+      // $(".text").css("color", "black");
+      $("#navbar").css("opacity", "0%");
     }
   });
 
