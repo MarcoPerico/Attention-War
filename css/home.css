@@ -390,10 +390,21 @@ h1 {
 }
 .capitolo-img {
   height: 30vh;
-  background-image: url("../assets/1.jpeg");
-  background-size: cover;
-  margin-bottom: 20px;
+  /* margin-bottom: 20px; */
 }
+#capitolo-img-1 {
+  background-image: url("../assets/gif/scroll.gif");
+  background-size: cover;
+}
+#capitolo-img-2 {
+  background-image: url("../assets/gif/mouse.gif");
+  background-size: cover;
+}
+#capitolo-img-3 {
+  background-image: url("../assets/gif/search.gif");
+  background-size: cover;
+}
+
 h2 {
   font-weight: 100;
   font-size: 24px;
