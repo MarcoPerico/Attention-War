@@ -70,7 +70,7 @@ color:white;
   font-size: 20px;
 }
 #question {
-  font-size:1.2vw;
+  font-size:1vw;
   margin-left:1.4%;
   width:15vw;
   word-break:normal;
@@ -158,9 +158,10 @@ color:white;
 #textpix{
   position:absolute;
   color:white;
-  font-size:2vw;
+  font-size:1.8vw;
   left:0;
-  top:28%;
+  margin-top:1vh;
+  top:25%;
 }
 #counterpix{
   position:fixed;
@@ -168,7 +169,7 @@ color:white;
   top:35%;
   z-index:2;
   width:20vw;
-  height:20vh;
+  height:22vh;
 }
 .counter {
   user-select: none;
@@ -192,14 +193,23 @@ color:white;
   font-family: PxGroteskRegular;
 }
 .counters{
-  left:75%;
+  left:105%;
   position:relative;
   margin-top:0;
+  top:50%;
+  transform:translate(0,-50%);
+  text-align: left;
   transition:all 0.3s ease-in-out;
-  font-size: 1.7vw;
+  font-size: 1.3vw;
 }
 .blue{
   color:blue;
+}
+.green{
+  color:rgb(0,255,0);
+}
+.red{
+  color:red;
 }
 #instructionstext{
   font-size:1vw;
@@ -286,9 +296,10 @@ p{
   
 #pixels {
   text-align:left;
-  font-size:4vw;
+  font-size:2.5vw;
   margin-top:0;
   margin-left:0;
+  margin-bottom:2%;
   z-index:3;
   color:white;
 }

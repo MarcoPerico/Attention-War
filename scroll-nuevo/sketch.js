@@ -1,7 +1,7 @@
 jQuery(document).ready(function( $ ){
 $(document).scroll(function(){
   var y = $(this).scrollTop();
-  if(y>8680){
+  if(y>3000){
     $("#goon").removeClass("flexioni");
     $("#goon").css("opacity","1");
   } else {
@@ -21,39 +21,43 @@ $('html, body').animate({scrollTop: 0}, 1000);
 $("#boxinoisbacc").on("click",function(){
   if($(".shown").hasClass("chiuso")){
     $("#daytonakk1").css({"height":"2vh","width":"2vh"});
-    $("#netflixshown").css("height","0.67%");
-    $("#primeshown").css("height","14.67%");
-    $("#youtubeshown").css("height","6%");
-    $("#twitchshown").css("height","2.67%");
+    $("#netflixshown").css("height","0.875%");
+    $("#primeshown").css("height","19.125%");
+    $(".shown").children().css("opacity","1");
+    $("#youtubeshown").css("height","7.825%");
+    $("#twitchshown").css("height","3.475%");
     $(".shown").removeClass("chiuso");
   } else{
     $("#netflixshown,#primeshown, #youtubeshown, #twitchshown").css("height","0%");
     $(".shown").addClass("chiuso");
+    $(".shown").children().css("opacity","0");
     $("#daytonakk1").css({"height":"0","width":"0"});
   }
 });
 $("#boxinoisbacc2").on("click",function(){
   if($(".scroll").hasClass("chiuso")){
-    $("#netflixscroll").css("height","40%");
+    $("#netflixscroll").css("height","52.175%");
     $("#daytonakk2").css({"height":"2vh","width":"2vh"});
-    $("#primescroll").css("height","25.33%");
-    $("#youtubescroll").css("height","13.33%");
-    $("#twitchscroll").css("height","18.67%");
+    $("#primescroll").css("height","33%");
+    $(".scroll").children().css("opacity","1");
+    $("#youtubescroll").css("height","17.3875%");
+    $("#twitchscroll").css("height","24.3375%");
     $(".scroll").removeClass("chiuso");
   } else{
     $("#netflixscroll,#primescroll, #youtubescroll, #twitchscroll").css("height","0%");
     $(".scroll").addClass("chiuso");
+    $(".scroll").children().css("opacity","0");
     $("#daytonakk2").css({"height":"0","width":"0"});
   }
 });
 $("#boxinoisbacc3").on("click",function(){
   if($(".click").hasClass("chiuso")){
-    $("#netflixclick").css("height","36%");
+    $("#netflixclick").css("height","46.95%");
     $("#daytonakk3").css({"height":"2vh","width":"2vh"});
-    $("#primeclick").css("height","21.33%");
-    $("#youtubeclick").css("height","9.33%");
+    $("#primeclick").css("height","27.825%");
+    $("#youtubeclick").css("height","12.1625%");
     $(".click").children().css("opacity","1");
-    $("#twitchclick").css("height","5.33%");
+    $("#twitchclick").css("height","6.95%");
     $(".click").removeClass("chiuso");
   } else{
     $("#netflixclick,#primeclick, #youtubeclick, #twitchclick").css("height","0%");
