@@ -275,11 +275,12 @@ h1 {
   flex-direction: column;
   background-color: transparent;
   justify-content: space-between;
+  position: relative;
 }
 #freccia {
   height: 50px;
-  /* position: absolute; */
-  margin-bottom: 40px;
+  position: absolute;
+  bottom: 5vh;
 }
 #myVideo {
   position: absolute;
