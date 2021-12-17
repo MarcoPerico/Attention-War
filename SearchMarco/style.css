@@ -133,7 +133,7 @@ display:flex;
 }
 .category{
   width:70%;
-  height:25%;
+  /* height:25%; */
   border-style:solid;
   position:absolute;
   margin:0 auto;
@@ -143,6 +143,7 @@ display:flex;
   word-break: break-all;
   border-width: 2px;
   justify-content: center;
+  padding-bottom: 10px;
 }
 .category > p{
   font-size:10pt;
