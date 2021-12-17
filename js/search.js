@@ -338,7 +338,7 @@ jQuery(document).ready(function ($) {
       //LOGGED OUT e RANDOM//
       $("#primeresults").html("308 results");
       $("#netflixresults").html("No results");
-      $("#logintext").html("LOGGED OUT");
+      $("#logintext").html("LOGGED IN");
       $("#youtuberesults").html("No results");
       $("#twitchresults").html("No results");
       $("#column2,#column3")
@@ -922,7 +922,7 @@ jQuery(document).ready(function ($) {
       $("#primeresults").html("37 results");
       $("#netflixresults").html("No results");
       $("#youtuberesults").html("828 results");
-      $("#logintext").html("LOGGED OUT");
+      $("#logintext").html("LOGGED IN");
       $("#twitchresults").html("22 results");
       $("#primeresultsgreen").html("");
       $("#netflixresultsblue").html("");
