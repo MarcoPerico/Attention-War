@@ -162,7 +162,7 @@ function draw() {
   let h2 = "A guide to streaming platforms' user retention strategies";
   textAlign(LEFT, TOP);
   fill(255);
-  textSize(18);
+  textSize(24);
   text(h2, 25, h1width * 0.092 + 40);
   pop();
 
