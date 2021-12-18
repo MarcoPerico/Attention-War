@@ -227,6 +227,12 @@ function draw() {
   // blendMode(MULTIPLY);
   // image(noiseGra, 0, 0);
   // pop();
+
+  // push();
+  // rectMode(CORNERS);
+  // fill("red");
+  // rect(0, windowHeight, windowWidth, (windowHeight / 20) * 19);
+  // pop();
 }
 
 function windowResized() {

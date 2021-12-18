@@ -30,12 +30,13 @@ jQuery(document).ready(function ($) {
     }
   });
   $("#goon").on("click", function spariscizioviatiprego() {
-    $("#campotot").css("opacity", "0");
-    $("#campotot").delay(500).addClass("off");
+    // $("#campotot").css("opacity", "0");
+    $("#campotot").delay(1000).css("opacity", "0%");
+    $("#campotot").delay(1000).addClass("off");
     $("#goon").css("opacity", "0");
-    $("#campotot").delay(500).addClass("off");
+    // $("#campotot").delay(500).addClass("off");
     $("body").css("overflow-y", "hidden");
-    $("#campotot2").removeClass("off");
+    $("#campotot2").delay(1000).removeClass("off");
     $("html, body").animate({ scrollTop: 0 }, 1000);
   });
   $("#boxinoisbacc").on("click", function () {

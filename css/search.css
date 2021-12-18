@@ -305,7 +305,7 @@ p {
   width: 15vw;
   position: relative;
   padding-right: 3.8vw;
-  
+
   align-items: center;
 }
 #logintext,
@@ -433,7 +433,7 @@ p {
   font-weight: 100;
   width: 40%;
   text-align: center;
-  font-size: 26px;
+  font-size: 24px;
   opacity: 0%;
   transition: 0.5s;
   transform: translate(0, 5px);

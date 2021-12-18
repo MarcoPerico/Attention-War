@@ -421,13 +421,13 @@ img {
   display: block;
   position: absolute;
   font-family: PxGroteskRegular;
-  font-size: 1.4vw;
+  font-size: 1.1vw;
   width: 26vw;
   text-align: left;
-  height: 15vh;
-  bottom: -25%;
+  height: 11vh;
+  bottom: -20%;
   transition: all 0.5s cubic-bezier(0, 0, 0.58, 1);
-  left: 21%;
+  left: 18.3%;
   color: white;
   overflow: visible;
 }
@@ -484,7 +484,7 @@ canvas {
   font-weight: 100;
   width: 40%;
   text-align: center;
-  font-size: 26px;
+  font-size: 24px;
   opacity: 0%;
   transition: 0.5s;
   transform: translate(0, 5px);

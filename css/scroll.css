@@ -22,9 +22,8 @@ a {
   font-weight: normal;
 }
 #goon2 {
-  bottom: 30px;
-  right: 30px;
-  height: 50px;
+  bottom: 3vh;
+  right: 3vh;
   /* width: 160px; */
   position: fixed;
   border-style: solid;
@@ -39,8 +38,8 @@ a {
   font-family: PxGroteskRegular;
   cursor: pointer;
   color: white;
-  font-size: 22px;
-  padding: 0 20px 0 20px;
+  font-size: 1.2vw;
+  padding: 1vw;
 }
 #next2 {
   color: white;
@@ -52,8 +51,8 @@ a {
   color: black;
 }
 #toggloidi {
-  margin-top: 50%;
-  position: absolute;
+  margin-top: 40vh;
+  /* position: absolute; */
   bottom: 10%;
 }
 .toggloide {
@@ -61,13 +60,15 @@ a {
   margin-bottom: 5%;
   position: relative;
   left: 0;
-  margin-left: 1.5vw;
+  /* margin-left: 1.5vw; */
 }
 .categoria {
   left: 20%;
   position: absolute;
   top: 0;
   margin-top: 3%;
+  font-size: 1.2vw;
+  font-weight: 100;
 }
 #navbar {
   position: fixed;
@@ -77,11 +78,11 @@ a {
   left: 0;
   background-color: black;
   display: flex;
-  font-size: 22px;
+  font-size: 1.2vw;
 }
 #question {
   font-weight: 100;
-  font-size: 26px;
+  font-size: 1.2vw;
   margin-left: 1.4%;
   width: 16vw;
   word-break: normal;
@@ -104,7 +105,7 @@ a {
   left: 0;
   height: 95vh;
   margin-top: 5vh;
-  width: 100vw;
+  width: 97vw;
   display: flex;
   flex-direction: row;
 }
@@ -116,7 +117,7 @@ a {
   display: flex;
   flex-direction: column-reverse;
   position: relative;
-  width: 60%;
+  width: 100%;
 }
 .statist {
   width: 100%;
@@ -170,15 +171,20 @@ a {
   height: 6.95%;
 }
 .columns {
-  width: 18vw;
+  /* width: 18vw; */
+  width: 25%;
+
   height: 100%;
   align-items: flex-start;
   display: flex;
   background-color: black;
   flex-direction: column;
+  margin: 0 1.7vw;
 }
 #column1 {
   width: 28vw;
+  display: flex;
+  flex-direction: column;
 }
 .chapters-button {
   padding-left: 12px;
@@ -207,17 +213,18 @@ a {
   opacity: 1;
 }
 #textpix {
-  position: absolute;
+  /* position: absolute; */
   color: white;
-  font-size: 1.8vw;
+  font-size: 1.2vw;
+  font-weight: 100;
   left: 0;
-  margin-top: 1vh;
+  /* margin-top: 1vh; */
   top: 25%;
 }
 #counterpix {
   position: fixed;
   left: 1.4%;
-  top: 35%;
+  top: 50%;
   z-index: 2;
   width: 20vw;
   height: 22vh;
@@ -230,7 +237,7 @@ a {
   margin-top: 23vh;
   margin-left: 3.2vw;
   cursor: default;
-  font-size: 28px;
+  font-size: 1.5vw;
   color: white;
   font-family: PxGroteskRegular;
 }
@@ -240,7 +247,8 @@ a {
   width: 16vw;
   position: absolute;
   cursor: default;
-  font-size: 1.4vw;
+  font-size: 1.2vw;
+  font-weight: 100;
   font-family: PxGroteskRegular;
 }
 .counters {
@@ -263,12 +271,12 @@ a {
   color: red;
 }
 #instructionstext {
-  font-size: 1vw;
+  font-size: 1.2vw;
   position: absolute;
   top: 5%;
   align-self: auto;
-  margin-left: 1.5%;
   width: 17vw;
+  font-weight: 100;
 }
 
 .titoli2 {
@@ -326,10 +334,10 @@ p {
 
 #pixels {
   text-align: left;
-  font-size: 2.5vw;
+  font-size: 1.5vw;
   margin-top: 0;
   margin-left: 0;
-  margin-bottom: 2%;
+  margin-bottom: 1%;
   z-index: 3;
   color: white;
 }
@@ -446,7 +454,7 @@ p {
   position: absolute;
 }
 .titolo {
-  font-size: 65px;
+  font-size: 3vw;
   transform: translate(0, 50px);
   transition: 0.5s;
   margin-bottom: 5vh;
@@ -455,7 +463,7 @@ p {
   font-weight: 100;
   width: 40%;
   text-align: center;
-  font-size: 26px;
+  font-size: 1.2vw;
   opacity: 0%;
   transition: 0.5s;
   transform: translate(0, 5px);
@@ -472,8 +480,8 @@ p {
   background-color: black;
   color: white;
   border: 1px solid white;
-  font-size: 26px;
-  padding: 18px 36px 18px 36px;
+  font-size: 1.2vw;
+  padding: 1vw 1.5vw;
   transform: translate(0, 40px);
   opacity: 0%;
   transition: 0.5s;
