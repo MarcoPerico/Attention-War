@@ -55,8 +55,6 @@ function Box(source, x, y, w, h) {
     fill(0);
 // rotate(angle);
     rectMode(CENTER);
-    rotate(angle);
-    // rectMode(CENTER);
     // rect(0, 0, this.w, this.h, 20);
     // fill(255);
     // text(name,0,0);
