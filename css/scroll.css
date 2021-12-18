@@ -348,10 +348,9 @@ p {
   pointer-events: none;
 }
 #goon {
-  bottom: 30px;
+  bottom: 3vh;
   opacity: 0;
-  right: 30px;
-  height: 50px;
+  right: 3vh;
   /* width: 160px; */
   position: fixed;
   display: flex;
@@ -366,8 +365,8 @@ p {
   font-family: PxGroteskRegular;
   cursor: pointer;
   color: white;
-  font-size: 22px;
-  padding: 0px 20px 0px 20px;
+  font-size: 1.2vw;
+  padding: 1vw;
 }
 #goon:hover {
   background-color: white;
