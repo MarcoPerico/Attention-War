@@ -28,11 +28,11 @@ a {
   width: 100%;
   display: flex;
   /* background-color: #262626; */
-  font-size: 22px;
+  font-size: 1.2vw;
 }
 
 .navbar-button {
-  padding: 14px 20px 14px 20px;
+  padding: 1vw;
 }
 .chapters-button {
   padding-left: 12px;
@@ -67,11 +67,11 @@ a {
   display: flex;
   width: 100vw;
   padding-top: 3vh;
-  margin-bottom:0.5vh;
+  margin-bottom: 0.5vh;
   flex-direction: row;
   align-items: center;
   height: 6vh;
-  margin-top:2.5vh;
+  margin-top: 2.5vh;
   border-width: 0 0 0 0;
   border-style: solid;
   border-color: white;
@@ -104,7 +104,7 @@ a {
   border-style: solid;
   border-color: white;
   width: 21.25vw;
-  margin-top:1vh;
+  margin-top: 1vh;
   transition: all 0.4s ease-in-out;
   visibility: visible;
   height: 90%;
@@ -114,7 +114,7 @@ a {
 .results {
   position: absolute;
   right: 15%;
-  font-size: 16pt;
+  font-size: 1.5vw;
   bottom: 0;
   margin-bottom: 0;
 }
@@ -175,12 +175,13 @@ a {
   display: flex;
 }
 #instructionstext {
-  font-size: 0.9vw;
+  font-size: 1.2vw;
   position: fixed;
   top: 7vh;
   align-self: auto;
-  margin-left: 20px;
+  margin-left: 1vw;
   width: 14vw;
+  font-weight: 100;
 }
 #banner {
   position: fixed;
@@ -235,6 +236,7 @@ p {
   position: absolute;
   font-size: 1.2vw;
   margin-left: 0.5vw;
+  font-weight: 100;
 }
 .off {
   visibility: hidden;
@@ -253,7 +255,7 @@ p {
   display: flex;
   height: 7vh;
   width: 40%;
-  margin-left:1vw;
+  margin-left: 1vw;
   flex-direction: column;
 }
 #randombox {
@@ -275,15 +277,22 @@ p {
   left: 0;
   top: 0;
 }
-#tastoakira,#tastorandom{
-  position:absolute;
-  display:flex;
-  height:50%;
-  top:22%;
-  margin-left:2%;
+#tastoakira,
+#tastorandom {
+  position: absolute;
+  display: flex;
+  height: 50%;
+  top: 22%;
+  margin-left: 2%;
 }
-#tastoakira{left:0;  width:50%;}
-#tastorandom{left:50%; width:50%;}
+#tastoakira {
+  left: 0;
+  width: 50%;
+}
+#tastorandom {
+  left: 50%;
+  width: 50%;
+}
 #randomizza {
   width: 90%;
   position: relative;
@@ -299,7 +308,7 @@ p {
 }
 #loginbox {
   flex-direction: row;
-  width:25%;
+  width: 25%;
 }
 #column5 {
   width: 15vw;
@@ -314,12 +323,12 @@ p {
   width: 20%;
   margin-left: 0%;
 }
-#logintext{
-  margin-top:3.5%;
+#logintext {
+  margin-top: 3.5%;
 }
 #gibberish {
   width: 100%;
-  font-size:0.85vw;
+  font-size: 0.85vw;
   height: 25%;
 }
 #login {
@@ -327,7 +336,7 @@ p {
   font-size: 1vw;
   color: white;
   width: 100%;
-  margin-top:2.5%;
+  margin-top: 2.5%;
   cursor: pointer;
 }
 #searchbutton {
@@ -360,7 +369,7 @@ p {
   border-color: white;
   border-style: solid;
   position: absolute;
-  border-width: 3px;
+  border-width: 1px;
   transition: all 0.4s ease-in-out;
   background-color: black;
   height: 3vh;
@@ -376,9 +385,8 @@ p {
   height: 2vh;
 }
 #goon2 {
-  bottom: 30px;
-  right: 30px;
-  height: 50px;
+  bottom: 3vh;
+  right: 3vh;
   /* width: 160px; */
   position: fixed;
   display: flex;
@@ -393,8 +401,8 @@ p {
   font-family: PxGroteskRegular;
   cursor: pointer;
   color: white;
-  font-size: 22px;
-  padding: 0px 20px 0px 20px;
+  font-size: 1.2vw;
+  padding: 1vw;
 }
 #goon2:hover {
   background-color: white;
@@ -424,7 +432,7 @@ p {
 }
 
 .titolo {
-  font-size: 65px;
+  font-size: 3vw;
   transform: translate(0, 50px);
   transition: 0.5s;
   margin-bottom: 5vh;
@@ -434,7 +442,7 @@ p {
   font-weight: 100;
   width: 40%;
   text-align: center;
-  font-size: 24px;
+  font-size: 1.2vw;
   opacity: 0%;
   transition: 0.5s;
   transform: translate(0, 5px);
@@ -451,8 +459,8 @@ p {
   background-color: black;
   color: white;
   border: 1px solid white;
-  font-size: 26px;
-  padding: 18px 36px 18px 36px;
+  font-size: 1.2vw;
+  padding: 1vw 1.5vw;
   transform: translate(0, 40px);
   opacity: 0%;
   transition: 0.5s;
