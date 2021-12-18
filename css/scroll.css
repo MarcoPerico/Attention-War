@@ -16,7 +16,7 @@ body {
   overflow-x: hidden;
 }
 a {
-  color: #5c5c5c;
+  /* color: #5c5c5c; */
   text-decoration: none;
   font-family: PxGroteskRegular;
   font-weight: normal;
@@ -92,6 +92,7 @@ a {
 }
 .navbar-button {
   padding: 14px 20px 14px 20px;
+  color: white;
 }
 #campotot {
   transition: all 0.5s cubic-bezier(0, 0, 0.58, 1);
@@ -182,21 +183,28 @@ a {
 .chapters-button {
   padding-left: 12px;
   padding-right: 12px;
+  color: white;
+  opacity: 0.4;
+}
+.chapters-button:hover {
+  transition: 0.2s;
+  opacity: 1;
 }
 .off {
   visibility: hidden;
 }
-#navbar a:hover {
+/* #navbar-button:hover {
   color: white;
+} */
+#home {
+  opacity: 1;
+}
+#home:hover {
+  opacity: 1;
   transition: 0.2s;
 }
-/* #home {
-  padding-left: 1.5%;
-} */
-#active,
-#home,
-#about {
-  color: white;
+#active {
+  opacity: 1;
 }
 #textpix {
   position: absolute;
