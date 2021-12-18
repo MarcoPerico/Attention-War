@@ -19,14 +19,6 @@ jQuery(document).ready(function ($) {
   });
 
   //marco
-  var search = "Akira";
-  var i = 0;
-  $(document).keydown(function akira() {
-    $("#searchinput").hide();
-    $("#searchakira").show();
-    document.getElementById("searchakira").innerText += search.slice(i, i + 1);
-    i += 1;
-  });
   $(".thumbnail").hover(
     function highlight() {
       $(".nothovering").addClass("off");
@@ -94,13 +86,13 @@ jQuery(document).ready(function ($) {
   });
   $("#randomizza").click(function () {
     if ($("#randomizza").hasClass("random")) {
-      $("#bianchino").css({ left: "0%", width: "40%" });
+      $("#bianchino").css({ left: "0%", width: "50%" });
       $("#acasaccio").css("color", "white");
       $("#akira").css("color", "black");
       $("#randomizza").removeClass("random");
     } else {
       $("#randomizza").addClass("random");
-      $("#bianchino").css({ left: "40%", width: "60%" });
+      $("#bianchino").css({ left: "50%", width: "50%" });
       $("#akira").css("color", "white");
       $("#acasaccio").css("color", "black");
     }
@@ -112,9 +104,9 @@ jQuery(document).ready(function ($) {
       $("#primeresultsgreen").html("20 results");
       $("#primeresults").html("20 results");
       $("#primeresults").html("20 results");
-      $("#logintext").html("LOGGED IN");
       $("#youtuberesults").html("25 results");
       $("#twitchresults").html("No results");
+      $("#netflixresults").html("No results");
       $("#column2,#column3")
         .children(".row")
         .children(".thumbnail")
@@ -338,7 +330,6 @@ jQuery(document).ready(function ($) {
       //LOGGED OUT e RANDOM//
       $("#primeresults").html("308 results");
       $("#netflixresults").html("No results");
-      $("#logintext").html("LOGGED IN");
       $("#youtuberesults").html("No results");
       $("#twitchresults").html("No results");
       $("#column2,#column3")
@@ -549,7 +540,6 @@ jQuery(document).ready(function ($) {
       $("#primeresults").html("37 results");
       $("#netflixresults").html("315 results");
       $("#youtuberesults").html("828 results");
-      $("#logintext").html("LOGGED IN");
       $("#twitchresults").html("22 results");
       $("#primeresultsgreen").html("");
       $("#netflixresultsblue").html("314 results");
@@ -922,12 +912,12 @@ jQuery(document).ready(function ($) {
       $("#primeresults").html("37 results");
       $("#netflixresults").html("No results");
       $("#youtuberesults").html("828 results");
-      $("#logintext").html("LOGGED IN");
       $("#twitchresults").html("22 results");
       $("#primeresultsgreen").html("");
       $("#netflixresultsblue").html("");
       $("#netflixresultsred").html("");
       $("#youtuberesultsgreen").html("16 results");
+      $("#youtuberesultsred").html("822 results");
       $("#column2,#column3")
         .children(".row")
         .children(".thumbnail")
