@@ -36,8 +36,9 @@ function moveIt() {
 function Box(source, x, y, w, h) {
   let options = {
     friction: 0.5,
-    restitution: 0.5,
-    mass: 0.5,
+    restitution: 0.1,
+    mass: 0.12,
+    inertia: Infinity,
   };
   this.body = Bodies.rectangle(x, y, w, h, options);
   this.w = w;
@@ -52,8 +53,8 @@ function Box(source, x, y, w, h) {
     translate(pos.x, pos.y);
     //blendMode(BLEND);
     fill(0);
-    // rotate(angle);
-    // rectMode(CENTER);
+// rotate(angle);
+    rectMode(CENTER);
     // rect(0, 0, this.w, this.h, 20);
     // fill(255);
     // text(name,0,0);
