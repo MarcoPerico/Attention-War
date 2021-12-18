@@ -94,7 +94,7 @@ jQuery(document).ready(function ($) {
   });
   $("#randomizza").click(function () {
     if ($("#randomizza").hasClass("random")) {
-      $("#bianchino").css({ left: "0%", width: "29%" });
+      $("#bianchino").css({ left: "0%", width: "40%" });
       $("#acasaccio").css("color", "white");
       $("#akira").css("color", "black");
       $("#randomizza").removeClass("random");

@@ -272,13 +272,13 @@ p {
   height: 12vh;
 }
 .switchate {
-  font-size: 0.8vw;
+  font-size: 0.7vw;
   position: absolute;
   display: inline-block;
 }
 #bianchino {
   position: absolute;
-  width: 29%;
+  width: 40%;
   height: 100%;
   outline: white 1px solid;
   align-self: center;
@@ -287,6 +287,16 @@ p {
   left: 0;
   top: 0;
 }
+#tastoakira,#tastorandom{
+  position:absolute;
+  justify-content:center;
+  flex-direction: column;
+  align-items:center;
+  display:flex;
+  height:100%;
+}
+#tastoakira{left:0; top:0;   width:40%;}
+#tastorandom{right:0; top:0;   width:60%;}
 #randomizza {
   width: 90%;
   position: relative;
