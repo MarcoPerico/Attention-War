@@ -319,6 +319,7 @@ p {
 }
 #gibberish {
   width: 100%;
+  font-size:0.85vw;
   height: 25%;
 }
 #login {
