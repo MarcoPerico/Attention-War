@@ -378,13 +378,13 @@ p {
   height: 2vh;
 }
 #goon2 {
-  bottom: 3%;
-  right: 3%;
-  height: 40px;
-  width: 160px;
+  bottom: 30px;
+  right: 30px;
+  height: 50px;
+  /* width: 160px; */
   position: fixed;
-  border-style: solid;
   display: flex;
+  border-style: solid;
   flex-direction: column;
   text-align: center;
   align-items: center;
@@ -395,6 +395,8 @@ p {
   font-family: PxGroteskRegular;
   cursor: pointer;
   color: white;
+  font-size: 22px;
+  padding: 0px 20px 0px 20px;
 }
 #goon2:hover {
   background-color: white;

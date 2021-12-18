@@ -22,10 +22,10 @@ a {
   font-weight: normal;
 }
 #goon2 {
-  bottom: 3%;
-  right: 3%;
-  height: 40px;
-  width: 160px;
+  bottom: 30px;
+  right: 30px;
+  height: 50px;
+  /* width: 160px; */
   position: fixed;
   border-style: solid;
   display: flex;
@@ -39,6 +39,8 @@ a {
   font-family: PxGroteskRegular;
   cursor: pointer;
   color: white;
+  font-size: 22px;
+  padding: 0 20px 0 20px;
 }
 #next2 {
   color: white;
@@ -78,9 +80,10 @@ a {
   font-size: 22px;
 }
 #question {
-  font-size: 1vw;
+  font-weight: 100;
+  font-size: 26px;
   margin-left: 1.4%;
-  width: 15vw;
+  width: 16vw;
   word-break: normal;
   position: absolute;
   color: white;
@@ -269,6 +272,7 @@ a {
   color: white;
   font-size: 1.4vw;
   font-family: PxGroteskRegular;
+  font-weight: 100;
 }
 .chiuso {
   height: 0%;
@@ -328,11 +332,11 @@ p {
   pointer-events: none;
 }
 #goon {
-  bottom: 3%;
+  bottom: 30px;
   opacity: 0;
-  right: 3%;
-  height: 40px;
-  width: 160px;
+  right: 30px;
+  height: 50px;
+  /* width: 160px; */
   position: fixed;
   display: flex;
   border-style: solid;
@@ -346,6 +350,8 @@ p {
   font-family: PxGroteskRegular;
   cursor: pointer;
   color: white;
+  font-size: 22px;
+  padding: 0px 20px 0px 20px;
 }
 #goon:hover {
   background-color: white;
