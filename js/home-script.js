@@ -10,7 +10,7 @@ jQuery(document).ready(function ($) {
 
   $(document).scroll(function () {
     var y = $(this).scrollTop();
-    if (y > 800) {
+    if (y > 600) {
       // $("#navbar").fadeIn();
       // $("#container").css("background-color", "black");
       // $(".text").css("color", "white");
