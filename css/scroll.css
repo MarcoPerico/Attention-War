@@ -14,6 +14,7 @@ body {
   user-select: none;
   margin: 0;
   overflow-x: hidden;
+  overflow-y:hidden;
 }
 a {
   /* color: #5c5c5c; */
@@ -38,13 +39,14 @@ a {
   font-family: PxGroteskRegular;
   cursor: pointer;
   color: white;
-  font-size: 1.2vw;
+  font-size: 1.1vw;
   padding: 1vw;
 }
 #next2 {
   color: white;
 }
-#next {
+#back {color:white;}
+#next,#back {
   margin: 0;
 }
 #goon2:hover {
@@ -383,13 +385,38 @@ p {
   font-family: PxGroteskRegular;
   cursor: pointer;
   color: white;
-  font-size: 1.2vw;
+  font-size: 1.1vw;
+  padding: 1vw;
+}
+#goback{
+  left:2vh;
+  bottom:3vh;
+  position: fixed;
+  display: flex;
+  border-style: solid;
+  flex-direction: column;
+  text-align: center;
+  align-items: center;
+  justify-content: center;
+  border-width: 1px;
+  border-color: white;
+  transition: all 0.5s cubic-bezier(0, 0, 0.58, 1);
+  font-family: PxGroteskRegular;
+  cursor: pointer;
+  color: white;
+  font-size: 1.1vw;
   padding: 1vw;
 }
 #goon:hover {
   background-color: white;
 }
 #goon:hover > #next {
+  color: black;
+}
+#goback:hover {
+  background-color: white;
+}
+#goback:hover > #back {
   color: black;
 }
 #counterbar {
