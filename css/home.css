@@ -271,6 +271,7 @@ h1 {
   height: 50px;
   position: absolute;
   bottom: 5vh;
+  z-index: 5;
 }
 #myVideo {
   position: absolute;
@@ -328,6 +329,7 @@ h1 {
   background-image: url("../assets/gif/search.gif");
   background-size: cover;
 }
+
 h2 {
   font-weight: 100;
   font-size: 24px;
@@ -335,16 +337,17 @@ h2 {
   padding: 0;
   text-align: center;
 }
+
 p {
   cursor: default;
   user-select: none;
 }
-.capitolo:hover {
-  /* background-color: white;
-  color: black; */
+
+/* .capitolo:hover {
   margin-top: -10px;
   margin-bottom: 10px;
-}
+} */
+
 #sfumatura {
   position: absolute;
   bottom: 0;

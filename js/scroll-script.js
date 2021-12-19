@@ -21,7 +21,7 @@ jQuery(document).ready(function ($) {
   //MARCO
   $(document).scroll(function () {
     var y = $(this).scrollTop();
-    if (y > 3000) {
+    if (y >1700) {
       $("#goon").removeClass("flexioni");
       $("#goon").css("opacity", "1");
     } else {
