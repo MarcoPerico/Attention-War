@@ -39,7 +39,7 @@ body {
   justify-content: space-between;
   width: 100%;
   display: flex;
-  font-size: 22px;
+  font-size: 1.2vw;
   top: 0;
   z-index: 2;
   font-weight: 200;
@@ -47,7 +47,7 @@ body {
 }
 
 .navbar-button {
-  padding: 14px 20px 14px 20px;
+  padding: 1vw;
   color: white;
   opacity: 1;
   text-decoration: none !important;
@@ -125,14 +125,9 @@ h4 {
   transition: background-position 0.3s, color 0.1s;
   text-decoration: underline;
 }
-.fun-hover:hover {
-  background-position: -100%;
-  transition: background-position 0.3s, color 0.4s;
-  color: black;
-}
 
 /* tentativo image show on hover */
-#hiddenimg {
+/* #hiddenimg {
   display: none;
 }
 #hiddentxt {
@@ -147,7 +142,7 @@ h4 {
 .revealImage {
   display: none;
 }
-/* ---------------------------- */
+---------------------------- */
 
 #about-container {
   background-color: black;
@@ -246,6 +241,7 @@ h4 {
   border-color: white;
   border-style: solid;
   width: 70vw;
+  position: relative;
   margin-right: 20px;
   display: flex;
   flex-direction: column;
@@ -295,6 +291,15 @@ ul {
   font-weight: 100;
   line-height: 1.2;
   margin-left: 20px;
+}
+#libro {
+  width: 20%;
+  opacity: 0;
+  transition: all 0.2s ease-in-out;
+  position: absolute;
+  right: 0;
+  top: 0;
+  padding: 30px 0 0 0;
 }
 
 #last-about-section {
@@ -449,10 +454,14 @@ footer a {
   text-decoration: none !important;
   font-size: 14px;
 }
+#contacts {
+  padding-right: 20px;
+}
 
 #noi {
   display: flex;
   flex-direction: column;
+  width: 100%;
 }
 .profilepic {
   flex-basis: 21%;
@@ -473,21 +482,23 @@ footer a {
 #bharath {
   margin-left: 0;
 }
-#chiara {
+/* #chiara {
   margin-right: 0;
 }
 #yasmine {
   margin-left: 0;
-}
+} */
 .riga {
   width: 100%;
   display: flex;
   flex-direction: row;
 }
 .profile-img {
-  margin-bottom: 6%;
+  margin-bottom: 9%;
   width: 100%;
   height: 100%;
+  object-fit: cover;
+  min-height: 100%;
 }
 .riga {
   margin-bottom: 20px;
@@ -495,3 +506,7 @@ footer a {
 #riga-1 {
   margin-top: 40px;
 }
+/* #bharath-img {
+  background-image: url(../assets/profilepic/01.jpg);
+  background-size: cover;
+} */

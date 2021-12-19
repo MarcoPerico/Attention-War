@@ -123,7 +123,7 @@ loadingclass2 {
 }
 
 .navbar-button {
-  padding: 14px 20px 14px 20px;
+  padding: 1vw;
   color: white;
   opacity: 1;
 }
@@ -348,7 +348,7 @@ h4 {
   background-size: cover;
 }
 #capitolo-img-2 {
-  background-image: url("../assets/gif/mouse.gif");
+  background-image: url("../assets/gif/mousetrack2.gif");
   background-size: cover;
 }
 #capitolo-img-3 {

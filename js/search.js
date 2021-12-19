@@ -30,9 +30,9 @@ jQuery(document).ready(function ($) {
         $(".thumbnail").not(".keyword").css("opacity", "0.3");
       } else if ($(this).hasClass("searchrelated")) {
         $(".hoveringblue").removeClass("off");
-        $(".hoveringblue").css("color", "blue");
+        $(".hoveringblue").css("color", "rgb(0, 92, 230)");
         $("#category2").removeClass("off");
-        $(".searchrelated").css("outline", "2px blue solid");
+        $(".searchrelated").css("outline", "2px rgb(0, 92, 230) solid");
         $(".thumbnail").not(".searchrelated").css("opacity", "0.3");
       } else if ($(this).hasClass("unrelated")) {
         $(".hoveringgreen").removeClass("off");
