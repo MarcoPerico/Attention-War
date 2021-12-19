@@ -271,6 +271,7 @@ h1 {
   height: 50px;
   position: absolute;
   bottom: 5vh;
+  z-index: 5;
 }
 #myVideo {
   position: absolute;
