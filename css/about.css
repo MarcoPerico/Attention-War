@@ -70,14 +70,17 @@ body {
 /* ------------------------ABOUT------------------------------------ */
 a:link {
   /* opacity: 0.4;*/
-  color: white; 
+  color: white;
   text-decoration: underline;
 }
 a:visited {
   color: white;
 }
 
-h1,h2,h3,h4 {
+h1,
+h2,
+h3,
+h4 {
   line-height: 1em;
   margin: 0px;
   padding: 0px;
@@ -113,7 +116,11 @@ h4 {
 
 .fun-hover {
   background-blend-mode: exclusion;
-  background-image: linear-gradient(to right, transparent 50%, rgb(255, 255, 255) 50%);
+  background-image: linear-gradient(
+    to right,
+    transparent 50%,
+    rgb(255, 255, 255) 50%
+  );
   background-size: 200%;
   transition: background-position 0.3s, color 0.1s;
   text-decoration: underline;
@@ -124,13 +131,12 @@ h4 {
   color: black;
 }
 
-
 /* tentativo image show on hover */
 #hiddenimg {
   display: none;
 }
 #hiddentxt {
-  z-index:99;
+  z-index: 99;
 }
 #hiddentxt:hover ~ #hiddenimg {
   display: fixed;
@@ -139,10 +145,9 @@ h4 {
   z-index: 2;
 }
 .revealImage {
-  display:none;
+  display: none;
 }
 /* ---------------------------- */
-
 
 #about-container {
   background-color: black;
@@ -198,7 +203,8 @@ h4 {
   width: 50vw;
   margin-top: 15vh;
 }
-.about-button-titolo {          /* titolo */
+.about-button-titolo {
+  /* titolo */
   font-weight: 100;
   text-align: left;
   background-color: black;
@@ -209,8 +215,10 @@ h4 {
   padding: 0px;
   line-height: 60px;
   transition: 0.3s;
+  user-select: none;
 }
-.about-button {               /* titoli dal secondo in poi */
+.about-button {
+  /* titoli dal secondo in poi */
   font-weight: 100;
   text-align: left;
   background-color: black;
@@ -220,6 +228,7 @@ h4 {
   font-family: px;
   padding: 30px 50px 0 0;
   transition: 0.3s;
+  user-select: none;
 }
 .about-section-intro {
   border: none;
@@ -247,8 +256,10 @@ h4 {
   width: 80%;
   padding: 0px;
   margin-bottom: 20px;
+  user-select: none;
 }
-.about-section-text {               /* paragrafi */
+.about-section-text {
+  /* paragrafi */
   /* font-size: 1.2vw; */
   font-size: 22px;
   line-height: 25px;
@@ -258,19 +269,33 @@ h4 {
   margin-bottom: 80px;
   font-weight: 100;
 }
+.about-section-text2 {
+  /* paragrafi */
+  /* font-size: 1.2vw; */
+  font-size: 22px;
+  line-height: 25px;
+  font-weight: 200;
+  padding: 0px;
+  margin-top: 40px;
+  margin-bottom: 40px;
+  font-weight: 100;
+}
 ul {
-  margin-left: 20px;
-  margin-top: 0px;
-  margin-bottom: 0px;
-  padding: 0;
+  margin: 0px;
+  padding: 0px;
   list-style-type: circle;
+  user-select: none;
 }
-#elenco {
-  /* font-size: 28px; */
+.elenco-text {
+  font-size: 22px;
+  font-weight: 200;
+  padding: 0px;
+  margin-top: 0px;
+  margin-bottom: 80px;
+  font-weight: 100;
   line-height: 1.2;
+  margin-left: 20px;
 }
-
-
 
 #last-about-section {
   margin-bottom: 100px;
@@ -287,24 +312,16 @@ ul {
   margin-top: 30px;
 }
 
-
-
 .images {
   width: 100%;
-  margin-top: 30px;
-  margin-bottom: 30px;
+  margin-top: 50px;
+  margin-bottom: 50px;
 }
-
-
-
-
-
-
-
-
-
-
-
+.images-table {
+  width: 100%;
+  margin-top: 50px;
+  margin-bottom: 0px;
+}
 
 /*HOME*/
 .capitolo {
@@ -346,11 +363,6 @@ p {
   margin-top: -10px;
   margin-bottom: 10px;
 }
-
-
-
-
-
 
 /* -------------------FOOTER--------------------- */
 
@@ -421,6 +433,7 @@ footer p {
 
 footer ul {
   padding: 0;
+  margin: 0;
 }
 
 footer li {
@@ -435,4 +448,50 @@ footer a {
   color: white;
   text-decoration: none !important;
   font-size: 14px;
+}
+
+#noi {
+  display: flex;
+  flex-direction: column;
+}
+.profilepic {
+  flex-basis: 21%;
+  margin: 0 2% 2% 0;
+  display: flex;
+  flex-direction: column;
+  /* border: 1px solid; */
+  /* background-image: url("../assets/profilepic/01.jpg");
+  background-size: cover; */
+  /* padding: 10px; */
+  font-size: 18px;
+  font-weight: 100;
+  cursor: pointer;
+}
+#noi a {
+  text-decoration: none;
+}
+#bharath {
+  margin-left: 0;
+}
+#chiara {
+  margin-right: 0;
+}
+#yasmine {
+  margin-left: 0;
+}
+.riga {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+}
+.profile-img {
+  margin-bottom: 6%;
+  width: 100%;
+  height: 100%;
+}
+.riga {
+  margin-bottom: 20px;
+}
+#riga-1 {
+  margin-top: 40px;
 }

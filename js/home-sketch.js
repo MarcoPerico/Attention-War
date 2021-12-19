@@ -54,6 +54,7 @@ function preload() {
       imagesLoaded
     );
   }
+  // arrow = loadImage("./assets/freccia.svg");
 }
 
 function imagesLoaded() {
@@ -139,6 +140,8 @@ function draw() {
   push();
   //blendMode(HARD_LIGHT);
   background(0);
+  // image(arrow, windowWidth / 2, windowHeight - 20);
+
   pop();
 
   //text title and subtitle
@@ -158,13 +161,13 @@ function draw() {
   let h1width = textWidth(h1);
   pop();
 
-  push();
-  let h2 = "A guide to streaming platforms' user retention strategies";
-  textAlign(LEFT, TOP);
-  fill(255);
-  textSize(24);
-  text(h2, 25, h1width * 0.092 + 40);
-  pop();
+  // push();
+  // let h2 = "A guide to streaming platforms' user retention strategies";
+  // textAlign(LEFT, TOP);
+  // fill(255);
+  // textSize(24);
+  // text(h2, 25, h1width * 0.092 + 40);
+  // pop();
 
   //matter.js interaction : draw
   if (boxes.length <= 29) {
