@@ -14,7 +14,7 @@ body {
   user-select: none;
   margin: 0;
   overflow-x: hidden;
-  overflow-y:hidden;
+  overflow-y: hidden;
 }
 a {
   /* color: #5c5c5c; */
@@ -45,8 +45,11 @@ a {
 #next2 {
   color: white;
 }
-#back {color:white;}
-#next,#back {
+#back {
+  color: white;
+}
+#next,
+#back {
   margin: 0;
 }
 #goon2:hover {
@@ -56,14 +59,14 @@ a {
   color: black;
 }
 #toggloidi {
-  display:flex;
-  width:60vw;
-  left:15vw;
-  height:5vh;
-  position:absolute;
+  display: flex;
+  width: 60vw;
+  left: 15vw;
+  height: 5vh;
+  position: absolute;
   flex-direction: row;
   /* position: absolute; */
-  bottom:5%;
+  bottom: 5%;
 }
 .toggloide {
   width: 16vw;
@@ -80,8 +83,8 @@ a {
   font-size: 1vw;
   font-weight: 100;
 }
-#twitch{
-  margin-right:0;
+#twitch {
+  margin-right: 0;
 }
 #navbar {
   position: fixed;
@@ -101,7 +104,7 @@ a {
   position: absolute;
   color: white;
   left: 0;
-  top:30%;
+  top: 30%;
 }
 .navbar-button {
   padding: 14px 20px 14px 20px;
@@ -119,10 +122,10 @@ a {
   margin-top: 5vh;
   width: 100vw;
 }
-#columnbox{
+#columnbox {
   position: absolute;
   left: 10vw;
-top:5vh;
+  top: 5vh;
   height: 85vh;
   margin-top: 13vh;
   width: 80vw;
@@ -134,7 +137,7 @@ top:5vh;
   display: flex;
   flex-direction: column-reverse;
   position: relative;
-  width:55%;
+  width: 55%;
 }
 .statist {
   width: 100%;
@@ -144,9 +147,9 @@ top:5vh;
 }
 .shown {
   background-color: red;
-  border-style:solid;
+  border-style: solid;
   border-width: 0 0.5px 0 0;
-  border-color:red;
+  border-color: red;
 }
 .scroll {
   background-color: rgb(0, 255, 0);
@@ -201,11 +204,13 @@ top:5vh;
 }
 #column1 {
   width: 28vw;
-  margin-left:20px;
+  margin-left: 20px;
   display: flex;
   flex-direction: column;
 }
-#column2 {margin-left:4vw;}
+#column2 {
+  margin-left: 4vw;
+}
 .chapters-button {
   padding-left: 12px;
   padding-right: 12px;
@@ -235,21 +240,21 @@ top:5vh;
 #textpix {
   /* position: absolute; */
   color: white;
-  display:inline-block;
+  display: inline-block;
   font-size: 1.2vw;
   font-weight: 100;
   left: 0;
-  margin-top:0;
+  margin-top: 0;
 }
 #counterpix {
-position:absolute;
-display:flex;
-align-items:center;
+  position: absolute;
+  display: flex;
+  align-items: center;
   left: 70%;
   top: 35%;
-  border-color:white;
-  border-style:solid;
-  border-width:1px;
+  border-color: white;
+  border-style: solid;
+  border-width: 1px;
   width: 17vw;
   height: 6vh;
 }
@@ -296,9 +301,9 @@ align-items:center;
   font-size: 1.1vw;
   position: absolute;
   top: 3%;
-  left:14vw;
+  left: 14vw;
   align-self: auto;
-  width: 46vw;
+  width: 30vw;
   font-weight: 100;
 }
 
@@ -323,14 +328,14 @@ align-items:center;
   left: 20vw;
 }
 #tityoutube {
-  left:40vw;
+  left: 40vw;
 }
 #tittwitch {
-  left:60vw;
+  left: 60vw;
 }
 img {
   top: 0;
-left: 0;
+  left: 0;
   position: relative;
   margin-right: 4.8vw;
   vertical-align: top;
@@ -339,7 +344,7 @@ left: 0;
 p {
   font-family: PxGroteskRegular;
   color: white;
-  margin-bottom:0;
+  margin-bottom: 0;
 }
 #campo {
   height: 95vh;
@@ -355,14 +360,14 @@ p {
 #pixels {
   text-align: left;
   font-size: 1.3vw;
-  display:inline-block;
+  display: inline-block;
   margin: 15%;
-  width:10%;
+  width: 10%;
   color: white;
 }
 .screen {
   top: 20vh;
-  width:15vw;
+  width: 15vw;
 }
 .flexioni {
   pointer-events: none;
@@ -388,9 +393,9 @@ p {
   font-size: 1.1vw;
   padding: 1vw;
 }
-#goback{
-  left:2vh;
-  bottom:3vh;
+#goback {
+  left: 2vh;
+  bottom: 3vh;
   position: fixed;
   display: flex;
   border-style: solid;
@@ -423,7 +428,7 @@ p {
   position: fixed;
   display: flex;
   flex-direction: row;
-  top:0%;
+  top: 0%;
   align-items: right;
   width: 80vw;
   height: 35vh;
@@ -436,7 +441,6 @@ p {
   align-items: right;
   top: 15vh;
   width: 80vw;
-
 }
 #boxinoisbacc,
 #boxinoisbacc2,
@@ -444,7 +448,7 @@ p {
   width: 3vh;
   border-color: white;
   border-style: solid;
-  cursor:pointer;
+  cursor: pointer;
   position: relative;
   margin-bottom: 5vh;
   border-width: 3px;

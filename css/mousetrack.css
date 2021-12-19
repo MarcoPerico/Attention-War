@@ -15,8 +15,8 @@ body {
   margin: 0;
   overflow: hidden;
 }
-span{
-  color:white;
+span {
+  color: white;
 }
 #contenitorepath {
   position: absolute;
@@ -46,8 +46,8 @@ a {
   text-decoration: none;
   font-weight: normal;
 }
-#twitchstats{
-  width:65%;
+#twitchstats {
+  width: 65%;
 }
 #navbar {
   position: fixed;
@@ -61,6 +61,10 @@ a {
   font-weight: 100;
   transition: 0.5s;
   background-color: black;
+}
+
+#twitchbutton {
+  border-bottom: 1px solid white;
 }
 
 /* #navbar {
@@ -123,11 +127,12 @@ a {
 .active {
   opacity: 1;
 }
-.stats, .statsnum {
+.stats,
+.statsnum {
   display: none;
   opacity: 1;
   height: 10vh;
-  width:40%;
+  width: 40%;
   text-align: right;
   font-size: 1vw;
   margin-left: 10%;
@@ -135,12 +140,13 @@ a {
   color: white;
   transition: all 0.5s ease-in-out;
 }
-.stats{
-  text-align:left;
+.stats {
+  text-align: left;
 }
-.statsnum{
-margin-left:10%;
-width:10%;}
+.statsnum {
+  margin-left: 10%;
+  width: 10%;
+}
 #banner {
   position: fixed;
   top: 0;
@@ -330,9 +336,9 @@ width:10%;}
   color: rgb(102, 102, 102);
   overflow: auto;
 }
-#goback{
-  left:2vh;
-  bottom:3vh;
+#goback {
+  left: 2vh;
+  bottom: 3vh;
   position: fixed;
   display: flex;
   border-style: solid;
@@ -386,7 +392,9 @@ width:10%;}
 #next2 {
   color: white;
 }
-#next,#back,#next2 {
+#next,
+#back,
+#next2 {
   margin: 0;
 }
 #goon:hover > #next {
@@ -403,8 +411,8 @@ width:10%;}
   right: 0;
   width: 80vw;
 }
-#youtubestats{
-  padding-right:5px;
+#youtubestats {
+  padding-right: 5px;
 }
 #statsbox {
   height: 90vh;
@@ -439,8 +447,9 @@ width:10%;}
   font-family: PxGroteskRegular;
   font-weight: 200;
   cursor: pointer;
-  padding-top:0.8vw;
+  padding-top: 0.8vw;
   margin-bottom: 1vh;
+  line-height: 120%;
 }
 #disclaimer {
   /* margin: 0 10px 60px 30px; */
@@ -452,24 +461,24 @@ width:10%;}
   color: white;
   transition: all 0.3s ease-in-out;
   font-size: 1.2vw;
-  width:50%;
+  width: 50%;
 }
 #titolettonetflix {
   color: red;
 }
 #netflixbutton {
   height: 12vh;
-  margin-top:6vh;
+  margin-top: 6vh;
 }
 #testo2 {
   display: block;
   position: absolute;
-  margin-top:5px;
+  margin-top: 5px;
   font-family: PxGroteskRegular;
   font-size: 1.2vw;
   width: 16vw;
-  top:65%;
-  padding-left:1vw;
+  top: 65%;
+  padding-left: 1vw;
   text-align: left;
   height: 11vh;
   left: -50%;
@@ -491,7 +500,8 @@ canvas {
   transition: all 0.5s;
   display: block;
 }
-#netflixstats, #netflixnum{
+#netflixstats,
+#netflixnum {
   display: flex;
 }
 
