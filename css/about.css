@@ -1,11 +1,13 @@
 @font-face {
   font-family: px;
   font-weight: 100;
+  font-style: normal;
   src: url("../assets/fonts/PxGrotesk/PxGrotesk-Light.ttf");
 }
 @font-face {
   font-family: px;
   font-weight: 200;
+  font-size: bold;
   src: url("../assets/fonts/PxGrotesk/PxGrotesk-Regular.ttf");
 }
 
@@ -122,6 +124,26 @@ h4 {
   color: black;
 }
 
+
+/* tentativo image show on hover */
+#hiddenimg {
+  display: none;
+}
+#hiddentxt {
+  z-index:99;
+}
+#hiddentxt:hover ~ #hiddenimg {
+  display: fixed;
+  position: absolute;
+  top: 20%;
+  z-index: 2;
+}
+.revealImage {
+  display:none;
+}
+/* ---------------------------- */
+
+
 #about-container {
   background-color: black;
   color: white;
@@ -182,7 +204,7 @@ h4 {
   background-color: black;
   color: white;
   border: none;
-  font-size: 66px;
+  font-size: 70px;
   font-family: px;
   padding: 0px;
   line-height: 60px;
@@ -224,7 +246,7 @@ h4 {
 .content {
   width: 80%;
   padding: 0px;
-  margin-bottom: 50px;
+  margin-bottom: 20px;
 }
 .about-section-text {               /* paragrafi */
   /* font-size: 1.2vw; */
@@ -233,9 +255,22 @@ h4 {
   font-weight: 200;
   padding: 0px;
   margin-top: 40px;
-  margin-bottom: 50px;
+  margin-bottom: 80px;
   font-weight: 100;
 }
+ul {
+  margin-left: 20px;
+  margin-top: 0px;
+  margin-bottom: 0px;
+  padding: 0;
+  list-style-type: circle;
+}
+#elenco {
+  /* font-size: 28px; */
+  line-height: 1.2;
+}
+
+
 
 #last-about-section {
   margin-bottom: 100px;
@@ -251,6 +286,25 @@ h4 {
   flex-direction: row;
   margin-top: 30px;
 }
+
+
+
+.images {
+  width: 100%;
+  margin-top: 30px;
+  margin-bottom: 30px;
+}
+
+
+
+
+
+
+
+
+
+
+
 
 /*HOME*/
 .capitolo {

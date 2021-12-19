@@ -30,3 +30,22 @@ $("#voce6").on("click", function () {
 //   grainHeight: 1,
 //  };
 // grained("#about-container", options);
+
+
+// jQuery(document).ready(function($) {
+//   $('body').on('mouseenter', '.revealImage', function() {  
+//     var img = $(this).('src');      
+    
+//     $('body').append('<div class="imageHover" style="max-width:400px;width:100%;"><img src="./assets/report.gif" style="width:100%;height:auto !important;"></div>')
+    
+//     $(document).mousemove(function(e) {
+//       $('.imageHover').offset({
+//         left: e.pageX,
+//         top: e.pageY + 20
+//       })
+//     })
+    
+//   }).on('mouseleave', function() {    
+//     $('body').find('.imageHover').remove()
+//   })
+// })
