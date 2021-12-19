@@ -330,6 +330,26 @@ width:10%;}
   color: rgb(102, 102, 102);
   overflow: auto;
 }
+#goback{
+  left:2vh;
+  bottom:3vh;
+  position: fixed;
+  display: flex;
+  border-style: solid;
+  flex-direction: column;
+  text-align: center;
+  align-items: center;
+  justify-content: center;
+  border-width: 1px;
+  border-color: white;
+  transition: all 0.5s cubic-bezier(0, 0, 0.58, 1);
+  font-family: PxGroteskRegular;
+  cursor: pointer;
+  color: white;
+  font-size: 1.1vw;
+  padding: 1vw;
+}
+
 #goon,
 #goon2 {
   bottom: 3vh;
@@ -357,10 +377,22 @@ width:10%;}
 #goon2:hover {
   background-color: white;
 }
+#goback:hover {
+  background-color: white;
+}
+.off {
+  visibility: hidden;
+}
 #next2 {
   color: white;
 }
+#next,#back,#next2 {
+  margin: 0;
+}
 #goon:hover > #next {
+  color: black;
+}
+#goback:hover > #back {
   color: black;
 }
 #goon2:hover > #next2 {

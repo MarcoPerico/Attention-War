@@ -54,13 +54,22 @@ jQuery(document).ready(function ($) {
     progresso++;
   });
   $("#goon").on("click", function cambio() {
-    $("#campo").css("left", "-200%");
-    $("campo").delay(500).hide(0);
-    $("#campo2").css("opacity", "1");
+    $("#campo").delay(1000).css("opacity", "0%");
+    $("#campo").delay(1000).addClass("off");
+    $("#campo2").delay(1000).removeClass("off");
+    $("#campo2").delay(1000).css("opacity", "1");
     $("#goon").css("display", "none");
-    remove();
   });
+  $("#goback").on("click", function spariscizioviatiprego2() {
+    // $("#campotot").css("opacity", "0");
+    $("#campo").removeClass("off");
+    $("#campo").delay(1000).css("opacity", "1");
 
+    $("#goon").css("display", "flex");
+    // $("#campotot").delay(500).addClass("off");
+    $("#campo2").delay(1000).css("opacity", "0%");
+    $("#campo2").delay(1000).addClass("off");
+  });
   //mousetrack comparison-------------------------------------------------
 
   $(".visbottone", this).on("click", function attiva() {
