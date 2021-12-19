@@ -113,25 +113,25 @@ jQuery(document).ready(function ($) {
       }
     } else if (!$(this).hasClass("active")) {
       if ($(this).attr("id") == "netflixbutton") {
-        $("#netflixbutton").css("height","12vh");
+        $("#netflixbutton").css("height", "12vh");
         $("#netflixstats,#netflixnum").css("display", "flex");
         $("#titolettonetflix").css({ color: "red" });
         $("#netflixbutton").addClass("active");
         $("#netflixpath").addClass("active");
       } else if ($(this).attr("id") == "primebutton") {
-        $("#primebutton").css("height","12vh");
+        $("#primebutton").css("height", "12vh");
         $("#primestats,#primenum").css("display", "flex");
-        $("#titolettoprime").css({ color: "blue" });
+        $("#titolettoprime").css({ color: "rgb(26, 117, 255)" });
         $("#primebutton").addClass("active");
         $("#primepath").addClass("active");
       } else if ($(this).attr("id") == "twitchbutton") {
-        $("#twitchbutton").css("height","12vh");
+        $("#twitchbutton").css("height", "12vh");
         $("#twitchstats").css("display", "flex");
         $("#titolettotwitch").css({ color: "fuchsia" });
         $("#twitchpath").addClass("active");
         $("#twitchbutton").addClass("active");
       } else if ($(this).attr("id") == "youtubebutton") {
-        $("#youtubebutton").css("height","12vh");
+        $("#youtubebutton").css("height", "12vh");
         $("#youtubestats,#youtubenum").css("display", "flex");
         $("#titolettoyoutube").css({
           color: "rgb(0,255,0)",

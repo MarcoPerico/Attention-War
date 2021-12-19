@@ -163,7 +163,7 @@ a {
   border-color: red;
 }
 #category2 {
-  border-color: blue;
+  border-color: rgb(0, 92, 230);
 }
 #category3 {
   border-color: rgb(0, 255, 0);
@@ -260,7 +260,7 @@ p {
 #randombox {
   display: flex;
   height: 7vh;
-  width: 25%;
+  width: 20%;
   margin-left: 1vw;
   flex-direction: column;
 }
@@ -284,7 +284,7 @@ p {
   left: 0;
   top: 0;
 }
-#tastoakira{
+#tastoakira {
   position: absolute;
   display: flex;
   height: 50%;
@@ -309,19 +309,19 @@ p {
   height: 30%;
   margin-top: 0.5vh;
 }
-#lente{
-  background-image:url('/search/assets/search_icon.svg');
-  background-size:contain;
+#lente {
+  background-image: url("/search/assets/search_icon.svg");
+  background-size: contain;
   background-repeat: no-repeat;
-  width:10%;
-  height:60%;
+  width: 10%;
+  height: 60%;
   position: absolute;
-  left:92%;
+  left: 92%;
 }
 #loginbox {
   flex-direction: row;
   width: 25%;
-  margin-left:2.5vw
+  margin-left: 2.5vw;
 }
 #column5 {
   width: 15vw;
@@ -382,7 +382,7 @@ p {
   border-color: white;
   border-style: solid;
   position: absolute;
-  border-width: 1px;
+  border-width: 2px;
   transition: all 0.4s ease-in-out;
   background-color: black;
   height: 3vh;
