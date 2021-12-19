@@ -15,6 +15,9 @@ body {
   margin: 0;
   overflow: hidden;
 }
+span{
+  color:white;
+}
 #contenitorepath {
   position: absolute;
   top: 0;
@@ -43,7 +46,9 @@ a {
   text-decoration: none;
   font-weight: normal;
 }
-
+#twitchstats{
+  width:65%;
+}
 #navbar {
   position: fixed;
   justify-content: space-between;
@@ -106,13 +111,10 @@ a {
 }
 .path {
   height: 95vh;
-  width: 80vw;
+  width: 78vw;
   position: absolute;
   object-fit: contain;
   object-position: right;
-  border-style: solid;
-  border-color: white;
-  border-width: 0 0 0 1px;
   top: 0%;
   opacity: 0.3;
   transition: all 0.2s ease-in-out;
@@ -121,17 +123,24 @@ a {
 .active {
   opacity: 1;
 }
-.stats {
+.stats, .statsnum {
   display: none;
   opacity: 1;
   height: 10vh;
-  margin-top: 3%;
-  text-align: left;
-  font-size: 1.2vw;
+  width:40%;
+  text-align: right;
+  font-size: 1vw;
+  margin-left: 10%;
   font-family: PxGroteskRegular;
-  color: black;
+  color: white;
   transition: all 0.5s ease-in-out;
 }
+.stats{
+  text-align:left;
+}
+.statsnum{
+margin-left:10%;
+width:10%;}
 #banner {
   position: fixed;
   top: 0;
@@ -145,7 +154,7 @@ a {
 }
 #titolopag {
   font-family: PxGroteskRegular;
-  font-size: 1.4vw;
+  font-size: 1.1vw;
   width: 30vw;
   top: 50%;
   left: 1%;
@@ -162,7 +171,7 @@ a {
   transform: translate(0, -50%);
   top: 50%;
   right: 3vw;
-  font-size: 2vw;
+  font-size: 1vw;
 }
 #tutorial {
   height: 100vh;
@@ -178,20 +187,20 @@ a {
 }
 #ready {
   font-family: PxGroteskRegular;
-  font-size: 2vw;
+  font-size: 1vw;
   text-align: center;
   color: white;
 }
 #countdown {
   font-family: PxGroteskRegular;
-  font-size: 4.5vw;
+  font-size: 1vw;
   display: hidden;
   text-align: center;
   color: white;
 }
 #title {
   font-family: PxGroteskRegular;
-  font-size: 3vw;
+  font-size: 1vw;
   text-align: center;
   font-style: normal;
   color: white;
@@ -311,16 +320,36 @@ a {
 }
 #testo1 {
   display: block;
-  position: absolute;
+  position: relative;
   font-family: PxGroteskRegular;
   top: 3%;
   /* left: 3%; */
   background-color: black;
-  font-size: 1.2vw;
+  font-size: 1.1vw;
   font-weight: 100;
-  color: white;
+  color: rgb(102, 102, 102);
   overflow: auto;
 }
+#goback{
+  left:2vh;
+  bottom:3vh;
+  position: fixed;
+  display: flex;
+  border-style: solid;
+  flex-direction: column;
+  text-align: center;
+  align-items: center;
+  justify-content: center;
+  border-width: 1px;
+  border-color: white;
+  transition: all 0.5s cubic-bezier(0, 0, 0.58, 1);
+  font-family: PxGroteskRegular;
+  cursor: pointer;
+  color: white;
+  font-size: 1.1vw;
+  padding: 1vw;
+}
+
 #goon,
 #goon2 {
   bottom: 3vh;
@@ -339,7 +368,7 @@ a {
   font-family: PxGroteskRegular;
   cursor: pointer;
   color: white;
-  font-size: 1.2vw;
+  font-size: 1.1vw;
   padding: 1vw;
 }
 #goon:hover {
@@ -348,10 +377,22 @@ a {
 #goon2:hover {
   background-color: white;
 }
+#goback:hover {
+  background-color: white;
+}
+.off {
+  visibility: hidden;
+}
 #next2 {
   color: white;
 }
+#next,#back,#next2 {
+  margin: 0;
+}
 #goon:hover > #next {
+  color: black;
+}
+#goback:hover > #back {
   color: black;
 }
 #goon2:hover > #next2 {
@@ -362,10 +403,12 @@ a {
   right: 0;
   width: 80vw;
 }
-
+#youtubestats{
+  padding-right:5px;
+}
 #statsbox {
   height: 90vh;
-  width: 18vw;
+  width: 20vw;
   position: fixed;
   display: flex;
   flex-direction: column;
@@ -375,76 +418,64 @@ a {
   opacity: 1;
   padding: 0 1vw 0 1vw;
   font-weight: 100;
-  font-size: 1.2vw;
-}
-img {
-  border-style: solid;
-  border-color: white;
-  border-width: 1px 1px 1px 1px;
+  font-size: 1.1vw;
 }
 .visbottone {
   /* margin: 2% auto; */
-  height: 2.2vh;
-  width: 90%;
+  height: 4vh;
+  width: 100%;
   /* text-align: center; */
   display: flex;
   overflow: hidden;
-  align-self: flex-start;
-  flex-direction: column;
+  flex-direction: row;
   user-select: none;
   background-color: transparent;
   /* align-items: center; */
   /* justify-content: center; */
   border-style: solid;
   border-color: white;
-  border-width: 1px;
+  border-width: 1px 0 0 0;
   transition: all 0.3s cubic-bezier(0, 0, 0.58, 1);
   font-family: PxGroteskRegular;
   font-weight: 200;
   cursor: pointer;
-  padding: 0.8vw;
+  padding-top:0.8vw;
   margin-bottom: 1vh;
 }
 #disclaimer {
   /* margin: 0 10px 60px 30px; */
-  font-size: 1.2vw;
+  font-size: 1.1vw;
   margin: 0;
   margin-bottom: 2vw;
-}
-.visbottone:hover {
-  background-color: white;
-}
-.visbottone:hover > .titoletto {
-  color: black;
 }
 .titoletto {
   color: white;
   transition: all 0.3s ease-in-out;
   font-size: 1.2vw;
+  width:50%;
 }
 #titolettonetflix {
   color: red;
 }
 #netflixbutton {
-  height: 15vh;
-  background-color: white;
+  height: 12vh;
+  margin-top:6vh;
 }
 #testo2 {
   display: block;
   position: absolute;
+  margin-top:5px;
   font-family: PxGroteskRegular;
-  font-size: 1.1vw;
-  width: 26vw;
+  font-size: 1.2vw;
+  width: 16vw;
+  top:65%;
+  padding-left:1vw;
   text-align: left;
   height: 11vh;
-  bottom: -20%;
+  left: -50%;
   transition: all 0.5s cubic-bezier(0, 0, 0.58, 1);
-  left: 18.3%;
   color: white;
   overflow: visible;
-}
-span {
-  background-color: black;
 }
 p {
   /* margin: 0 auto; */
@@ -460,7 +491,7 @@ canvas {
   transition: all 0.5s;
   display: block;
 }
-#netflixstats {
+#netflixstats, #netflixnum{
   display: flex;
 }
 

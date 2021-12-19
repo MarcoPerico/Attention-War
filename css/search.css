@@ -260,7 +260,7 @@ p {
 #randombox {
   display: flex;
   height: 7vh;
-  width: 40%;
+  width: 25%;
   margin-left: 1vw;
   flex-direction: column;
 }
@@ -268,8 +268,9 @@ p {
   height: 12vh;
 }
 .switchate {
-  font-size: 1vw;
+  font-size: 1.1vw;
   position: absolute;
+  font-weight: 200;
   display: inline-block;
 }
 #bianchino {
@@ -283,8 +284,7 @@ p {
   left: 0;
   top: 0;
 }
-#tastoakira,
-#tastorandom {
+#tastoakira{
   position: absolute;
   display: flex;
   height: 50%;
@@ -295,16 +295,13 @@ p {
   left: 0;
   width: 50%;
 }
-#tastorandom {
-  left: 50%;
-  width: 50%;
-}
 #randomizza {
-  width: 90%;
+  width: 100%;
   position: relative;
   display: flex;
   cursor: pointer;
   border-style: solid;
+  background-color: white;
   border-color: white;
   border-width: 1px;
   align-items: center;
@@ -312,9 +309,19 @@ p {
   height: 30%;
   margin-top: 0.5vh;
 }
+#lente{
+  background-image:url('/search/assets/search_icon.svg');
+  background-size:contain;
+  background-repeat: no-repeat;
+  width:10%;
+  height:60%;
+  position: absolute;
+  left:92%;
+}
 #loginbox {
   flex-direction: row;
   width: 25%;
+  margin-left:2.5vw
 }
 #column5 {
   width: 15vw;
