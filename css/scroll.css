@@ -82,7 +82,7 @@ a {
 }
 #question {
   font-weight: 100;
-  font-size: 1.2vw;
+  font-size: 1.1vw;
   margin-left: 1.4%;
   width: 16vw;
   word-break: normal;
@@ -337,7 +337,6 @@ p {
   font-size: 1.5vw;
   margin-top: 0;
   margin-left: 0;
-  margin-bottom: 1%;
   z-index: 3;
   color: white;
 }
