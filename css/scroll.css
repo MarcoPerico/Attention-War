@@ -543,3 +543,26 @@ p {
 h1 {
   font-weight: normal;
 }
+
+/* SCROLLBAR */
+/* width */
+::-webkit-scrollbar {
+  width: 2vh;
+  background-color: rgb(34, 34, 34);
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: #303030;
+  background-clip: padding-box;
+  border: 2px solid transparent;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: #444444;
+}
+
+::-webkit-scrollbar-button{
+  background-color: #444444;
+}

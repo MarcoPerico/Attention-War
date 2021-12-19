@@ -510,3 +510,24 @@ footer a {
   background-image: url(../assets/profilepic/01.jpg);
   background-size: cover;
 } */
+
+/* SCROLLBAR */
+/* width */
+::-webkit-scrollbar {
+  width: 2vh;
+  background-color: rgb(34, 34, 34);
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: #303030;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: #444444;
+}
+
+::-webkit-scrollbar-button{
+  background-color: #444444;
+}
