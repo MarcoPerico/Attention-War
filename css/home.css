@@ -44,6 +44,18 @@ canvas {
   background: black;
   z-index: 2;
 }
+loadingclass2 {
+  position: fixed;
+  display: block;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  text-align: center;
+  background-color: red;
+  z-index: 99;
+  justify-content: center;
+}
 .text {
   color: white;
   text-align: center;
@@ -272,6 +284,7 @@ h1 {
   position: absolute;
   bottom: 5vh;
   z-index: 5;
+  display: none;
 }
 #myVideo {
   position: absolute;
@@ -303,9 +316,9 @@ h1 {
 .capitolo {
   color: white;
   width: 16vw;
-  border: 1px solid white;
+  /* border: 1px solid white; */
   margin: 0 6px 0 6px;
-  padding: 16px;
+  padding: 20px;
   font-size: 18px;
   transition: 0.3s;
 }
