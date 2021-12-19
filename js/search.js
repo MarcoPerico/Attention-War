@@ -104,6 +104,11 @@ jQuery(document).ready(function ($) {
       $("#youtuberesultsgreen").html("15 results");
       $("#twitchresults").html("No results");
       $("#netflixresults").html("No results");
+      $("#row11a,#row10a,#row9a,#row8a,#row7a,#row6a,#row12a").css("opacity","0");
+      $(
+        "#row11b,#row10b,#row9b,#row8b,#row7b-2,#row7b-3,#row7b-4,#row12b"
+      ).css("opacity","0");
+      $("#column3").css("opacity","1");
       $("#column2,#column3")
         .children(".row")
         .children(".thumbnail")
@@ -327,8 +332,11 @@ jQuery(document).ready(function ($) {
       //LOGGED OUT e RANDOM//
       $("#primeresults").html("308 results");
       $("#netflixresults").html("No results");
+      $("#row12a,#row11a,#row10a-2,#row10a-3,#row10a-4").css("opacity","1");
       $("#youtuberesults").html("No results");
       $("#twitchresults").html("No results");
+      $("#column3").css("opacity","0");
+      $("#row11a,#row10a,#row9a,#row8a,#row7a,#row6a,#row12a").css("opacity","1");
       $("#column2,#column3")
         .children(".row")
         .children(".thumbnail")
@@ -535,6 +543,12 @@ jQuery(document).ready(function ($) {
     ) {
       //LOGGED IN e AKIRA//
       $("#primeresults").html("37 results");
+      $("#row11a,#row10a,#row9a,#row8a,#row7a,#row6a,#row12a").css("opacity","1");
+      $(
+        "#row11b,#row10b,#row9b,#row8b,#row7b-2,#row7b-3,#row7b-4,#row12b"
+      ).css("opacity","1");
+      $("#column3").css("opacity","1");
+      $("#row12a,#row11a,#row10a-2,#row10a-3,#row10a-4").css("opacity","1");
       $("#netflixresults").html("315 results");
       $("#youtuberesults").html("828 results");
       $("#twitchresults").html("22 results");
@@ -910,6 +924,11 @@ jQuery(document).ready(function ($) {
       $("#netflixresults").html("No results");
       $("#youtuberesults").html("828 results");
       $("#twitchresults").html("22 results");
+      $("#column3").css("opacity","1");
+      $("#row11a,#row10a,#row9a,#row8a,#row7a,#row6a,#row12a").css("opacity","1");
+      $(
+        "#row11b,#row10b,#row9b,#row8b,#row7b-2,#row7b-3,#row7b-4,#row12b"
+      ).css("opacity","1");
       $("#primeresultsgreen").html("");
       $("#netflixresultsblue").html("");
       $("#netflixresultsred").html("");

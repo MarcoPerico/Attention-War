@@ -130,7 +130,9 @@ a {
   width: 15vw;
   padding-right: 3.8vw;
 }
-
+#previously{
+  font-size:0.95vw;
+}
 .category {
   width: 70%;
   /* height:25%; */
@@ -146,7 +148,7 @@ a {
   padding-bottom: 10px;
 }
 .category > p {
-  font-size: 1.1vw;
+  font-size: 1vw;
   margin: 0 1vw 0 1vw;
   padding-top: 0.6vw;
   padding-bottom: 0.8vw;
@@ -156,7 +158,7 @@ a {
   margin: 0 1vw 0 1vw;
 
   padding-top: 5%;
-  font-size: 1.1vw;
+  font-size: 1vw;
   font-weight: 200;
 }
 #category1 {
