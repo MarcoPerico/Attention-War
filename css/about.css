@@ -209,6 +209,7 @@ h4 {
   padding: 0px;
   line-height: 60px;
   transition: 0.3s;
+  user-select: none;
 }
 .about-button {               /* titoli dal secondo in poi */
   font-weight: 100;
@@ -220,6 +221,7 @@ h4 {
   font-family: px;
   padding: 30px 50px 0 0;
   transition: 0.3s;
+  user-select: none;
 }
 .about-section-intro {
   border: none;
@@ -247,6 +249,7 @@ h4 {
   width: 80%;
   padding: 0px;
   margin-bottom: 20px;
+  user-select: none;
 }
 .about-section-text {               /* paragrafi */
   /* font-size: 1.2vw; */
@@ -272,6 +275,7 @@ ul {
   margin: 0px;
   padding: 0px;
   list-style-type: circle;
+  user-select: none;
 }
 .elenco-text {
   font-size: 22px;
@@ -307,6 +311,11 @@ ul {
   width: 100%;
   margin-top: 50px;
   margin-bottom: 50px;
+}
+.images-table {
+  width: 100%;
+  margin-top: 50px;
+  margin-bottom: 0px;
 }
 
 
