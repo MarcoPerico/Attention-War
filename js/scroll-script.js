@@ -2,6 +2,7 @@ jQuery(document).ready(function ($) {
   //COVER
   function inizio() {
     $(".titolo").css("transform", "translate(0, 0)");
+    $("body").css("overflow-y", "auto");
     $(".capitolo").css({ opacity: "100%", transform: "translate(0,-7px)" });
     $(".info").css({ opacity: "100%", transform: "translate(0,-7px)" });
     $(".bottone-start").css({
@@ -33,11 +34,23 @@ jQuery(document).ready(function ($) {
     // $("#campotot").css("opacity", "0");
     $("#campotot").delay(1000).css("opacity", "0%");
     $("#campotot").delay(1000).addClass("off");
-    $("#goon").css("opacity", "0");
+    $("#goon").css("display", "none");
     // $("#campotot").delay(500).addClass("off");
     $("body").css("overflow-y", "hidden");
     $("#campotot2").delay(1000).removeClass("off");
+    $("#campotot2").delay(1000).css("opacity", "1");
     $("html, body").animate({ scrollTop: 0 }, 1000);
+  });
+  $("#goback").on("click", function spariscizioviatiprego2() {
+    // $("#campotot").css("opacity", "0");
+    $("#campotot").removeClass("off");
+    $("#campotot").delay(1000).css("opacity", "1");
+
+    $("#goon").css("display", "flex");
+    // $("#campotot").delay(500).addClass("off");
+    $("body").css("overflow-y", "auto");
+    $("#campotot2").delay(1000).css("opacity", "0%");
+    $("#campotot2").delay(1000).addClass("off");
   });
   $("#boxinoisbacc").on("click", function () {
     if ($(".shown").hasClass("chiuso")) {
@@ -189,11 +202,11 @@ function updateYouTubeCounter() {
     0,
     youtubescroll.scrollHeight,
     0,
-    881
+    877
   );
   youtubecounter.textContent = round(youtubemap);
-  if (round(youtubemap) > 881) {
-    youtubecounter.textContent = 881;
+  if (round(youtubemap) > 877) {
+    youtubecounter.textContent = 877;
   }
 }
 function updatePrimeCounter() {
