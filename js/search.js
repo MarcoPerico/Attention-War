@@ -86,15 +86,11 @@ jQuery(document).ready(function ($) {
   });
   $("#randomizza").click(function () {
     if ($("#randomizza").hasClass("random")) {
-      $("#bianchino").css({ left: "0%", width: "50%" });
-      $("#acasaccio").css("color", "white");
-      $("#akira").css("color", "black");
+      $("#akira").html("Akira");
       $("#randomizza").removeClass("random");
     } else {
       $("#randomizza").addClass("random");
-      $("#bianchino").css({ left: "50%", width: "50%" });
-      $("#akira").css("color", "white");
-      $("#acasaccio").css("color", "black");
+      $("#akira").html("udnkunsdfuns");
     }
     check();
   });
