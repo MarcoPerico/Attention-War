@@ -5,12 +5,12 @@
 jQuery(document).ready(function ($) {
   //-----------------------------------------------------------------
   $(document).ready(function () {
-    $("#freccia").delay(2000).fadeIn(500);
+    $("#freccia").delay(3500).fadeIn(500);
   });
 
   $(document).scroll(function () {
     var y = $(this).scrollTop();
-    if (y > 800) {
+    if (y > 600) {
       // $("#navbar").fadeIn();
       // $("#container").css("background-color", "black");
       // $(".text").css("color", "white");
