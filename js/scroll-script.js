@@ -171,7 +171,7 @@ function updateTwitchCounter() {
     document.documentElement.scrollTop,
     0,
     twitchscroll.scrollHeight,
-    0,
+    41,
     73
   );
   twitchcounter.textContent = round(twitchmap);
@@ -186,7 +186,7 @@ function updateNetflixCounter() {
     document.documentElement.scrollTop,
     0,
     netflixscroll.scrollHeight,
-    0,
+    73,
     235
   );
   netflixcounter.textContent = round(netflixmap);
@@ -200,8 +200,8 @@ function updateYouTubeCounter() {
   youtubemap = map(
     document.documentElement.scrollTop,
     0,
-    youtubescroll.scrollHeight,
-    0,
+    youtubescroll.scrollHeight - windowHeight,
+    48,
     877
   );
   youtubecounter.textContent = round(youtubemap);
@@ -215,7 +215,7 @@ function updatePrimeCounter() {
     document.documentElement.scrollTop,
     0,
     primescroll.scrollHeight,
-    0,
+    58,
     433
   );
   primecounter.textContent = round(primemap);

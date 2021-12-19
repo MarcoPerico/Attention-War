@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Generator: Adobe Illustrator 25.4.1, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
+<svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+	 viewBox="0 0 912.7 478.6" style="enable-background:new 0 0 912.7 478.6;" xml:space="preserve">
+<style type="text/css">
+	.st0{fill:#FFFFFF;}
+	.st1{fill:none;stroke:#FFFFFF;stroke-width:1.09;stroke-miterlimit:10;}
+	.st2{font-family:'PxGrotesk-RegularItalic';}
+	.st3{font-size:22px;}
+	.st4{font-family:'PxGrotesk-Light';}
+</style>
+<path class="st0" d="M911.6,1.1v476.4H1.1V1.1H911.6 M912.7,0H0v478.6h912.7V0z"/>
+<line class="st1" x1="0" y1="327.2" x2="912.7" y2="327.2"/>
+<line class="st1" x1="0" y1="202.4" x2="912.7" y2="202.4"/>
+<line class="st1" x1="0" y1="63.6" x2="912.7" y2="63.6"/>
+<line class="st1" x1="608.5" y1="0" x2="608.5" y2="478.6"/>
+<line class="st1" x1="259.6" y1="0" x2="259.6" y2="478.6"/>
+<text transform="matrix(1 0 0 1 25.0946 34.41)" class="st0 st2 st3">Element analysed</text>
+<text transform="matrix(1 0 0 1 291.1746 34.41)" class="st0 st2 st3">Data Collected</text>
+<text transform="matrix(1 0 0 1 639.2847 34.41)" class="st0 st2 st3">Method of Collection</text>
+<text transform="matrix(1 0 0 1 639.2847 94.6)" class="st0 st4 st3">Manual</text>
+<text transform="matrix(1 0 0 1 639.2847 366.36)" class="st0 st4 st3">Manual</text>
+<text transform="matrix(1 0 0 1 25.0946 94.6)" class="st0 st4 st3">Homepage content </text>
+<text transform="matrix(1 0 0 1 25.0946 121)" class="st0 st4 st3">library</text>
+<text transform="matrix(1 0 0 1 25.0946 239.72)" class="st0 st4 st3">Autoplay disabling </text>
+<text transform="matrix(1 0 0 1 25.0946 266.12)" class="st0 st4 st3">process</text>
+<text transform="matrix(1 0 0 1 25.0946 366.36)" class="st0 st4 st3">Search results</text>
+<text transform="matrix(1 0 0 1 292.1946 94.6)" class="st0 st4 st3">Number of content, </text>
+<text transform="matrix(1 0 0 1 292.1946 121)" class="st0 st4 st3">categorized in: shown </text>
+<text transform="matrix(1 0 0 1 292.1946 147.4)" class="st0 st4 st3">immediately, shown on </text>
+<text transform="matrix(1 0 0 1 292.1946 173.8)" class="st0 st4 st3">scroll, shown on click</text>
+<text transform="matrix(1 0 0 1 292.1946 239.72)" class="st0 st4 st3">Number of clicks &amp; scrolls </text>
+<text transform="matrix(1 0 0 1 292.1946 266.12)" class="st0 st4 st3">needed, average timing, </text>
+<text transform="matrix(1 0 0 1 292.1946 292.52)" class="st0 st4 st3">number of page switches</text>
+<text transform="matrix(1 0 0 1 639.2847 239.72)" class="st0 st4 st3">IOGraphica for mouse </text>
+<text transform="matrix(1 0 0 1 639.2847 266.12)" class="st0 st4 st3">tracking, Odoplus for </text>
+<text transform="matrix(1 0 0 1 639.2847 292.52)" class="st0 st4 st3">counting the metrics</text>
+<text transform="matrix(1 0 0 1 292.1946 366.36)" class="st0 st4 st3">Number of results </text>
+<text transform="matrix(1 0 0 1 292.1946 392.76)" class="st0 st4 st3">categorized according to: </text>
+<text transform="matrix(1 0 0 1 292.1946 419.16)" class="st0 st4 st3">logged-in user / visitor, </text>
+<text transform="matrix(1 0 0 1 292.1946 445.56)" class="st0 st4 st3">realistic / nonsense query</text>
+</svg>
