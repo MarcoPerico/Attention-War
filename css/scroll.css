@@ -54,9 +54,14 @@ a {
   color: black;
 }
 #toggloidi {
-  margin-top: 40vh;
+  display:flex;
+  width:60vw;
+  left:15vw;
+  height:5vh;
+  position:absolute;
+  flex-direction: row;
   /* position: absolute; */
-  bottom: 10%;
+  bottom:5%;
 }
 .toggloide {
   width: 16vw;
@@ -70,7 +75,7 @@ a {
   position: absolute;
   top: 0;
   margin-top: 3%;
-  font-size: 1.2vw;
+  font-size: 1vw;
   font-weight: 100;
 }
 #twitch{
@@ -89,41 +94,45 @@ a {
 #question {
   font-weight: 100;
   font-size: 1.1vw;
-  margin-left: 1.4%;
-  width: 16vw;
+  width: 25vw;
   word-break: normal;
   position: absolute;
   color: white;
   left: 0;
-  top: 3.5%;
+  top:30%;
 }
 .navbar-button {
   padding: 14px 20px 14px 20px;
   color: white;
 }
 #campotot {
-  transition: all 1.3s cubic-bezier(0, 0, 0.58, 1);
+  transition: all 1.1s cubic-bezier(0, 0, 0.58, 1);
   opacity: 1;
 }
 #campotot2 {
-  position: relative;
+  position: absolute;
   bottom: 0;
   left: 0;
   height: 95vh;
   margin-top: 5vh;
-  width: 97vw;
+  width: 100vw;
+}
+#columnbox{
+  position: absolute;
+  left: 10vw;
+top:5vh;
+  height: 85vh;
+  margin-top: 13vh;
+  width: 80vw;
   display: flex;
   flex-direction: row;
 }
 .box {
-  border-style: solid;
-  border-color: white;
-  border-width: 1px;
-  height: 77%;
+  height: 70%;
   display: flex;
   flex-direction: column-reverse;
   position: relative;
-  width: 75%;
+  width:55%;
 }
 .statist {
   width: 100%;
@@ -133,6 +142,9 @@ a {
 }
 .shown {
   background-color: red;
+  border-style:solid;
+  border-width: 0 0.5px 0 0;
+  border-color:red;
 }
 .scroll {
   background-color: rgb(0, 255, 0);
@@ -179,13 +191,11 @@ a {
 .columns {
   /* width: 18vw; */
   width: 25%;
-
-  height: 100%;
+  height: 90%;
   align-items: flex-start;
   display: flex;
   background-color: black;
   flex-direction: column;
-  margin: 0 2vw;
 }
 #column1 {
   width: 28vw;
@@ -223,51 +233,42 @@ a {
 #textpix {
   /* position: absolute; */
   color: white;
+  display:inline-block;
   font-size: 1.2vw;
   font-weight: 100;
   left: 0;
-  /* margin-top: 1vh; */
-  top: 25%;
+  margin-top:0;
 }
 #counterpix {
-  position: fixed;
-  left: 1.4%;
-  top: 30%;
-  width: 14vw;
-  height: 22vh;
+position:absolute;
+display:flex;
+align-items:center;
+  left: 70%;
+  top: 35%;
+  border-color:white;
+  border-style:solid;
+  border-width:1px;
+  width: 17vw;
+  height: 6vh;
 }
 .counter {
   user-select: none;
-  bottom: 0;
   left: 0;
-  width: 15vw;
-  margin-top: 21vh;
-  margin-right:5vw;
+  width: 21vw;
+  margin-top: 26vh;
   cursor: default;
-  font-size: 1.5vw;
+  font-size: 2.3vw;
   color: white;
   font-family: PxGroteskRegular;
 }
-#scatola{
-  position: fixed;
-  width:19vw;
-  background-color: black;
-  height:95vh;
-  border-width:0 1px 0 0;
-  border-color:white;
-  border-style:solid;
-  bottom:0;
-  left:0;
-}
 .titoli {
   user-select: none;
-  top: 42%;
-  width: 16vw;
-  margin-left:3.2vw;
+  top: 58%;
+  width: 20vw;
   position: absolute;
   cursor: default;
-  font-size: 1.2vw;
-  font-weight: 100;
+  font-size: 1.1vw;
+  font-weight: 200;
   font-family: PxGroteskRegular;
 }
 .counters {
@@ -292,22 +293,23 @@ a {
 #instructionstext {
   font-size: 1.1vw;
   position: absolute;
-  top: 5%;
+  top: 3%;
+  left:14vw;
   align-self: auto;
-  width: 16vw;
+  width: 46vw;
   font-weight: 100;
 }
 
 .titoli2 {
   user-select: none;
-  top: 40%;
+  top: 30%;
   width: 16vw;
   cursor: default;
-  margin-bottom: 2%;
+  margin-bottom: 6%;
   color: white;
-  font-size: 1.4vw;
+  font-size: 1.2vw;
   font-family: PxGroteskRegular;
-  font-weight: 100;
+  font-weight: 200;
 }
 .chiuso {
   height: 0%;
@@ -316,21 +318,21 @@ a {
   left: 0;
 }
 #titprime {
-  left: 19vw;
+  left: 20vw;
 }
 #tityoutube {
-  left: 38.2vw;
+  left:40vw;
 }
 #tittwitch {
-  left: 57.4vw;
+  left:60vw;
 }
 img {
   top: 0;
-  right: 0;
+left: 0;
   position: relative;
-  margin-right: 5vw;
+  margin-right: 4.8vw;
   vertical-align: top;
-  object-fit: contain;
+  object-fit: cover;
 }
 p {
   font-family: PxGroteskRegular;
@@ -350,14 +352,14 @@ p {
 
 #pixels {
   text-align: left;
-  font-size: 1.5vw;
-  margin-top: 0;
-  margin-left: 0;
-  z-index: 3;
+  font-size: 1.3vw;
+  display:inline-block;
+  margin: 15%;
+  width:10%;
   color: white;
 }
 .screen {
-  top: 10vh;
+  top: 20vh;
   width:15vw;
 }
 .flexioni {
@@ -394,15 +396,15 @@ p {
   position: fixed;
   display: flex;
   flex-direction: row;
-  top:5%;
+  top:0%;
   align-items: right;
   width: 80vw;
-  height: 30vh;
+  height: 35vh;
   background-color: black;
 }
 #container {
   position: absolute;
-  left: 10vw;
+  left: 12.5vw;
   height: 100vh;
   align-items: right;
   top: 15vh;
@@ -415,6 +417,7 @@ p {
   width: 3vh;
   border-color: white;
   border-style: solid;
+  cursor:pointer;
   position: relative;
   margin-bottom: 5vh;
   border-width: 3px;
