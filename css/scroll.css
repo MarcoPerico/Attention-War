@@ -44,6 +44,9 @@ a {
 #next2 {
   color: white;
 }
+#next {
+  margin: 0;
+}
 #goon2:hover {
   background-color: white;
 }
