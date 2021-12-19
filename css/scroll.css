@@ -44,6 +44,9 @@ a {
 #next2 {
   color: white;
 }
+#next {
+  margin: 0;
+}
 #goon2:hover {
   background-color: white;
 }
@@ -70,6 +73,9 @@ a {
   font-size: 1.2vw;
   font-weight: 100;
 }
+#twitch{
+  margin-right:0;
+}
 #navbar {
   position: fixed;
   justify-content: space-between;
@@ -82,7 +88,7 @@ a {
 }
 #question {
   font-weight: 100;
-  font-size: 1.2vw;
+  font-size: 1.1vw;
   margin-left: 1.4%;
   width: 16vw;
   word-break: normal;
@@ -96,7 +102,7 @@ a {
   color: white;
 }
 #campotot {
-  transition: all 0.5s cubic-bezier(0, 0, 0.58, 1);
+  transition: all 1.3s cubic-bezier(0, 0, 0.58, 1);
   opacity: 1;
 }
 #campotot2 {
@@ -113,11 +119,11 @@ a {
   border-style: solid;
   border-color: white;
   border-width: 1px;
-  height: 80%;
+  height: 77%;
   display: flex;
   flex-direction: column-reverse;
   position: relative;
-  width: 100%;
+  width: 75%;
 }
 .statist {
   width: 100%;
@@ -179,13 +185,15 @@ a {
   display: flex;
   background-color: black;
   flex-direction: column;
-  margin: 0 1.7vw;
+  margin: 0 2vw;
 }
 #column1 {
   width: 28vw;
+  margin-left:20px;
   display: flex;
   flex-direction: column;
 }
+#column2 {margin-left:4vw;}
 .chapters-button {
   padding-left: 12px;
   padding-right: 12px;
@@ -224,27 +232,38 @@ a {
 #counterpix {
   position: fixed;
   left: 1.4%;
-  top: 50%;
-  z-index: 2;
-  width: 20vw;
+  top: 30%;
+  width: 14vw;
   height: 22vh;
 }
 .counter {
   user-select: none;
   bottom: 0;
   left: 0;
-  width: 16vw;
-  margin-top: 23vh;
-  margin-left: 3.2vw;
+  width: 15vw;
+  margin-top: 21vh;
+  margin-right:5vw;
   cursor: default;
   font-size: 1.5vw;
   color: white;
   font-family: PxGroteskRegular;
 }
+#scatola{
+  position: fixed;
+  width:19vw;
+  background-color: black;
+  height:95vh;
+  border-width:0 1px 0 0;
+  border-color:white;
+  border-style:solid;
+  bottom:0;
+  left:0;
+}
 .titoli {
   user-select: none;
-  top: 40%;
+  top: 42%;
   width: 16vw;
+  margin-left:3.2vw;
   position: absolute;
   cursor: default;
   font-size: 1.2vw;
@@ -271,11 +290,11 @@ a {
   color: red;
 }
 #instructionstext {
-  font-size: 1.2vw;
+  font-size: 1.1vw;
   position: absolute;
   top: 5%;
   align-self: auto;
-  width: 17vw;
+  width: 16vw;
   font-weight: 100;
 }
 
@@ -305,21 +324,18 @@ a {
 #tittwitch {
   left: 57.4vw;
 }
-#nvideos {
-  margin-left: 0;
-}
 img {
-  width: 16vw;
   top: 0;
   right: 0;
   position: relative;
-  margin-right: 6vh;
+  margin-right: 5vw;
   vertical-align: top;
   object-fit: contain;
 }
 p {
   font-family: PxGroteskRegular;
   color: white;
+  margin-bottom:0;
 }
 #campo {
   height: 95vh;
@@ -337,12 +353,12 @@ p {
   font-size: 1.5vw;
   margin-top: 0;
   margin-left: 0;
-  margin-bottom: 1%;
   z-index: 3;
   color: white;
 }
 .screen {
   top: 10vh;
+  width:15vw;
 }
 .flexioni {
   pointer-events: none;
@@ -378,20 +394,20 @@ p {
   position: fixed;
   display: flex;
   flex-direction: row;
-  top: -5%;
-  right: 0;
+  top:5%;
   align-items: right;
-  width: 77vw;
+  width: 80vw;
   height: 30vh;
   background-color: black;
 }
 #container {
   position: absolute;
-  right: 0;
+  left: 10vw;
   height: 100vh;
   align-items: right;
   top: 15vh;
-  width: 77vw;
+  width: 80vw;
+
 }
 #boxinoisbacc,
 #boxinoisbacc2,

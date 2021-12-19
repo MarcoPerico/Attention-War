@@ -68,7 +68,7 @@ jQuery(document).ready(function ($) {
       if ($(this).attr("id") == "netflixbutton") {
         $("#netflixbutton").css({
           "background-color": "transparent",
-          height: "2vh",
+          height: "2.2vh",
         });
         $("#netflixstats").css("display", "none");
         $("#titolettonetflix").css({ color: "white", "margin-top": "0%" });
@@ -77,7 +77,7 @@ jQuery(document).ready(function ($) {
       } else if ($(this).attr("id") == "primebutton") {
         $("#primebutton").css({
           "background-color": "transparent",
-          height: "2vh",
+          height: "2.2vh",
         });
         $("#primestats").css("display", "none");
         $("#primepath").removeClass("active");
@@ -86,7 +86,7 @@ jQuery(document).ready(function ($) {
       } else if ($(this).attr("id") == "twitchbutton") {
         $("#twitchbutton").css({
           "background-color": "transparent",
-          height: "2vh",
+          height: "2.2vh",
         });
         $("#twitchstats").css("display", "none");
         $("#twitchpath").removeClass("active");
@@ -95,7 +95,7 @@ jQuery(document).ready(function ($) {
       } else if ($(this).attr("id") == "youtubebutton") {
         $("#youtubebutton").css({
           "background-color": "transparent",
-          height: "2vh",
+          height: "2.2vh",
         });
         $("#youtubestats").css("display", "none");
         $("#titolettoyoutube").css({ color: "white", "margin-top": "0%" });
@@ -106,20 +106,20 @@ jQuery(document).ready(function ($) {
       if ($(this).attr("id") == "netflixbutton") {
         $("#netflixbutton").css({
           "background-color": "white",
-          height: "13vh",
+          height: "15vh",
         });
         $("#netflixstats").css("display", "flex");
         $("#titolettonetflix").css({ color: "red" });
         $("#netflixbutton").addClass("active");
         $("#netflixpath").addClass("active");
       } else if ($(this).attr("id") == "primebutton") {
-        $("#primebutton").css({ "background-color": "white", height: "13vh" });
+        $("#primebutton").css({ "background-color": "white", height: "15vh" });
         $("#primestats").css("display", "flex");
         $("#titolettoprime").css({ color: "blue" });
         $("#primebutton").addClass("active");
         $("#primepath").addClass("active");
       } else if ($(this).attr("id") == "twitchbutton") {
-        $("#twitchbutton").css({ "background-color": "white", height: "13vh" });
+        $("#twitchbutton").css({ "background-color": "white", height: "15vh" });
         $("#twitchstats").css("display", "flex");
         $("#titolettotwitch").css({ color: "fuchsia" });
         $("#twitchpath").addClass("active");
@@ -127,7 +127,7 @@ jQuery(document).ready(function ($) {
       } else if ($(this).attr("id") == "youtubebutton") {
         $("#youtubebutton").css({
           "background-color": "white",
-          height: "13vh",
+          height: "15vh",
         });
         $("#youtubestats").css("display", "flex");
         $("#titolettoyoutube").css({

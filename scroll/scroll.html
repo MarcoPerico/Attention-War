@@ -4,7 +4,9 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-    <title>Sketch</title>
+    <title>Attention War</title>
+    <link rel="icon" type="image/x-icon" href="./assets/favicon.svg">
+
 
     <link rel="stylesheet" type="text/css" href="../css/scroll.css" />
     <script src="libraries/p5.min.js"></script>
@@ -14,6 +16,7 @@
   <body>
     <div id="containerone">
     <div id="campotot2" class="off">
+      <div id="scatola"></div>
       <div id="column1" class="columns">
         <p id="instructionstext">The homepages of each platform have been examined in an area equal to three viewports in height to investigate how metadata is distributed in multiple levels of interaction.<br><br>Toggle the switches to confront the categories.</p>
           <div id="toggloidi">
@@ -98,10 +101,6 @@
     </div>
 
       <div id="campotot">
-        <div id="counterpix">
-          <p id="pixels" class="counter"><span>0</span></p>
-          <p id="textpix">Pixels scrolled</p>
-        </div>
         <div id="container">
           <img src = "assets/netflix.webp" id="netflix" width = "300" class = "screen"></img>
           <img src = "assets/prime.jpg" id="prime" width = "300" class = "screen"></img>
@@ -118,8 +117,12 @@
             <p class="titoli" id="tittwitch">Twitch</p>
           </div>
         <div id="campo">
-          <p id="question">How many videos are there in your homepage?<br><br>Scroll down to count them.</p>
+          <p id="question">How many videos are in your homepage?<br><br>Scroll down to count them.</p>
         </div>
+        </div>
+        <div id="counterpix">
+          <p id="pixels" class="counter"><span>0</span></p>
+          <p id="textpix">Pixels scrolled</p>
         </div>
       </div>
     <div id="goon"><p id="next">Next</p></div>
