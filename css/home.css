@@ -316,9 +316,9 @@ h1 {
 .capitolo {
   color: white;
   width: 16vw;
-  border: 1px solid white;
+  /* border: 1px solid white; */
   margin: 0 6px 0 6px;
-  padding: 16px;
+  padding: 20px;
   font-size: 18px;
   transition: 0.3s;
 }
