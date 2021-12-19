@@ -124,7 +124,7 @@ a {
 .stats {
   display: none;
   opacity: 1;
-  /* height: 10vh; */
+  height: 10vh;
   margin-top: 3%;
   text-align: left;
   font-size: 1.2vw;
@@ -384,7 +384,7 @@ img {
 }
 .visbottone {
   /* margin: 2% auto; */
-  height: 2vh;
+  height: 2.2vh;
   width: 90%;
   /* text-align: center; */
   display: flex;
@@ -426,7 +426,7 @@ img {
   color: red;
 }
 #netflixbutton {
-  /* height: 15vh; */
+  height: 15vh;
   background-color: white;
 }
 #testo2 {
@@ -459,6 +459,9 @@ canvas {
   z-index: -1;
   transition: all 0.5s;
   display: block;
+}
+#netflixstats {
+  display: flex;
 }
 
 /* -----------------COVER------------------- */
