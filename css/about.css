@@ -454,6 +454,9 @@ footer a {
   text-decoration: none !important;
   font-size: 14px;
 }
+#contacts {
+  padding-right: 20px;
+}
 
 #noi {
   display: flex;
