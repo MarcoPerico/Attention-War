@@ -118,15 +118,10 @@ h4 {
   transition: background-position 0.3s, color 0.1s;
   text-decoration: underline;
 }
-.fun-hover:hover {
-  background-position: -100%;
-  transition: background-position 0.3s, color 0.4s;
-  color: black;
-}
 
 
 /* tentativo image show on hover */
-#hiddenimg {
+/* #hiddenimg {
   display: none;
 }
 #hiddentxt {
@@ -141,7 +136,7 @@ h4 {
 .revealImage {
   display:none;
 }
-/* ---------------------------- */
+---------------------------- */
 
 
 #about-container {
@@ -239,6 +234,7 @@ h4 {
   border-color: white;
   border-style: solid;
   width: 70vw;
+  position:relative;
   margin-right: 20px;
   display: flex;
   flex-direction: column;
@@ -287,6 +283,16 @@ ul {
   line-height: 1.2;
   margin-left: 20px;
 }
+#libro {
+  width: 20%;
+  opacity: 0;
+  transition:all 0.2s ease-in-out;
+  position: absolute;
+  right: 0;
+  top: 0;
+  padding: 30px 0 0 0;
+
+}
 
 
 
@@ -317,14 +323,6 @@ ul {
   margin-top: 50px;
   margin-bottom: 0px;
 }
-
-
-
-
-
-
-
-
 
 
 
@@ -369,9 +367,6 @@ p {
   margin-top: -10px;
   margin-bottom: 10px;
 }
-
-
-
 
 
 
@@ -460,3 +455,7 @@ footer a {
   text-decoration: none !important;
   font-size: 14px;
 }
+
+
+
+

@@ -20,6 +20,11 @@ $("#voce5").on("click", function () {
 $("#voce6").on("click", function () {
   $('html, body').animate({ scrollTop: $('#aboutsection6').offset().top }, 900);
 });
+$(".fun-hover").hover(function(){
+  $("#libro").css("opacity","1");
+}, function(){
+  $("#libro").css("opacity","0");
+});
 });
 //  var options = {
 //  animate: true,
