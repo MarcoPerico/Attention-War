@@ -161,13 +161,13 @@ function draw() {
   let h1width = textWidth(h1);
   pop();
 
-  push();
-  let h2 = "A guide to streaming platforms' user retention strategies";
-  textAlign(LEFT, TOP);
-  fill(255);
-  textSize(24);
-  text(h2, 25, h1width * 0.092 + 40);
-  pop();
+  // push();
+  // let h2 = "A guide to streaming platforms' user retention strategies";
+  // textAlign(LEFT, TOP);
+  // fill(255);
+  // textSize(24);
+  // text(h2, 25, h1width * 0.092 + 40);
+  // pop();
 
   //matter.js interaction : draw
   if (boxes.length <= 29) {
