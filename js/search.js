@@ -101,6 +101,7 @@ jQuery(document).ready(function ($) {
       $("#primeresults").html("20 results");
       $("#primeresults").html("20 results");
       $("#youtuberesults").html("25 results");
+      $("#youtuberesultsgreen").html("15 results");
       $("#twitchresults").html("No results");
       $("#netflixresults").html("No results");
       $("#column2,#column3")

@@ -309,6 +309,15 @@ p {
   height: 30%;
   margin-top: 0.5vh;
 }
+#lente{
+  background-image:url('/search/assets/search_icon.svg');
+  background-size:contain;
+  background-repeat: no-repeat;
+  width:10%;
+  height:60%;
+  position: absolute;
+  left:92%;
+}
 #loginbox {
   flex-direction: row;
   width: 25%;
