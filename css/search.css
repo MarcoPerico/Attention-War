@@ -136,22 +136,28 @@ a {
   /* height:25%; */
   border-style: solid;
   position: absolute;
-  margin: 0 auto;
-  top: 30%;
-  left: 10%;
-  text-align: center;
+  margin: 0;
+  top: 38%;
+  /* left: 10%; */
+  /* text-align: center; */
   word-break: break-all;
   border-width: 2px;
   justify-content: center;
   padding-bottom: 10px;
 }
 .category > p {
-  font-size: 10pt;
-  margin: 0 10px 0 10px;
-  padding-top: 10%;
+  font-size: 1.1vw;
+  margin: 0 1vw 0 1vw;
+  padding-top: 0.6vw;
+  padding-bottom: 0.8vw;
+  font-weight: 100;
 }
 .category > h1 {
+  margin: 0 1vw 0 1vw;
+
   padding-top: 5%;
+  font-size: 1.1vw;
+  font-weight: 200;
 }
 #category1 {
   border-color: red;
@@ -175,7 +181,7 @@ a {
   display: flex;
 }
 #instructionstext {
-  font-size: 1.2vw;
+  font-size: 1.1vw;
   position: fixed;
   top: 7vh;
   align-self: auto;
@@ -234,7 +240,7 @@ p {
   color: white;
   bottom: 0;
   position: absolute;
-  font-size: 1.2vw;
+  font-size: 1.1vw;
   margin-left: 0.5vw;
   font-weight: 100;
 }
