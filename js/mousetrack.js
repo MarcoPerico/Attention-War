@@ -35,9 +35,9 @@ jQuery(document).ready(function ($) {
     // get seconds
     var seconds = Math.round(timeDiff * 100) / 100;
     document.getElementById("testo2").innerHTML =
-      "<span>you took " +
+      "<span>YOU'VE DONE IT!<br>you took " +
       seconds +
-      " seconds<br>and you did 9 interactions<br>to deactivate Netflix autoplay function</span>";
+      " seconds<br>and you did 9 interactions<br>to deactivate Netflix<br>autoplay function</span>";
   }
   function handleTimer() {
     if (count === 0) {
@@ -68,25 +68,25 @@ jQuery(document).ready(function ($) {
       if ($(this).attr("id") == "netflixbutton") {
         $("#netflixbutton").css({
           "background-color": "transparent",
-          height: "2.2vh",
+          height: "4vh",
         });
-        $("#netflixstats").css("display", "none");
+        $("#netflixstats,#netflixnum").css("display", "none");
         $("#titolettonetflix").css({ color: "white", "margin-top": "0%" });
         $("#netflixpath").removeClass("active");
         $("#netflixbutton").removeClass("active");
       } else if ($(this).attr("id") == "primebutton") {
         $("#primebutton").css({
           "background-color": "transparent",
-          height: "2.2vh",
+          height: "4vh",
         });
-        $("#primestats").css("display", "none");
+        $("#primestats,#primenum").css("display", "none");
         $("#primepath").removeClass("active");
         $("#titolettoprime").css({ color: "white", "margin-top": "0%" });
         $("#primebutton").removeClass("active");
       } else if ($(this).attr("id") == "twitchbutton") {
         $("#twitchbutton").css({
           "background-color": "transparent",
-          height: "2.2vh",
+          height: "4vh",
         });
         $("#twitchstats").css("display", "none");
         $("#twitchpath").removeClass("active");
@@ -95,41 +95,35 @@ jQuery(document).ready(function ($) {
       } else if ($(this).attr("id") == "youtubebutton") {
         $("#youtubebutton").css({
           "background-color": "transparent",
-          height: "2.2vh",
+          height: "4vh",
         });
-        $("#youtubestats").css("display", "none");
+        $("#youtubestats,#youtubenum").css("display", "none");
         $("#titolettoyoutube").css({ color: "white", "margin-top": "0%" });
         $("#youtubepath").removeClass("active");
         $("#youtubebutton").removeClass("active");
       }
     } else if (!$(this).hasClass("active")) {
       if ($(this).attr("id") == "netflixbutton") {
-        $("#netflixbutton").css({
-          "background-color": "white",
-          height: "15vh",
-        });
-        $("#netflixstats").css("display", "flex");
+        $("#netflixbutton").css("height","12vh");
+        $("#netflixstats,#netflixnum").css("display", "flex");
         $("#titolettonetflix").css({ color: "red" });
         $("#netflixbutton").addClass("active");
         $("#netflixpath").addClass("active");
       } else if ($(this).attr("id") == "primebutton") {
-        $("#primebutton").css({ "background-color": "white", height: "15vh" });
-        $("#primestats").css("display", "flex");
+        $("#primebutton").css("height","12vh");
+        $("#primestats,#primenum").css("display", "flex");
         $("#titolettoprime").css({ color: "blue" });
         $("#primebutton").addClass("active");
         $("#primepath").addClass("active");
       } else if ($(this).attr("id") == "twitchbutton") {
-        $("#twitchbutton").css({ "background-color": "white", height: "15vh" });
+        $("#twitchbutton").css("height","12vh");
         $("#twitchstats").css("display", "flex");
         $("#titolettotwitch").css({ color: "fuchsia" });
         $("#twitchpath").addClass("active");
         $("#twitchbutton").addClass("active");
       } else if ($(this).attr("id") == "youtubebutton") {
-        $("#youtubebutton").css({
-          "background-color": "white",
-          height: "15vh",
-        });
-        $("#youtubestats").css("display", "flex");
+        $("#youtubebutton").css("height","12vh");
+        $("#youtubestats,#youtubenum").css("display", "flex");
         $("#titolettoyoutube").css({
           color: "rgb(0,255,0)",
         });
@@ -143,67 +137,68 @@ jQuery(document).ready(function ($) {
 
   function testo() {
     if (progresso == 2) {
-      document.getElementById("testo1").innerHTML +=
-        "<br><br>Click on the downwards arrow next to the profile picture.";
+      document.getElementById("testo1").innerHTML =
+        "Click on the back button in the player window.<br><br><span>Click on the downwards arrow next to the profile picture.</span>";
       $("#screenshots").attr(
         "src",
         "./assets/Netflix/Netflix screenshot 2.jpg"
       );
       start();
     } else if (progresso == 3) {
-      document.getElementById("testo1").innerHTML +=
-        "<br><br>In the dropdown menu, click on the Account button.";
+      document.getElementById("testo1").innerHTML =
+        "Click on the back button in the player window.<br><br>Click on the downwards arrow next to the profile picture.<span><br><br>In the dropdown menu, click on the Account button.</span>";
       $("#screenshots").attr(
         "src",
         "./assets/Netflix/Netflix screenshot 3.jpg"
       );
     } else if (progresso == 4) {
-      document.getElementById("testo1").innerHTML +=
-        "<br><br>Click on the scrollbar.";
+      document.getElementById("testo1").innerHTML =
+        "Click on the back button in the player window.<br><br>Click on the downwards arrow next to the profile picture.<br><br>In the dropdown menu, click on the Account button.<span><br><br>Click on the scrollbar.</span>";
       $("#screenshots").attr(
         "src",
         "./assets/Netflix/Netflix screenshot 4.jpg"
       );
     } else if (progresso == 5) {
-      document.getElementById("testo1").innerHTML +=
-        "<br><br>Click on the downwards arrow of Bharath's profile.";
+      document.getElementById("testo1").innerHTML =
+        "Click on the back button in the player window.<br><br>Click on the downwards arrow next to the profile picture.<br><br>In the dropdown menu, click on the Account button.<br><br>Click on the scrollbar.<span><br><br>Click on the downwards arrow of Bharath's profile.</span>";
       $("#screenshots").attr(
         "src",
         "./assets/Netflix/Netflix screenshot 5.jpg"
       );
     } else if (progresso == 6) {
-      document.getElementById("testo1").innerHTML +=
-        "<br><br>Next to Playback Settings, click on Change.";
+      document.getElementById("testo1").innerHTML =
+        "Click on the back button in the player window.<br><br>Click on the downwards arrow next to the profile picture.<br><br>In the dropdown menu, click on the Account button.<br><br>Click on the scrollbar.<br><br>Click on the downwards arrow of Bharath's profile.<span><br><br>Next to Playback Settings, click on Change.</span>";
       $("#screenshots").attr(
         "src",
         "./assets/Netflix/Netflix screenshot 6.jpg"
       );
     } else if (progresso == 7) {
-      document.getElementById("testo1").innerHTML +=
-        "<br><br>Uncheck Autoplay next episode in a series.";
+      document.getElementById("testo1").innerHTML =
+        "Click on the back button in the player window.<br><br>Click on the downwards arrow next to the profile picture.<br><br>In the dropdown menu, click on the Account button.<br><br>Click on the scrollbar.<br><br>Click on the downwards arrow of Bharath's profile.<br><br>Next to Playback Settings, click on Change.<span><br><br>Uncheck Autoplay next episode in a series.</span>";
       $("#screenshots").attr(
         "src",
         "./assets/Netflix/Netflix screenshot 7.jpg"
       );
     } else if (progresso == 8) {
-      document.getElementById("testo1").innerHTML +=
-        "<br><br>Uncheck Autoplay previews while browsing.";
+      document.getElementById("testo1").innerHTML =
+        "Click on the back button in the player window.<br><br>Click on the downwards arrow next to the profile picture.<br><br>In the dropdown menu, click on the Account button.<br><br>Click on the scrollbar.<br><br>Click on the downwards arrow of Bharath's profile.<br><br>Next to Playback Settings, click on Change.<br><br>Uncheck Autoplay next episode in a series.<span><br><br>Uncheck Autoplay previews while browsing.</span>";
       $("#screenshots").attr(
         "src",
         "./assets/Netflix/Netflix screenshot 8.jpg"
       );
     } else if (progresso == 9) {
-      document.getElementById("testo1").innerHTML +=
-        "<br><br>Click on the Save button";
+      document.getElementById("testo1").innerHTML =
+        "Click on the back button in the player window.<br><br>Click on the downwards arrow next to the profile picture.<br><br>In the dropdown menu, click on the Account button.<br><br>Click on the scrollbar.<br><br>Click on the downwards arrow of Bharath's profile.<br><br>Next to Playback Settings, click on Change.<br><br>Uncheck Autoplay next episode in a series.<br><br>Uncheck Autoplay previews while browsing.<span><br><br>Click on the Save button</span>";
       $("#screenshots").attr(
         "src",
         "./assets/Netflix/Netflix screenshot 9.jpg"
       );
     } else if (progresso == 10) {
       end();
-      document.getElementById("testo1").innerHTML += "<br><br>You've done it!";
+      document.getElementById("testo1").innerHTML =
+        "Click on the back button in the player window.<br><br>Click on the downwards arrow next to the profile picture.<br><br>In the dropdown menu, click on the Account button.<br><br>Click on the scrollbar.<br><br>Click on the downwards arrow of Bharath's profile.<br><br>Next to Playback Settings, click on Change.<br><br>Uncheck Autoplay next episode in a series.<br><br>Uncheck Autoplay previews while browsing.<br><br>Click on the Save button";
       $("#screenshots").css("opacity", "0");
-      $("#testo2").css("bottom", "0%");
+      $("#testo2").css("left", "0%");
       $("#goon").css("right", "2%");
       $("#campo").css("cursor", "auto");
       p1.noLoop();
