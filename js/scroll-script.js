@@ -200,7 +200,7 @@ function updateYouTubeCounter() {
   youtubemap = map(
     document.documentElement.scrollTop,
     0,
-    youtubescroll.scrollHeight - windowHeight,
+    youtubescroll.scrollHeight - windowHeight + windowHeight/5,
     48,
     877
   );
