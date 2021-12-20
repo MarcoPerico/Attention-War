@@ -5,7 +5,7 @@
 jQuery(document).ready(function ($) {
   //-----------------------------------------------------------------
   $(document).ready(function () {
-    $("#freccia").delay(3500).fadeIn(500);
+    $("#freccia").delay(8000).fadeIn(500);
   });
 
   $(document).scroll(function () {
