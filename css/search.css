@@ -312,7 +312,7 @@ p {
   margin-top: 0.5vh;
 }
 #lente {
-  background-image: url("/search/assets/search_icon.svg");
+  background-image: url("/assets/images/SVG/search_icon.svg");
   background-size: contain;
   background-repeat: no-repeat;
   width: 10%;
