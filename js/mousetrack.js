@@ -125,7 +125,7 @@ jQuery(document).ready(function ($) {
         $("#primebutton").addClass("active");
         $("#primepath").addClass("active");
       } else if ($(this).attr("id") == "twitchbutton") {
-        $("#twitchbutton").css("height", "12vh");
+        $("#twitchbutton").css("height", "10vh");
         $("#twitchstats").css("display", "flex");
         $("#titolettotwitch").css({ color: "fuchsia" });
         $("#twitchpath").addClass("active");
