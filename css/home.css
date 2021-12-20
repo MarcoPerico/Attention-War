@@ -376,7 +376,7 @@ p {
 
 #sfumatura {
   position: absolute;
-  bottom: 0;
+  bottom: -2px;
   width: 100vw;
   height: 15vh;
   background-image: linear-gradient(transparent, black);
