@@ -294,8 +294,8 @@ h4 {
 }
 #freccia {
   position: absolute;
-  bottom: 0px;
-  z-index: 5;
+  bottom: 40px;
+  z-index: 1;
   display: none;
 }
 
