@@ -202,11 +202,11 @@ function updateYouTubeCounter() {
     0,
     youtubescroll.scrollHeight - windowHeight + windowHeight/5,
     48,
-    877
+    828
   );
   youtubecounter.textContent = round(youtubemap);
-  if (round(youtubemap) > 877) {
-    youtubecounter.textContent = 877;
+  if (round(youtubemap) > 828) {
+    youtubecounter.textContent = 828;
   }
 }
 function updatePrimeCounter() {
