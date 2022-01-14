@@ -117,7 +117,7 @@ function cl(text) {
 
 window.addEventListener("scroll", () => {
   const span = document.querySelector("span");
-  span.innerHTML = Math.round(window.scrollY);
+  span.innerHTML = Math.round(window.scrollY * 7.6);
 
   var wScroll = window.scrollY;
 });
