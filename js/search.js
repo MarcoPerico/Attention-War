@@ -24,26 +24,26 @@ jQuery(document).ready(function ($) {
       $(".nothovering").addClass("off");
       if ($(this).hasClass("keyword")) {
         $(".keyword").css("outline", "2px red solid");
-        $("#category1").removeClass("off");
+        $("#desc1").removeClass("offvero");
         $(".hoveringred").removeClass("off");
         $(".hoveringred").css("color", "red");
         $(".thumbnail").not(".keyword").css("opacity", "0.3");
       } else if ($(this).hasClass("searchrelated")) {
         $(".hoveringblue").removeClass("off");
         $(".hoveringblue").css("color", "rgb(0, 92, 230)");
-        $("#category2").removeClass("off");
+        $("#desc2").removeClass("offvero");
         $(".searchrelated").css("outline", "2px rgb(0, 92, 230) solid");
         $(".thumbnail").not(".searchrelated").css("opacity", "0.3");
       } else if ($(this).hasClass("unrelated")) {
         $(".hoveringgreen").removeClass("off");
         $(".hoveringgreen").css("color", "rgb(0,255,0)");
-        $("#category3").removeClass("off");
+        $("#desc3").removeClass("offvero");
         $(".unrelated").css("outline", "2px rgb(0,255,0) solid");
         $(".thumbnail").not(".unrelated").css("opacity", "0.3");
       } else if ($(this).hasClass("rewatch")) {
         $(".hoveringfuchsia").removeClass("off");
         $(".hoveringfuchsia").css("color", "fuchsia");
-        $("#category4").removeClass("off");
+        $("#desc4").removeClass("offvero");
         $(".rewatch").css("outline", "2px fuchsia solid");
         $(".thumbnail").not(".rewatch").css("opacity", "0.3");
       }
@@ -56,19 +56,19 @@ jQuery(document).ready(function ($) {
       $(".nothovering").removeClass("off");
       if ($(this).hasClass("keyword")) {
         $(".keyword").css("outline", "none");
-        $("#category1").addClass("off");
+        $("#desc1").addClass("offvero");
         $(".thumbnail").not(".keyword").css("opacity", "1");
       } else if ($(this).hasClass("searchrelated")) {
         $(".searchrelated").css("outline", "none");
-        $("#category2").addClass("off");
+        $("#desc2").addClass("offvero");
         $(".thumbnail").not(".searchrelated").css("opacity", "1");
       } else if ($(this).hasClass("unrelated")) {
         $(".unrelated").css("outline", "none");
-        $("#category3").addClass("off");
+        $("#desc3").addClass("offvero");
         $(".thumbnail").not(".unrelated").css("opacity", "1");
       } else if ($(this).hasClass("rewatch")) {
         $(".rewatch").css("outline", "none");
-        $("#category4").addClass("off");
+        $("#desc4").addClass("offvero");
         $(".thumbnail").not(".rewatch").css("opacity", "1");
       }
     }
