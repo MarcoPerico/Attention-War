@@ -116,11 +116,7 @@ h4 {
 
 .fun-hover {
   background-blend-mode: exclusion;
-  background-image: linear-gradient(
-    to right,
-    transparent 50%,
-    rgb(255, 255, 255) 50%
-  );
+  background-image: linear-gradient(to right, transparent 50%, rgb(255, 255, 255) 50%);
   background-size: 200%;
   transition: background-position 0.3s, color 0.1s;
   text-decoration: underline;
@@ -287,7 +283,7 @@ ul {
   font-weight: 200;
   padding: 0px;
   margin-top: 0px;
-  margin-bottom: 80px;
+  margin-bottom: 40px;
   font-weight: 100;
   line-height: 1.2;
   margin-left: 20px;
@@ -530,4 +526,8 @@ footer a {
   background: #444444;
   background-clip: padding-box;
   border: 2px solid transparent;
+}
+
+#marginami {
+  margin-top: 80px;
 }
